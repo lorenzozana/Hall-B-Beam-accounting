@@ -1,0 +1,4361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="12" Z="6" name="C12">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C13">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C">
+      <fraction n="0.9893" ref="C12"/>
+      <fraction n="0.0107" ref="C13"/>
+    </element>
+    <isotope N="1" Z="1" name="H1">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H2">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="Hydrogen">
+      <fraction n="0.999885" ref="H1"/>
+      <fraction n="0.000115" ref="H2"/>
+    </element>
+    <isotope N="14" Z="7" name="N14">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N15">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="N">
+      <fraction n="0.99632" ref="N14"/>
+      <fraction n="0.00368" ref="N15"/>
+    </element>
+    <isotope N="16" Z="8" name="O16">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O17">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O18">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O">
+      <fraction n="0.99757" ref="O16"/>
+      <fraction n="0.00038" ref="O17"/>
+      <fraction n="0.00205" ref="O18"/>
+    </element>
+    <isotope N="12" Z="6" name="C12">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C13">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="Carbon">
+      <fraction n="0.9893" ref="C12"/>
+      <fraction n="0.0107" ref="C13"/>
+    </element>
+    <material name="carbonFiber" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="75.7802482798744"/>
+      <D unit="g/cm3" value="1.75"/>
+      <fraction n="0.745" ref="C"/>
+      <fraction n="0.0270676899544882" ref="Hydrogen"/>
+      <fraction n="0.0234610692743458" ref="N"/>
+      <fraction n="0.0535973439487326" ref="O"/>
+      <fraction n="0.150873896822433" ref="Carbon"/>
+    </material>
+    <material name="scintillator" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="64.6844741120544"/>
+      <D unit="g/cm3" value="1.032"/>
+      <fraction n="0.914544377696929" ref="Carbon"/>
+      <fraction n="0.0854556223030713" ref="Hydrogen"/>
+    </material>
+    <isotope N="1" Z="1" name="H1">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H2">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H">
+      <fraction n="0.999885" ref="H1"/>
+      <fraction n="0.000115" ref="H2"/>
+    </element>
+    <material name="G4_MYLAR" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="78.7"/>
+      <D unit="g/cm3" value="1.4"/>
+      <fraction n="0.625010832340889" ref="C"/>
+      <fraction n="0.0419607170679433" ref="H"/>
+      <fraction n="0.333028450591168" ref="O"/>
+    </material>
+    <isotope N="36" Z="18" name="Ar36">
+      <atom unit="g/mole" value="35.9675"/>
+    </isotope>
+    <isotope N="38" Z="18" name="Ar38">
+      <atom unit="g/mole" value="37.9627"/>
+    </isotope>
+    <isotope N="40" Z="18" name="Ar40">
+      <atom unit="g/mole" value="39.9624"/>
+    </isotope>
+    <element name="Ar">
+      <fraction n="0.003365" ref="Ar36"/>
+      <fraction n="0.000632" ref="Ar38"/>
+      <fraction n="0.996003" ref="Ar40"/>
+    </element>
+    <material name="G4_AIR" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="85.7"/>
+      <D unit="g/cm3" value="0.00120479"/>
+      <fraction n="0.000124000124000124" ref="C"/>
+      <fraction n="0.755267755267755" ref="N"/>
+      <fraction n="0.231781231781232" ref="O"/>
+      <fraction n="0.0128270128270128" ref="Ar"/>
+    </material>
+    <material name="ft_peek" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="67.0975104636801"/>
+      <D unit="g/cm3" value="1.31"/>
+      <fraction n="0.76" ref="C"/>
+      <fraction n="0.08" ref="H"/>
+      <fraction n="0.16" ref="O"/>
+    </material>
+  </materials>
+
+  <solids>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_hodo_L1" rmax="178.5" rmin="52.5" startphi="0" z="0.5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_hodo_L2" rmax="178.5" rmin="52.5" startphi="0" z="0.5"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_111" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_111" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_113" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_113" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_119" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_119" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_121" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_121" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_123" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_123" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_129" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_129" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2113" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2113" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2114" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2114" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2115" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2115" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2116" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2116" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2117" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2117" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2118" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2118" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2119" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2119" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2120" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_2120" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2213" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2213" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2214" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2214" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2215" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2215" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2216" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2216" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2217" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2217" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2218" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2218" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2219" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2219" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_2220" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_2220" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_311" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_311" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_313" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_313" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_319" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_319" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_321" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_321" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_323" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_323" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_329" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_329" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4113" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4113" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4114" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4114" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4115" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4115" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4116" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4116" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4117" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4117" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4118" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4118" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4119" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4119" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4120" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_4120" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4213" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4213" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4214" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4214" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4215" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4215" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4216" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4216" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4217" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4217" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4218" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4218" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4219" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4219" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_4220" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_4220" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_511" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_511" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_513" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_513" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_519" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_519" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_521" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_521" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_523" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_523" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_529" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_529" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6113" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6113" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6114" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6114" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6115" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6115" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6116" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6116" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6117" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6117" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6118" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6118" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6119" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6119" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6120" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_6120" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6213" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6213" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6214" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6214" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6215" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6215" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6216" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6216" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6217" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6217" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6218" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6218" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6219" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6219" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_6220" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_6220" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_711" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_711" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_713" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_713" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_719" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_719" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_721" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_721" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_723" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_723" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_729" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_729" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8113" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8113" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8114" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8114" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8115" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8115" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8116" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8116" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8117" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8117" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8118" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8118" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8119" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8119" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8120" x="15" y="15" z="7"/>
+    <box lunit="mm" name="ft_hodo_p15_8120" x="15.2" y="15.2" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8213" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8213" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8214" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8214" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8215" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8215" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8216" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8216" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8217" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8217" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8218" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8218" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8219" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8219" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p15_tile_8220" x="15" y="15" z="15"/>
+    <box lunit="mm" name="ft_hodo_p15_8220" x="15.2" y="15.2" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_112" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_112" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_114" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_114" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_115" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_115" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_116" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_116" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_117" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_117" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_118" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_118" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_122" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_122" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_124" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_124" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_125" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_125" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_126" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_126" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_127" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_127" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_128" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_128" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_211" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_211" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2110" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_2110" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2111" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_2111" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2112" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_2112" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_212" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_212" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_213" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_213" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_214" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_214" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_215" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_215" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_216" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_216" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_217" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_217" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_218" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_218" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_219" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_219" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_221" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_221" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2210" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_2210" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2211" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_2211" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_2212" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_2212" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_222" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_222" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_223" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_223" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_224" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_224" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_225" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_225" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_226" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_226" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_227" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_227" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_228" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_228" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_229" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_229" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_312" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_312" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_314" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_314" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_315" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_315" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_316" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_316" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_317" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_317" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_318" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_318" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_322" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_322" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_324" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_324" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_325" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_325" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_326" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_326" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_327" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_327" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_328" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_328" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_411" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_411" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4110" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_4110" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4111" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_4111" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4112" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_4112" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_412" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_412" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_413" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_413" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_414" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_414" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_415" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_415" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_416" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_416" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_417" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_417" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_418" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_418" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_419" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_419" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_421" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_421" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4210" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_4210" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4211" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_4211" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_4212" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_4212" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_422" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_422" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_423" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_423" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_424" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_424" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_425" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_425" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_426" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_426" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_427" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_427" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_428" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_428" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_429" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_429" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_512" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_512" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_514" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_514" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_515" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_515" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_516" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_516" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_517" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_517" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_518" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_518" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_522" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_522" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_524" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_524" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_525" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_525" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_526" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_526" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_527" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_527" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_528" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_528" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_611" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_611" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6110" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_6110" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6111" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_6111" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6112" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_6112" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_612" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_612" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_613" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_613" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_614" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_614" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_615" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_615" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_616" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_616" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_617" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_617" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_618" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_618" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_619" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_619" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_621" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_621" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6210" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_6210" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6211" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_6211" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_6212" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_6212" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_622" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_622" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_623" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_623" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_624" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_624" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_625" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_625" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_626" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_626" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_627" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_627" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_628" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_628" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_629" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_629" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_712" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_712" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_714" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_714" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_715" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_715" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_716" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_716" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_717" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_717" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_718" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_718" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_722" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_722" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_724" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_724" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_725" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_725" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_726" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_726" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_727" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_727" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_728" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_728" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_811" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_811" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8110" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_8110" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8111" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_8111" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8112" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_8112" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_812" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_812" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_813" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_813" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_814" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_814" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_815" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_815" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_816" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_816" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_817" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_817" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_818" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_818" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_819" x="30" y="30" z="7"/>
+    <box lunit="mm" name="ft_hodo_p30_819" x="30.4" y="30.4" z="7.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_821" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_821" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8210" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_8210" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8211" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_8211" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_8212" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_8212" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_822" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_822" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_823" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_823" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_824" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_824" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_825" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_825" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_826" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_826" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_827" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_827" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_828" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_828" x="30.4" y="30.4" z="15.2"/>
+    <box lunit="mm" name="ft_hodo_p30_tile_829" x="30" y="30" z="15"/>
+    <box lunit="mm" name="ft_hodo_p30_829" x="30.4" y="30.4" z="15.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_hodo_vol" rmax="178.5" rmin="52.5" startphi="0" z="38"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_hodo_ring" rmax="52.5" rmin="40" startphi="0" z="37"/>
+    <polycone aunit="deg" deltaphi="360" lunit="mm" name="ft_hodo" startphi="0">
+      <zplane rmax="178.5" rmin="52.5" z="1809.61"/>
+      <zplane rmax="178.5" rmin="52.5" z="1810.6"/>
+      <zplane rmax="178.5" rmin="40" z="1810.6"/>
+      <zplane rmax="178.5" rmin="40" z="1847.61"/>
+    </polycone>
+  </solids>
+
+  <structure>
+    <volume name="ft_hodo_L1">
+      <materialref ref="carbonFiber"/>
+      <solidref ref="ft_hodo_L1"/>
+    </volume>
+    <volume name="ft_hodo_L2">
+      <materialref ref="carbonFiber"/>
+      <solidref ref="ft_hodo_L2"/>
+    </volume>
+    <volume name="ft_hodo_p15_tile_111">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_111"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_111">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_111"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_111">
+        <volumeref ref="ft_hodo_p15_tile_111"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_113">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_113"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_113">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_113"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_113">
+        <volumeref ref="ft_hodo_p15_tile_113"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_119">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_119"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_119">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_119"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_119">
+        <volumeref ref="ft_hodo_p15_tile_119"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_121">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_121"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_121">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_121"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_121">
+        <volumeref ref="ft_hodo_p15_tile_121"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_123">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_123"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_123">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_123"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_123">
+        <volumeref ref="ft_hodo_p15_tile_123"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_129">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_129"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_129">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_129"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_129">
+        <volumeref ref="ft_hodo_p15_tile_129"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2113">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2113"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2113">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2113"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2113">
+        <volumeref ref="ft_hodo_p15_tile_2113"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2114">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2114"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2114">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2114"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2114">
+        <volumeref ref="ft_hodo_p15_tile_2114"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2115">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2115"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2115">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2115"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2115">
+        <volumeref ref="ft_hodo_p15_tile_2115"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2116">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2116"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2116">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2116"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2116">
+        <volumeref ref="ft_hodo_p15_tile_2116"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2117">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2117"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2117">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2117"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2117">
+        <volumeref ref="ft_hodo_p15_tile_2117"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2118">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2118"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2118">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2118"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2118">
+        <volumeref ref="ft_hodo_p15_tile_2118"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2119">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2119"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2119">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2119"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2119">
+        <volumeref ref="ft_hodo_p15_tile_2119"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2120">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2120"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2120">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2120"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2120">
+        <volumeref ref="ft_hodo_p15_tile_2120"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2213">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2213"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2213">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2213"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2213">
+        <volumeref ref="ft_hodo_p15_tile_2213"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2214">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2214"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2214">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2214"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2214">
+        <volumeref ref="ft_hodo_p15_tile_2214"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2215">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2215"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2215">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2215"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2215">
+        <volumeref ref="ft_hodo_p15_tile_2215"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2216">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2216"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2216">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2216"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2216">
+        <volumeref ref="ft_hodo_p15_tile_2216"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2217">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2217"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2217">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2217"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2217">
+        <volumeref ref="ft_hodo_p15_tile_2217"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2218">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2218"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2218">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2218"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2218">
+        <volumeref ref="ft_hodo_p15_tile_2218"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2219">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2219"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2219">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2219"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2219">
+        <volumeref ref="ft_hodo_p15_tile_2219"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_2220">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_2220"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_2220">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_2220"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_2220">
+        <volumeref ref="ft_hodo_p15_tile_2220"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_311">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_311"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_311">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_311"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_311">
+        <volumeref ref="ft_hodo_p15_tile_311"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_313">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_313"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_313">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_313"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_313">
+        <volumeref ref="ft_hodo_p15_tile_313"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_319">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_319"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_319">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_319"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_319">
+        <volumeref ref="ft_hodo_p15_tile_319"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_321">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_321"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_321">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_321"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_321">
+        <volumeref ref="ft_hodo_p15_tile_321"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_323">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_323"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_323">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_323"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_323">
+        <volumeref ref="ft_hodo_p15_tile_323"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_329">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_329"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_329">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_329"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_329">
+        <volumeref ref="ft_hodo_p15_tile_329"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4113">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4113"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4113">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4113"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4113">
+        <volumeref ref="ft_hodo_p15_tile_4113"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4114">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4114"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4114">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4114"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4114">
+        <volumeref ref="ft_hodo_p15_tile_4114"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4115">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4115"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4115">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4115"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4115">
+        <volumeref ref="ft_hodo_p15_tile_4115"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4116">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4116"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4116">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4116"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4116">
+        <volumeref ref="ft_hodo_p15_tile_4116"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4117">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4117"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4117">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4117"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4117">
+        <volumeref ref="ft_hodo_p15_tile_4117"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4118">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4118"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4118">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4118"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4118">
+        <volumeref ref="ft_hodo_p15_tile_4118"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4119">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4119"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4119">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4119"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4119">
+        <volumeref ref="ft_hodo_p15_tile_4119"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4120">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4120"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4120">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4120"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4120">
+        <volumeref ref="ft_hodo_p15_tile_4120"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4213">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4213"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4213">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4213"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4213">
+        <volumeref ref="ft_hodo_p15_tile_4213"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4214">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4214"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4214">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4214"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4214">
+        <volumeref ref="ft_hodo_p15_tile_4214"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4215">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4215"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4215">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4215"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4215">
+        <volumeref ref="ft_hodo_p15_tile_4215"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4216">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4216"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4216">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4216"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4216">
+        <volumeref ref="ft_hodo_p15_tile_4216"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4217">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4217"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4217">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4217"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4217">
+        <volumeref ref="ft_hodo_p15_tile_4217"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4218">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4218"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4218">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4218"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4218">
+        <volumeref ref="ft_hodo_p15_tile_4218"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4219">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4219"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4219">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4219"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4219">
+        <volumeref ref="ft_hodo_p15_tile_4219"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_4220">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_4220"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_4220">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_4220"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_4220">
+        <volumeref ref="ft_hodo_p15_tile_4220"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_511">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_511"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_511">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_511"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_511">
+        <volumeref ref="ft_hodo_p15_tile_511"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_513">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_513"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_513">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_513"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_513">
+        <volumeref ref="ft_hodo_p15_tile_513"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_519">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_519"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_519">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_519"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_519">
+        <volumeref ref="ft_hodo_p15_tile_519"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_521">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_521"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_521">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_521"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_521">
+        <volumeref ref="ft_hodo_p15_tile_521"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_523">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_523"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_523">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_523"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_523">
+        <volumeref ref="ft_hodo_p15_tile_523"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_529">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_529"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_529">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_529"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_529">
+        <volumeref ref="ft_hodo_p15_tile_529"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6113">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6113"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6113">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6113"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6113">
+        <volumeref ref="ft_hodo_p15_tile_6113"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6114">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6114"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6114">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6114"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6114">
+        <volumeref ref="ft_hodo_p15_tile_6114"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6115">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6115"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6115">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6115"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6115">
+        <volumeref ref="ft_hodo_p15_tile_6115"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6116">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6116"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6116">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6116"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6116">
+        <volumeref ref="ft_hodo_p15_tile_6116"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6117">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6117"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6117">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6117"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6117">
+        <volumeref ref="ft_hodo_p15_tile_6117"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6118">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6118"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6118">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6118"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6118">
+        <volumeref ref="ft_hodo_p15_tile_6118"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6119">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6119"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6119">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6119"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6119">
+        <volumeref ref="ft_hodo_p15_tile_6119"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6120">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6120"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6120">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6120"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6120">
+        <volumeref ref="ft_hodo_p15_tile_6120"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6213">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6213"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6213">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6213"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6213">
+        <volumeref ref="ft_hodo_p15_tile_6213"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6214">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6214"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6214">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6214"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6214">
+        <volumeref ref="ft_hodo_p15_tile_6214"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6215">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6215"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6215">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6215"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6215">
+        <volumeref ref="ft_hodo_p15_tile_6215"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6216">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6216"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6216">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6216"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6216">
+        <volumeref ref="ft_hodo_p15_tile_6216"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6217">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6217"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6217">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6217"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6217">
+        <volumeref ref="ft_hodo_p15_tile_6217"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6218">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6218"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6218">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6218"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6218">
+        <volumeref ref="ft_hodo_p15_tile_6218"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6219">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6219"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6219">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6219"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6219">
+        <volumeref ref="ft_hodo_p15_tile_6219"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_6220">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_6220"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_6220">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_6220"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_6220">
+        <volumeref ref="ft_hodo_p15_tile_6220"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_711">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_711"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_711">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_711"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_711">
+        <volumeref ref="ft_hodo_p15_tile_711"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_713">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_713"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_713">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_713"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_713">
+        <volumeref ref="ft_hodo_p15_tile_713"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_719">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_719"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_719">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_719"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_719">
+        <volumeref ref="ft_hodo_p15_tile_719"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_721">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_721"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_721">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_721"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_721">
+        <volumeref ref="ft_hodo_p15_tile_721"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_723">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_723"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_723">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_723"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_723">
+        <volumeref ref="ft_hodo_p15_tile_723"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_729">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_729"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_729">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_729"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_729">
+        <volumeref ref="ft_hodo_p15_tile_729"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8113">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8113"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8113">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8113"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8113">
+        <volumeref ref="ft_hodo_p15_tile_8113"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8114">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8114"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8114">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8114"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8114">
+        <volumeref ref="ft_hodo_p15_tile_8114"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8115">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8115"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8115">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8115"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8115">
+        <volumeref ref="ft_hodo_p15_tile_8115"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8116">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8116"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8116">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8116"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8116">
+        <volumeref ref="ft_hodo_p15_tile_8116"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8117">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8117"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8117">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8117"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8117">
+        <volumeref ref="ft_hodo_p15_tile_8117"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8118">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8118"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8118">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8118"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8118">
+        <volumeref ref="ft_hodo_p15_tile_8118"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8119">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8119"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8119">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8119"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8119">
+        <volumeref ref="ft_hodo_p15_tile_8119"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8120">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8120"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8120">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8120"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8120">
+        <volumeref ref="ft_hodo_p15_tile_8120"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8213">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8213"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8213">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8213"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8213">
+        <volumeref ref="ft_hodo_p15_tile_8213"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8214">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8214"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8214">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8214"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8214">
+        <volumeref ref="ft_hodo_p15_tile_8214"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8215">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8215"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8215">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8215"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8215">
+        <volumeref ref="ft_hodo_p15_tile_8215"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8216">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8216"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8216">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8216"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8216">
+        <volumeref ref="ft_hodo_p15_tile_8216"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8217">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8217"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8217">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8217"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8217">
+        <volumeref ref="ft_hodo_p15_tile_8217"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8218">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8218"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8218">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8218"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8218">
+        <volumeref ref="ft_hodo_p15_tile_8218"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8219">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8219"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8219">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8219"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8219">
+        <volumeref ref="ft_hodo_p15_tile_8219"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p15_tile_8220">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p15_tile_8220"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p15_8220">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p15_8220"/>
+      <physvol copynumber="1" name="ft_hodo_p15_tile_8220">
+        <volumeref ref="ft_hodo_p15_tile_8220"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_112">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_112"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_112">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_112"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_112">
+        <volumeref ref="ft_hodo_p30_tile_112"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_114">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_114"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_114">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_114"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_114">
+        <volumeref ref="ft_hodo_p30_tile_114"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_115">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_115"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_115">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_115"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_115">
+        <volumeref ref="ft_hodo_p30_tile_115"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_116">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_116"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_116">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_116"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_116">
+        <volumeref ref="ft_hodo_p30_tile_116"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_117">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_117"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_117">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_117"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_117">
+        <volumeref ref="ft_hodo_p30_tile_117"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_118">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_118"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_118">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_118"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_118">
+        <volumeref ref="ft_hodo_p30_tile_118"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_122">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_122"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_122">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_122"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_122">
+        <volumeref ref="ft_hodo_p30_tile_122"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_124">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_124"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_124">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_124"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_124">
+        <volumeref ref="ft_hodo_p30_tile_124"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_125">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_125"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_125">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_125"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_125">
+        <volumeref ref="ft_hodo_p30_tile_125"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_126">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_126"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_126">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_126"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_126">
+        <volumeref ref="ft_hodo_p30_tile_126"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_127">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_127"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_127">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_127"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_127">
+        <volumeref ref="ft_hodo_p30_tile_127"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_128">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_128"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_128">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_128"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_128">
+        <volumeref ref="ft_hodo_p30_tile_128"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_211">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_211"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_211">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_211"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_211">
+        <volumeref ref="ft_hodo_p30_tile_211"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2110">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2110"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2110">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2110"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2110">
+        <volumeref ref="ft_hodo_p30_tile_2110"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2111">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2111"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2111">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2111"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2111">
+        <volumeref ref="ft_hodo_p30_tile_2111"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2112">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2112"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2112">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2112"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2112">
+        <volumeref ref="ft_hodo_p30_tile_2112"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_212">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_212"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_212">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_212"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_212">
+        <volumeref ref="ft_hodo_p30_tile_212"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_213">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_213"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_213">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_213"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_213">
+        <volumeref ref="ft_hodo_p30_tile_213"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_214">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_214"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_214">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_214"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_214">
+        <volumeref ref="ft_hodo_p30_tile_214"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_215">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_215"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_215">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_215"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_215">
+        <volumeref ref="ft_hodo_p30_tile_215"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_216">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_216"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_216">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_216"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_216">
+        <volumeref ref="ft_hodo_p30_tile_216"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_217">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_217"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_217">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_217"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_217">
+        <volumeref ref="ft_hodo_p30_tile_217"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_218">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_218"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_218">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_218"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_218">
+        <volumeref ref="ft_hodo_p30_tile_218"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_219">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_219"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_219">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_219"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_219">
+        <volumeref ref="ft_hodo_p30_tile_219"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_221">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_221"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_221">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_221"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_221">
+        <volumeref ref="ft_hodo_p30_tile_221"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2210">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2210"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2210">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2210"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2210">
+        <volumeref ref="ft_hodo_p30_tile_2210"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2211">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2211"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2211">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2211"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2211">
+        <volumeref ref="ft_hodo_p30_tile_2211"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_2212">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_2212"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_2212">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_2212"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_2212">
+        <volumeref ref="ft_hodo_p30_tile_2212"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_222">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_222"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_222">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_222"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_222">
+        <volumeref ref="ft_hodo_p30_tile_222"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_223">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_223"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_223">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_223"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_223">
+        <volumeref ref="ft_hodo_p30_tile_223"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_224">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_224"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_224">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_224"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_224">
+        <volumeref ref="ft_hodo_p30_tile_224"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_225">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_225"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_225">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_225"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_225">
+        <volumeref ref="ft_hodo_p30_tile_225"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_226">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_226"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_226">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_226"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_226">
+        <volumeref ref="ft_hodo_p30_tile_226"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_227">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_227"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_227">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_227"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_227">
+        <volumeref ref="ft_hodo_p30_tile_227"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_228">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_228"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_228">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_228"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_228">
+        <volumeref ref="ft_hodo_p30_tile_228"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_229">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_229"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_229">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_229"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_229">
+        <volumeref ref="ft_hodo_p30_tile_229"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_312">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_312"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_312">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_312"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_312">
+        <volumeref ref="ft_hodo_p30_tile_312"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_314">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_314"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_314">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_314"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_314">
+        <volumeref ref="ft_hodo_p30_tile_314"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_315">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_315"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_315">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_315"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_315">
+        <volumeref ref="ft_hodo_p30_tile_315"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_316">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_316"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_316">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_316"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_316">
+        <volumeref ref="ft_hodo_p30_tile_316"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_317">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_317"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_317">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_317"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_317">
+        <volumeref ref="ft_hodo_p30_tile_317"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_318">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_318"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_318">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_318"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_318">
+        <volumeref ref="ft_hodo_p30_tile_318"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_322">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_322"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_322">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_322"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_322">
+        <volumeref ref="ft_hodo_p30_tile_322"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_324">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_324"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_324">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_324"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_324">
+        <volumeref ref="ft_hodo_p30_tile_324"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_325">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_325"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_325">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_325"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_325">
+        <volumeref ref="ft_hodo_p30_tile_325"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_326">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_326"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_326">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_326"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_326">
+        <volumeref ref="ft_hodo_p30_tile_326"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_327">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_327"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_327">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_327"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_327">
+        <volumeref ref="ft_hodo_p30_tile_327"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_328">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_328"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_328">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_328"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_328">
+        <volumeref ref="ft_hodo_p30_tile_328"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_411">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_411"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_411">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_411"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_411">
+        <volumeref ref="ft_hodo_p30_tile_411"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4110">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4110"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4110">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4110"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4110">
+        <volumeref ref="ft_hodo_p30_tile_4110"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4111">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4111"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4111">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4111"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4111">
+        <volumeref ref="ft_hodo_p30_tile_4111"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4112">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4112"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4112">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4112"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4112">
+        <volumeref ref="ft_hodo_p30_tile_4112"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_412">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_412"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_412">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_412"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_412">
+        <volumeref ref="ft_hodo_p30_tile_412"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_413">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_413"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_413">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_413"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_413">
+        <volumeref ref="ft_hodo_p30_tile_413"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_414">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_414"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_414">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_414"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_414">
+        <volumeref ref="ft_hodo_p30_tile_414"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_415">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_415"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_415">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_415"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_415">
+        <volumeref ref="ft_hodo_p30_tile_415"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_416">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_416"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_416">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_416"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_416">
+        <volumeref ref="ft_hodo_p30_tile_416"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_417">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_417"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_417">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_417"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_417">
+        <volumeref ref="ft_hodo_p30_tile_417"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_418">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_418"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_418">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_418"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_418">
+        <volumeref ref="ft_hodo_p30_tile_418"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_419">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_419"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_419">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_419"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_419">
+        <volumeref ref="ft_hodo_p30_tile_419"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_421">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_421"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_421">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_421"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_421">
+        <volumeref ref="ft_hodo_p30_tile_421"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4210">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4210"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4210">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4210"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4210">
+        <volumeref ref="ft_hodo_p30_tile_4210"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4211">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4211"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4211">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4211"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4211">
+        <volumeref ref="ft_hodo_p30_tile_4211"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_4212">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_4212"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_4212">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_4212"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_4212">
+        <volumeref ref="ft_hodo_p30_tile_4212"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_422">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_422"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_422">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_422"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_422">
+        <volumeref ref="ft_hodo_p30_tile_422"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_423">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_423"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_423">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_423"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_423">
+        <volumeref ref="ft_hodo_p30_tile_423"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_424">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_424"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_424">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_424"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_424">
+        <volumeref ref="ft_hodo_p30_tile_424"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_425">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_425"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_425">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_425"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_425">
+        <volumeref ref="ft_hodo_p30_tile_425"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_426">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_426"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_426">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_426"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_426">
+        <volumeref ref="ft_hodo_p30_tile_426"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_427">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_427"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_427">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_427"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_427">
+        <volumeref ref="ft_hodo_p30_tile_427"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_428">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_428"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_428">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_428"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_428">
+        <volumeref ref="ft_hodo_p30_tile_428"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_429">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_429"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_429">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_429"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_429">
+        <volumeref ref="ft_hodo_p30_tile_429"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_512">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_512"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_512">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_512"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_512">
+        <volumeref ref="ft_hodo_p30_tile_512"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_514">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_514"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_514">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_514"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_514">
+        <volumeref ref="ft_hodo_p30_tile_514"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_515">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_515"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_515">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_515"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_515">
+        <volumeref ref="ft_hodo_p30_tile_515"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_516">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_516"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_516">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_516"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_516">
+        <volumeref ref="ft_hodo_p30_tile_516"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_517">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_517"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_517">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_517"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_517">
+        <volumeref ref="ft_hodo_p30_tile_517"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_518">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_518"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_518">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_518"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_518">
+        <volumeref ref="ft_hodo_p30_tile_518"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_522">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_522"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_522">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_522"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_522">
+        <volumeref ref="ft_hodo_p30_tile_522"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_524">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_524"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_524">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_524"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_524">
+        <volumeref ref="ft_hodo_p30_tile_524"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_525">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_525"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_525">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_525"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_525">
+        <volumeref ref="ft_hodo_p30_tile_525"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_526">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_526"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_526">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_526"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_526">
+        <volumeref ref="ft_hodo_p30_tile_526"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_527">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_527"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_527">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_527"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_527">
+        <volumeref ref="ft_hodo_p30_tile_527"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_528">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_528"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_528">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_528"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_528">
+        <volumeref ref="ft_hodo_p30_tile_528"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_611">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_611"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_611">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_611"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_611">
+        <volumeref ref="ft_hodo_p30_tile_611"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6110">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6110"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6110">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6110"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6110">
+        <volumeref ref="ft_hodo_p30_tile_6110"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6111">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6111"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6111">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6111"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6111">
+        <volumeref ref="ft_hodo_p30_tile_6111"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6112">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6112"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6112">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6112"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6112">
+        <volumeref ref="ft_hodo_p30_tile_6112"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_612">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_612"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_612">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_612"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_612">
+        <volumeref ref="ft_hodo_p30_tile_612"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_613">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_613"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_613">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_613"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_613">
+        <volumeref ref="ft_hodo_p30_tile_613"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_614">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_614"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_614">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_614"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_614">
+        <volumeref ref="ft_hodo_p30_tile_614"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_615">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_615"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_615">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_615"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_615">
+        <volumeref ref="ft_hodo_p30_tile_615"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_616">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_616"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_616">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_616"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_616">
+        <volumeref ref="ft_hodo_p30_tile_616"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_617">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_617"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_617">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_617"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_617">
+        <volumeref ref="ft_hodo_p30_tile_617"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_618">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_618"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_618">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_618"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_618">
+        <volumeref ref="ft_hodo_p30_tile_618"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_619">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_619"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_619">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_619"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_619">
+        <volumeref ref="ft_hodo_p30_tile_619"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_621">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_621"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_621">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_621"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_621">
+        <volumeref ref="ft_hodo_p30_tile_621"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6210">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6210"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6210">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6210"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6210">
+        <volumeref ref="ft_hodo_p30_tile_6210"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6211">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6211"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6211">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6211"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6211">
+        <volumeref ref="ft_hodo_p30_tile_6211"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_6212">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_6212"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_6212">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_6212"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_6212">
+        <volumeref ref="ft_hodo_p30_tile_6212"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_622">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_622"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_622">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_622"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_622">
+        <volumeref ref="ft_hodo_p30_tile_622"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_623">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_623"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_623">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_623"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_623">
+        <volumeref ref="ft_hodo_p30_tile_623"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_624">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_624"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_624">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_624"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_624">
+        <volumeref ref="ft_hodo_p30_tile_624"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_625">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_625"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_625">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_625"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_625">
+        <volumeref ref="ft_hodo_p30_tile_625"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_626">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_626"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_626">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_626"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_626">
+        <volumeref ref="ft_hodo_p30_tile_626"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_627">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_627"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_627">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_627"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_627">
+        <volumeref ref="ft_hodo_p30_tile_627"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_628">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_628"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_628">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_628"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_628">
+        <volumeref ref="ft_hodo_p30_tile_628"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_629">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_629"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_629">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_629"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_629">
+        <volumeref ref="ft_hodo_p30_tile_629"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_712">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_712"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_712">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_712"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_712">
+        <volumeref ref="ft_hodo_p30_tile_712"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_714">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_714"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_714">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_714"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_714">
+        <volumeref ref="ft_hodo_p30_tile_714"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_715">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_715"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_715">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_715"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_715">
+        <volumeref ref="ft_hodo_p30_tile_715"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_716">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_716"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_716">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_716"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_716">
+        <volumeref ref="ft_hodo_p30_tile_716"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_717">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_717"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_717">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_717"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_717">
+        <volumeref ref="ft_hodo_p30_tile_717"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_718">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_718"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_718">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_718"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_718">
+        <volumeref ref="ft_hodo_p30_tile_718"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_722">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_722"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_722">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_722"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_722">
+        <volumeref ref="ft_hodo_p30_tile_722"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_724">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_724"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_724">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_724"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_724">
+        <volumeref ref="ft_hodo_p30_tile_724"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_725">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_725"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_725">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_725"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_725">
+        <volumeref ref="ft_hodo_p30_tile_725"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_726">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_726"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_726">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_726"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_726">
+        <volumeref ref="ft_hodo_p30_tile_726"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_727">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_727"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_727">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_727"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_727">
+        <volumeref ref="ft_hodo_p30_tile_727"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_728">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_728"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_728">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_728"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_728">
+        <volumeref ref="ft_hodo_p30_tile_728"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_811">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_811"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_811">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_811"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_811">
+        <volumeref ref="ft_hodo_p30_tile_811"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8110">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8110"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8110">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8110"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8110">
+        <volumeref ref="ft_hodo_p30_tile_8110"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8111">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8111"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8111">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8111"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8111">
+        <volumeref ref="ft_hodo_p30_tile_8111"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8112">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8112"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8112">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8112"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8112">
+        <volumeref ref="ft_hodo_p30_tile_8112"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_812">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_812"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_812">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_812"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_812">
+        <volumeref ref="ft_hodo_p30_tile_812"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_813">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_813"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_813">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_813"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_813">
+        <volumeref ref="ft_hodo_p30_tile_813"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_814">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_814"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_814">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_814"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_814">
+        <volumeref ref="ft_hodo_p30_tile_814"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_815">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_815"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_815">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_815"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_815">
+        <volumeref ref="ft_hodo_p30_tile_815"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_816">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_816"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_816">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_816"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_816">
+        <volumeref ref="ft_hodo_p30_tile_816"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_817">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_817"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_817">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_817"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_817">
+        <volumeref ref="ft_hodo_p30_tile_817"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_818">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_818"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_818">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_818"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_818">
+        <volumeref ref="ft_hodo_p30_tile_818"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_819">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_819"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_819">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_819"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_819">
+        <volumeref ref="ft_hodo_p30_tile_819"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_821">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_821"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_821">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_821"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_821">
+        <volumeref ref="ft_hodo_p30_tile_821"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8210">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8210"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8210">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8210"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8210">
+        <volumeref ref="ft_hodo_p30_tile_8210"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8211">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8211"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8211">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8211"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8211">
+        <volumeref ref="ft_hodo_p30_tile_8211"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_8212">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_8212"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_8212">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_8212"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_8212">
+        <volumeref ref="ft_hodo_p30_tile_8212"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_822">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_822"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_822">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_822"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_822">
+        <volumeref ref="ft_hodo_p30_tile_822"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_823">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_823"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_823">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_823"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_823">
+        <volumeref ref="ft_hodo_p30_tile_823"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_824">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_824"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_824">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_824"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_824">
+        <volumeref ref="ft_hodo_p30_tile_824"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_825">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_825"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_825">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_825"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_825">
+        <volumeref ref="ft_hodo_p30_tile_825"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_826">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_826"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_826">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_826"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_826">
+        <volumeref ref="ft_hodo_p30_tile_826"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_827">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_827"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_827">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_827"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_827">
+        <volumeref ref="ft_hodo_p30_tile_827"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_828">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_828"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_828">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_828"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_828">
+        <volumeref ref="ft_hodo_p30_tile_828"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_p30_tile_829">
+      <materialref ref="scintillator"/>
+      <solidref ref="ft_hodo_p30_tile_829"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_hodo"/>
+    </volume>
+    <volume name="ft_hodo_p30_829">
+      <materialref ref="G4_MYLAR"/>
+      <solidref ref="ft_hodo_p30_829"/>
+      <physvol copynumber="1" name="ft_hodo_p30_tile_829">
+        <volumeref ref="ft_hodo_p30_tile_829"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_vol">
+      <materialref ref="G4_AIR"/>
+      <solidref ref="ft_hodo_vol"/>
+      <physvol copynumber="1" name="ft_hodo_L1">
+        <volumeref ref="ft_hodo_L1"/>
+        <position name="ft_hodo_L1_pos" unit="mm" x="0" y="0" z="-18.75"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_L2">
+        <volumeref ref="ft_hodo_L2"/>
+        <position name="ft_hodo_L2_pos" unit="mm" x="0" y="0" z="-11.05"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_111">
+        <volumeref ref="ft_hodo_p15_111"/>
+        <position name="ft_hodo_p15_111_pos" unit="mm" x="98.8" y="129.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_113">
+        <volumeref ref="ft_hodo_p15_113"/>
+        <position name="ft_hodo_p15_113_pos" unit="mm" x="129.2" y="98.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_119">
+        <volumeref ref="ft_hodo_p15_119"/>
+        <position name="ft_hodo_p15_119_pos" unit="mm" x="53.2" y="53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_121">
+        <volumeref ref="ft_hodo_p15_121"/>
+        <position name="ft_hodo_p15_121_pos" unit="mm" x="98.8" y="129.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_123">
+        <volumeref ref="ft_hodo_p15_123"/>
+        <position name="ft_hodo_p15_123_pos" unit="mm" x="129.2" y="98.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_129">
+        <volumeref ref="ft_hodo_p15_129"/>
+        <position name="ft_hodo_p15_129_pos" unit="mm" x="53.2" y="53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2113">
+        <volumeref ref="ft_hodo_p15_2113"/>
+        <position name="ft_hodo_p15_2113_pos" unit="mm" x="53.2" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2114">
+        <volumeref ref="ft_hodo_p15_2114"/>
+        <position name="ft_hodo_p15_2114_pos" unit="mm" x="38" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2115">
+        <volumeref ref="ft_hodo_p15_2115"/>
+        <position name="ft_hodo_p15_2115_pos" unit="mm" x="22.8" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2116">
+        <volumeref ref="ft_hodo_p15_2116"/>
+        <position name="ft_hodo_p15_2116_pos" unit="mm" x="7.6" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2117">
+        <volumeref ref="ft_hodo_p15_2117"/>
+        <position name="ft_hodo_p15_2117_pos" unit="mm" x="-7.6" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2118">
+        <volumeref ref="ft_hodo_p15_2118"/>
+        <position name="ft_hodo_p15_2118_pos" unit="mm" x="-22.8" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2119">
+        <volumeref ref="ft_hodo_p15_2119"/>
+        <position name="ft_hodo_p15_2119_pos" unit="mm" x="-38" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2120">
+        <volumeref ref="ft_hodo_p15_2120"/>
+        <position name="ft_hodo_p15_2120_pos" unit="mm" x="-53.2" y="68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2213">
+        <volumeref ref="ft_hodo_p15_2213"/>
+        <position name="ft_hodo_p15_2213_pos" unit="mm" x="53.2" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2214">
+        <volumeref ref="ft_hodo_p15_2214"/>
+        <position name="ft_hodo_p15_2214_pos" unit="mm" x="38" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2215">
+        <volumeref ref="ft_hodo_p15_2215"/>
+        <position name="ft_hodo_p15_2215_pos" unit="mm" x="22.8" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2216">
+        <volumeref ref="ft_hodo_p15_2216"/>
+        <position name="ft_hodo_p15_2216_pos" unit="mm" x="7.6" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2217">
+        <volumeref ref="ft_hodo_p15_2217"/>
+        <position name="ft_hodo_p15_2217_pos" unit="mm" x="-7.6" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2218">
+        <volumeref ref="ft_hodo_p15_2218"/>
+        <position name="ft_hodo_p15_2218_pos" unit="mm" x="-22.8" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2219">
+        <volumeref ref="ft_hodo_p15_2219"/>
+        <position name="ft_hodo_p15_2219_pos" unit="mm" x="-38" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_2220">
+        <volumeref ref="ft_hodo_p15_2220"/>
+        <position name="ft_hodo_p15_2220_pos" unit="mm" x="-53.2" y="68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_311">
+        <volumeref ref="ft_hodo_p15_311"/>
+        <position name="ft_hodo_p15_311_pos" unit="mm" x="-129.2" y="98.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_313">
+        <volumeref ref="ft_hodo_p15_313"/>
+        <position name="ft_hodo_p15_313_pos" unit="mm" x="-98.8" y="129.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_319">
+        <volumeref ref="ft_hodo_p15_319"/>
+        <position name="ft_hodo_p15_319_pos" unit="mm" x="-53.2" y="53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_321">
+        <volumeref ref="ft_hodo_p15_321"/>
+        <position name="ft_hodo_p15_321_pos" unit="mm" x="-129.2" y="98.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_323">
+        <volumeref ref="ft_hodo_p15_323"/>
+        <position name="ft_hodo_p15_323_pos" unit="mm" x="-98.8" y="129.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_329">
+        <volumeref ref="ft_hodo_p15_329"/>
+        <position name="ft_hodo_p15_329_pos" unit="mm" x="-53.2" y="53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4113">
+        <volumeref ref="ft_hodo_p15_4113"/>
+        <position name="ft_hodo_p15_4113_pos" unit="mm" x="-68.4" y="53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4114">
+        <volumeref ref="ft_hodo_p15_4114"/>
+        <position name="ft_hodo_p15_4114_pos" unit="mm" x="-68.4" y="38" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4115">
+        <volumeref ref="ft_hodo_p15_4115"/>
+        <position name="ft_hodo_p15_4115_pos" unit="mm" x="-68.4" y="22.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4116">
+        <volumeref ref="ft_hodo_p15_4116"/>
+        <position name="ft_hodo_p15_4116_pos" unit="mm" x="-68.4" y="7.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4117">
+        <volumeref ref="ft_hodo_p15_4117"/>
+        <position name="ft_hodo_p15_4117_pos" unit="mm" x="-68.4" y="-7.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4118">
+        <volumeref ref="ft_hodo_p15_4118"/>
+        <position name="ft_hodo_p15_4118_pos" unit="mm" x="-68.4" y="-22.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4119">
+        <volumeref ref="ft_hodo_p15_4119"/>
+        <position name="ft_hodo_p15_4119_pos" unit="mm" x="-68.4" y="-38" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4120">
+        <volumeref ref="ft_hodo_p15_4120"/>
+        <position name="ft_hodo_p15_4120_pos" unit="mm" x="-68.4" y="-53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4213">
+        <volumeref ref="ft_hodo_p15_4213"/>
+        <position name="ft_hodo_p15_4213_pos" unit="mm" x="-68.4" y="53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4214">
+        <volumeref ref="ft_hodo_p15_4214"/>
+        <position name="ft_hodo_p15_4214_pos" unit="mm" x="-68.4" y="38" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4215">
+        <volumeref ref="ft_hodo_p15_4215"/>
+        <position name="ft_hodo_p15_4215_pos" unit="mm" x="-68.4" y="22.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4216">
+        <volumeref ref="ft_hodo_p15_4216"/>
+        <position name="ft_hodo_p15_4216_pos" unit="mm" x="-68.4" y="7.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4217">
+        <volumeref ref="ft_hodo_p15_4217"/>
+        <position name="ft_hodo_p15_4217_pos" unit="mm" x="-68.4" y="-7.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4218">
+        <volumeref ref="ft_hodo_p15_4218"/>
+        <position name="ft_hodo_p15_4218_pos" unit="mm" x="-68.4" y="-22.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4219">
+        <volumeref ref="ft_hodo_p15_4219"/>
+        <position name="ft_hodo_p15_4219_pos" unit="mm" x="-68.4" y="-38" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_4220">
+        <volumeref ref="ft_hodo_p15_4220"/>
+        <position name="ft_hodo_p15_4220_pos" unit="mm" x="-68.4" y="-53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_511">
+        <volumeref ref="ft_hodo_p15_511"/>
+        <position name="ft_hodo_p15_511_pos" unit="mm" x="-98.8" y="-129.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_513">
+        <volumeref ref="ft_hodo_p15_513"/>
+        <position name="ft_hodo_p15_513_pos" unit="mm" x="-129.2" y="-98.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_519">
+        <volumeref ref="ft_hodo_p15_519"/>
+        <position name="ft_hodo_p15_519_pos" unit="mm" x="-53.2" y="-53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_521">
+        <volumeref ref="ft_hodo_p15_521"/>
+        <position name="ft_hodo_p15_521_pos" unit="mm" x="-98.8" y="-129.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_523">
+        <volumeref ref="ft_hodo_p15_523"/>
+        <position name="ft_hodo_p15_523_pos" unit="mm" x="-129.2" y="-98.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_529">
+        <volumeref ref="ft_hodo_p15_529"/>
+        <position name="ft_hodo_p15_529_pos" unit="mm" x="-53.2" y="-53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6113">
+        <volumeref ref="ft_hodo_p15_6113"/>
+        <position name="ft_hodo_p15_6113_pos" unit="mm" x="-53.2" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6114">
+        <volumeref ref="ft_hodo_p15_6114"/>
+        <position name="ft_hodo_p15_6114_pos" unit="mm" x="-38" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6115">
+        <volumeref ref="ft_hodo_p15_6115"/>
+        <position name="ft_hodo_p15_6115_pos" unit="mm" x="-22.8" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6116">
+        <volumeref ref="ft_hodo_p15_6116"/>
+        <position name="ft_hodo_p15_6116_pos" unit="mm" x="-7.6" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6117">
+        <volumeref ref="ft_hodo_p15_6117"/>
+        <position name="ft_hodo_p15_6117_pos" unit="mm" x="7.6" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6118">
+        <volumeref ref="ft_hodo_p15_6118"/>
+        <position name="ft_hodo_p15_6118_pos" unit="mm" x="22.8" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6119">
+        <volumeref ref="ft_hodo_p15_6119"/>
+        <position name="ft_hodo_p15_6119_pos" unit="mm" x="38" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6120">
+        <volumeref ref="ft_hodo_p15_6120"/>
+        <position name="ft_hodo_p15_6120_pos" unit="mm" x="53.2" y="-68.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6213">
+        <volumeref ref="ft_hodo_p15_6213"/>
+        <position name="ft_hodo_p15_6213_pos" unit="mm" x="-53.2" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6214">
+        <volumeref ref="ft_hodo_p15_6214"/>
+        <position name="ft_hodo_p15_6214_pos" unit="mm" x="-38" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6215">
+        <volumeref ref="ft_hodo_p15_6215"/>
+        <position name="ft_hodo_p15_6215_pos" unit="mm" x="-22.8" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6216">
+        <volumeref ref="ft_hodo_p15_6216"/>
+        <position name="ft_hodo_p15_6216_pos" unit="mm" x="-7.6" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6217">
+        <volumeref ref="ft_hodo_p15_6217"/>
+        <position name="ft_hodo_p15_6217_pos" unit="mm" x="7.6" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6218">
+        <volumeref ref="ft_hodo_p15_6218"/>
+        <position name="ft_hodo_p15_6218_pos" unit="mm" x="22.8" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6219">
+        <volumeref ref="ft_hodo_p15_6219"/>
+        <position name="ft_hodo_p15_6219_pos" unit="mm" x="38" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_6220">
+        <volumeref ref="ft_hodo_p15_6220"/>
+        <position name="ft_hodo_p15_6220_pos" unit="mm" x="53.2" y="-68.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_711">
+        <volumeref ref="ft_hodo_p15_711"/>
+        <position name="ft_hodo_p15_711_pos" unit="mm" x="129.2" y="-98.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_713">
+        <volumeref ref="ft_hodo_p15_713"/>
+        <position name="ft_hodo_p15_713_pos" unit="mm" x="98.8" y="-129.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_719">
+        <volumeref ref="ft_hodo_p15_719"/>
+        <position name="ft_hodo_p15_719_pos" unit="mm" x="53.2" y="-53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_721">
+        <volumeref ref="ft_hodo_p15_721"/>
+        <position name="ft_hodo_p15_721_pos" unit="mm" x="129.2" y="-98.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_723">
+        <volumeref ref="ft_hodo_p15_723"/>
+        <position name="ft_hodo_p15_723_pos" unit="mm" x="98.8" y="-129.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_729">
+        <volumeref ref="ft_hodo_p15_729"/>
+        <position name="ft_hodo_p15_729_pos" unit="mm" x="53.2" y="-53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8113">
+        <volumeref ref="ft_hodo_p15_8113"/>
+        <position name="ft_hodo_p15_8113_pos" unit="mm" x="68.4" y="-53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8114">
+        <volumeref ref="ft_hodo_p15_8114"/>
+        <position name="ft_hodo_p15_8114_pos" unit="mm" x="68.4" y="-38" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8115">
+        <volumeref ref="ft_hodo_p15_8115"/>
+        <position name="ft_hodo_p15_8115_pos" unit="mm" x="68.4" y="-22.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8116">
+        <volumeref ref="ft_hodo_p15_8116"/>
+        <position name="ft_hodo_p15_8116_pos" unit="mm" x="68.4" y="-7.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8117">
+        <volumeref ref="ft_hodo_p15_8117"/>
+        <position name="ft_hodo_p15_8117_pos" unit="mm" x="68.4" y="7.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8118">
+        <volumeref ref="ft_hodo_p15_8118"/>
+        <position name="ft_hodo_p15_8118_pos" unit="mm" x="68.4" y="22.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8119">
+        <volumeref ref="ft_hodo_p15_8119"/>
+        <position name="ft_hodo_p15_8119_pos" unit="mm" x="68.4" y="38" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8120">
+        <volumeref ref="ft_hodo_p15_8120"/>
+        <position name="ft_hodo_p15_8120_pos" unit="mm" x="68.4" y="53.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8213">
+        <volumeref ref="ft_hodo_p15_8213"/>
+        <position name="ft_hodo_p15_8213_pos" unit="mm" x="68.4" y="-53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8214">
+        <volumeref ref="ft_hodo_p15_8214"/>
+        <position name="ft_hodo_p15_8214_pos" unit="mm" x="68.4" y="-38" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8215">
+        <volumeref ref="ft_hodo_p15_8215"/>
+        <position name="ft_hodo_p15_8215_pos" unit="mm" x="68.4" y="-22.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8216">
+        <volumeref ref="ft_hodo_p15_8216"/>
+        <position name="ft_hodo_p15_8216_pos" unit="mm" x="68.4" y="-7.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8217">
+        <volumeref ref="ft_hodo_p15_8217"/>
+        <position name="ft_hodo_p15_8217_pos" unit="mm" x="68.4" y="7.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8218">
+        <volumeref ref="ft_hodo_p15_8218"/>
+        <position name="ft_hodo_p15_8218_pos" unit="mm" x="68.4" y="22.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8219">
+        <volumeref ref="ft_hodo_p15_8219"/>
+        <position name="ft_hodo_p15_8219_pos" unit="mm" x="68.4" y="38" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p15_8220">
+        <volumeref ref="ft_hodo_p15_8220"/>
+        <position name="ft_hodo_p15_8220_pos" unit="mm" x="68.4" y="53.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_112">
+        <volumeref ref="ft_hodo_p30_112"/>
+        <position name="ft_hodo_p30_112_pos" unit="mm" x="76" y="136.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_114">
+        <volumeref ref="ft_hodo_p30_114"/>
+        <position name="ft_hodo_p30_114_pos" unit="mm" x="106.4" y="106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_115">
+        <volumeref ref="ft_hodo_p30_115"/>
+        <position name="ft_hodo_p30_115_pos" unit="mm" x="76" y="106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_116">
+        <volumeref ref="ft_hodo_p30_116"/>
+        <position name="ft_hodo_p30_116_pos" unit="mm" x="136.8" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_117">
+        <volumeref ref="ft_hodo_p30_117"/>
+        <position name="ft_hodo_p30_117_pos" unit="mm" x="106.4" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_118">
+        <volumeref ref="ft_hodo_p30_118"/>
+        <position name="ft_hodo_p30_118_pos" unit="mm" x="76" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_122">
+        <volumeref ref="ft_hodo_p30_122"/>
+        <position name="ft_hodo_p30_122_pos" unit="mm" x="76" y="136.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_124">
+        <volumeref ref="ft_hodo_p30_124"/>
+        <position name="ft_hodo_p30_124_pos" unit="mm" x="106.4" y="106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_125">
+        <volumeref ref="ft_hodo_p30_125"/>
+        <position name="ft_hodo_p30_125_pos" unit="mm" x="76" y="106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_126">
+        <volumeref ref="ft_hodo_p30_126"/>
+        <position name="ft_hodo_p30_126_pos" unit="mm" x="136.8" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_127">
+        <volumeref ref="ft_hodo_p30_127"/>
+        <position name="ft_hodo_p30_127_pos" unit="mm" x="106.4" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_128">
+        <volumeref ref="ft_hodo_p30_128"/>
+        <position name="ft_hodo_p30_128_pos" unit="mm" x="76" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_211">
+        <volumeref ref="ft_hodo_p30_211"/>
+        <position name="ft_hodo_p30_211_pos" unit="mm" x="45.6" y="152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2110">
+        <volumeref ref="ft_hodo_p30_2110"/>
+        <position name="ft_hodo_p30_2110_pos" unit="mm" x="15.2" y="91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2111">
+        <volumeref ref="ft_hodo_p30_2111"/>
+        <position name="ft_hodo_p30_2111_pos" unit="mm" x="-15.2" y="91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2112">
+        <volumeref ref="ft_hodo_p30_2112"/>
+        <position name="ft_hodo_p30_2112_pos" unit="mm" x="-45.6" y="91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_212">
+        <volumeref ref="ft_hodo_p30_212"/>
+        <position name="ft_hodo_p30_212_pos" unit="mm" x="15.2" y="152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_213">
+        <volumeref ref="ft_hodo_p30_213"/>
+        <position name="ft_hodo_p30_213_pos" unit="mm" x="-15.2" y="152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_214">
+        <volumeref ref="ft_hodo_p30_214"/>
+        <position name="ft_hodo_p30_214_pos" unit="mm" x="-45.6" y="152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_215">
+        <volumeref ref="ft_hodo_p30_215"/>
+        <position name="ft_hodo_p30_215_pos" unit="mm" x="45.6" y="121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_216">
+        <volumeref ref="ft_hodo_p30_216"/>
+        <position name="ft_hodo_p30_216_pos" unit="mm" x="15.2" y="121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_217">
+        <volumeref ref="ft_hodo_p30_217"/>
+        <position name="ft_hodo_p30_217_pos" unit="mm" x="-15.2" y="121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_218">
+        <volumeref ref="ft_hodo_p30_218"/>
+        <position name="ft_hodo_p30_218_pos" unit="mm" x="-45.6" y="121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_219">
+        <volumeref ref="ft_hodo_p30_219"/>
+        <position name="ft_hodo_p30_219_pos" unit="mm" x="45.6" y="91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_221">
+        <volumeref ref="ft_hodo_p30_221"/>
+        <position name="ft_hodo_p30_221_pos" unit="mm" x="45.6" y="152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2210">
+        <volumeref ref="ft_hodo_p30_2210"/>
+        <position name="ft_hodo_p30_2210_pos" unit="mm" x="15.2" y="91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2211">
+        <volumeref ref="ft_hodo_p30_2211"/>
+        <position name="ft_hodo_p30_2211_pos" unit="mm" x="-15.2" y="91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_2212">
+        <volumeref ref="ft_hodo_p30_2212"/>
+        <position name="ft_hodo_p30_2212_pos" unit="mm" x="-45.6" y="91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_222">
+        <volumeref ref="ft_hodo_p30_222"/>
+        <position name="ft_hodo_p30_222_pos" unit="mm" x="15.2" y="152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_223">
+        <volumeref ref="ft_hodo_p30_223"/>
+        <position name="ft_hodo_p30_223_pos" unit="mm" x="-15.2" y="152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_224">
+        <volumeref ref="ft_hodo_p30_224"/>
+        <position name="ft_hodo_p30_224_pos" unit="mm" x="-45.6" y="152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_225">
+        <volumeref ref="ft_hodo_p30_225"/>
+        <position name="ft_hodo_p30_225_pos" unit="mm" x="45.6" y="121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_226">
+        <volumeref ref="ft_hodo_p30_226"/>
+        <position name="ft_hodo_p30_226_pos" unit="mm" x="15.2" y="121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_227">
+        <volumeref ref="ft_hodo_p30_227"/>
+        <position name="ft_hodo_p30_227_pos" unit="mm" x="-15.2" y="121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_228">
+        <volumeref ref="ft_hodo_p30_228"/>
+        <position name="ft_hodo_p30_228_pos" unit="mm" x="-45.6" y="121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_229">
+        <volumeref ref="ft_hodo_p30_229"/>
+        <position name="ft_hodo_p30_229_pos" unit="mm" x="45.6" y="91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_312">
+        <volumeref ref="ft_hodo_p30_312"/>
+        <position name="ft_hodo_p30_312_pos" unit="mm" x="-136.8" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_314">
+        <volumeref ref="ft_hodo_p30_314"/>
+        <position name="ft_hodo_p30_314_pos" unit="mm" x="-106.4" y="106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_315">
+        <volumeref ref="ft_hodo_p30_315"/>
+        <position name="ft_hodo_p30_315_pos" unit="mm" x="-106.4" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_316">
+        <volumeref ref="ft_hodo_p30_316"/>
+        <position name="ft_hodo_p30_316_pos" unit="mm" x="-76" y="136.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_317">
+        <volumeref ref="ft_hodo_p30_317"/>
+        <position name="ft_hodo_p30_317_pos" unit="mm" x="-76" y="106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_318">
+        <volumeref ref="ft_hodo_p30_318"/>
+        <position name="ft_hodo_p30_318_pos" unit="mm" x="-76" y="76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_322">
+        <volumeref ref="ft_hodo_p30_322"/>
+        <position name="ft_hodo_p30_322_pos" unit="mm" x="-136.8" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_324">
+        <volumeref ref="ft_hodo_p30_324"/>
+        <position name="ft_hodo_p30_324_pos" unit="mm" x="-106.4" y="106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_325">
+        <volumeref ref="ft_hodo_p30_325"/>
+        <position name="ft_hodo_p30_325_pos" unit="mm" x="-106.4" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_326">
+        <volumeref ref="ft_hodo_p30_326"/>
+        <position name="ft_hodo_p30_326_pos" unit="mm" x="-76" y="136.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_327">
+        <volumeref ref="ft_hodo_p30_327"/>
+        <position name="ft_hodo_p30_327_pos" unit="mm" x="-76" y="106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_328">
+        <volumeref ref="ft_hodo_p30_328"/>
+        <position name="ft_hodo_p30_328_pos" unit="mm" x="-76" y="76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_411">
+        <volumeref ref="ft_hodo_p30_411"/>
+        <position name="ft_hodo_p30_411_pos" unit="mm" x="-152" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4110">
+        <volumeref ref="ft_hodo_p30_4110"/>
+        <position name="ft_hodo_p30_4110_pos" unit="mm" x="-91.2" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4111">
+        <volumeref ref="ft_hodo_p30_4111"/>
+        <position name="ft_hodo_p30_4111_pos" unit="mm" x="-91.2" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4112">
+        <volumeref ref="ft_hodo_p30_4112"/>
+        <position name="ft_hodo_p30_4112_pos" unit="mm" x="-91.2" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_412">
+        <volumeref ref="ft_hodo_p30_412"/>
+        <position name="ft_hodo_p30_412_pos" unit="mm" x="-152" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_413">
+        <volumeref ref="ft_hodo_p30_413"/>
+        <position name="ft_hodo_p30_413_pos" unit="mm" x="-152" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_414">
+        <volumeref ref="ft_hodo_p30_414"/>
+        <position name="ft_hodo_p30_414_pos" unit="mm" x="-152" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_415">
+        <volumeref ref="ft_hodo_p30_415"/>
+        <position name="ft_hodo_p30_415_pos" unit="mm" x="-121.6" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_416">
+        <volumeref ref="ft_hodo_p30_416"/>
+        <position name="ft_hodo_p30_416_pos" unit="mm" x="-121.6" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_417">
+        <volumeref ref="ft_hodo_p30_417"/>
+        <position name="ft_hodo_p30_417_pos" unit="mm" x="-121.6" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_418">
+        <volumeref ref="ft_hodo_p30_418"/>
+        <position name="ft_hodo_p30_418_pos" unit="mm" x="-121.6" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_419">
+        <volumeref ref="ft_hodo_p30_419"/>
+        <position name="ft_hodo_p30_419_pos" unit="mm" x="-91.2" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_421">
+        <volumeref ref="ft_hodo_p30_421"/>
+        <position name="ft_hodo_p30_421_pos" unit="mm" x="-152" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4210">
+        <volumeref ref="ft_hodo_p30_4210"/>
+        <position name="ft_hodo_p30_4210_pos" unit="mm" x="-91.2" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4211">
+        <volumeref ref="ft_hodo_p30_4211"/>
+        <position name="ft_hodo_p30_4211_pos" unit="mm" x="-91.2" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_4212">
+        <volumeref ref="ft_hodo_p30_4212"/>
+        <position name="ft_hodo_p30_4212_pos" unit="mm" x="-91.2" y="-45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_422">
+        <volumeref ref="ft_hodo_p30_422"/>
+        <position name="ft_hodo_p30_422_pos" unit="mm" x="-152" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_423">
+        <volumeref ref="ft_hodo_p30_423"/>
+        <position name="ft_hodo_p30_423_pos" unit="mm" x="-152" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_424">
+        <volumeref ref="ft_hodo_p30_424"/>
+        <position name="ft_hodo_p30_424_pos" unit="mm" x="-152" y="-45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_425">
+        <volumeref ref="ft_hodo_p30_425"/>
+        <position name="ft_hodo_p30_425_pos" unit="mm" x="-121.6" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_426">
+        <volumeref ref="ft_hodo_p30_426"/>
+        <position name="ft_hodo_p30_426_pos" unit="mm" x="-121.6" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_427">
+        <volumeref ref="ft_hodo_p30_427"/>
+        <position name="ft_hodo_p30_427_pos" unit="mm" x="-121.6" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_428">
+        <volumeref ref="ft_hodo_p30_428"/>
+        <position name="ft_hodo_p30_428_pos" unit="mm" x="-121.6" y="-45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_429">
+        <volumeref ref="ft_hodo_p30_429"/>
+        <position name="ft_hodo_p30_429_pos" unit="mm" x="-91.2" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_512">
+        <volumeref ref="ft_hodo_p30_512"/>
+        <position name="ft_hodo_p30_512_pos" unit="mm" x="-76" y="-136.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_514">
+        <volumeref ref="ft_hodo_p30_514"/>
+        <position name="ft_hodo_p30_514_pos" unit="mm" x="-106.4" y="-106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_515">
+        <volumeref ref="ft_hodo_p30_515"/>
+        <position name="ft_hodo_p30_515_pos" unit="mm" x="-76" y="-106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_516">
+        <volumeref ref="ft_hodo_p30_516"/>
+        <position name="ft_hodo_p30_516_pos" unit="mm" x="-136.8" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_517">
+        <volumeref ref="ft_hodo_p30_517"/>
+        <position name="ft_hodo_p30_517_pos" unit="mm" x="-106.4" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_518">
+        <volumeref ref="ft_hodo_p30_518"/>
+        <position name="ft_hodo_p30_518_pos" unit="mm" x="-76" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_522">
+        <volumeref ref="ft_hodo_p30_522"/>
+        <position name="ft_hodo_p30_522_pos" unit="mm" x="-76" y="-136.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_524">
+        <volumeref ref="ft_hodo_p30_524"/>
+        <position name="ft_hodo_p30_524_pos" unit="mm" x="-106.4" y="-106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_525">
+        <volumeref ref="ft_hodo_p30_525"/>
+        <position name="ft_hodo_p30_525_pos" unit="mm" x="-76" y="-106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_526">
+        <volumeref ref="ft_hodo_p30_526"/>
+        <position name="ft_hodo_p30_526_pos" unit="mm" x="-136.8" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_527">
+        <volumeref ref="ft_hodo_p30_527"/>
+        <position name="ft_hodo_p30_527_pos" unit="mm" x="-106.4" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_528">
+        <volumeref ref="ft_hodo_p30_528"/>
+        <position name="ft_hodo_p30_528_pos" unit="mm" x="-76" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_611">
+        <volumeref ref="ft_hodo_p30_611"/>
+        <position name="ft_hodo_p30_611_pos" unit="mm" x="-45.6" y="-152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6110">
+        <volumeref ref="ft_hodo_p30_6110"/>
+        <position name="ft_hodo_p30_6110_pos" unit="mm" x="-15.2" y="-91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6111">
+        <volumeref ref="ft_hodo_p30_6111"/>
+        <position name="ft_hodo_p30_6111_pos" unit="mm" x="15.2" y="-91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6112">
+        <volumeref ref="ft_hodo_p30_6112"/>
+        <position name="ft_hodo_p30_6112_pos" unit="mm" x="45.6" y="-91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_612">
+        <volumeref ref="ft_hodo_p30_612"/>
+        <position name="ft_hodo_p30_612_pos" unit="mm" x="-15.2" y="-152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_613">
+        <volumeref ref="ft_hodo_p30_613"/>
+        <position name="ft_hodo_p30_613_pos" unit="mm" x="15.2" y="-152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_614">
+        <volumeref ref="ft_hodo_p30_614"/>
+        <position name="ft_hodo_p30_614_pos" unit="mm" x="45.6" y="-152" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_615">
+        <volumeref ref="ft_hodo_p30_615"/>
+        <position name="ft_hodo_p30_615_pos" unit="mm" x="-45.6" y="-121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_616">
+        <volumeref ref="ft_hodo_p30_616"/>
+        <position name="ft_hodo_p30_616_pos" unit="mm" x="-15.2" y="-121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_617">
+        <volumeref ref="ft_hodo_p30_617"/>
+        <position name="ft_hodo_p30_617_pos" unit="mm" x="15.2" y="-121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_618">
+        <volumeref ref="ft_hodo_p30_618"/>
+        <position name="ft_hodo_p30_618_pos" unit="mm" x="45.6" y="-121.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_619">
+        <volumeref ref="ft_hodo_p30_619"/>
+        <position name="ft_hodo_p30_619_pos" unit="mm" x="-45.6" y="-91.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_621">
+        <volumeref ref="ft_hodo_p30_621"/>
+        <position name="ft_hodo_p30_621_pos" unit="mm" x="-45.6" y="-152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6210">
+        <volumeref ref="ft_hodo_p30_6210"/>
+        <position name="ft_hodo_p30_6210_pos" unit="mm" x="-15.2" y="-91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6211">
+        <volumeref ref="ft_hodo_p30_6211"/>
+        <position name="ft_hodo_p30_6211_pos" unit="mm" x="15.2" y="-91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_6212">
+        <volumeref ref="ft_hodo_p30_6212"/>
+        <position name="ft_hodo_p30_6212_pos" unit="mm" x="45.6" y="-91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_622">
+        <volumeref ref="ft_hodo_p30_622"/>
+        <position name="ft_hodo_p30_622_pos" unit="mm" x="-15.2" y="-152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_623">
+        <volumeref ref="ft_hodo_p30_623"/>
+        <position name="ft_hodo_p30_623_pos" unit="mm" x="15.2" y="-152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_624">
+        <volumeref ref="ft_hodo_p30_624"/>
+        <position name="ft_hodo_p30_624_pos" unit="mm" x="45.6" y="-152" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_625">
+        <volumeref ref="ft_hodo_p30_625"/>
+        <position name="ft_hodo_p30_625_pos" unit="mm" x="-45.6" y="-121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_626">
+        <volumeref ref="ft_hodo_p30_626"/>
+        <position name="ft_hodo_p30_626_pos" unit="mm" x="-15.2" y="-121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_627">
+        <volumeref ref="ft_hodo_p30_627"/>
+        <position name="ft_hodo_p30_627_pos" unit="mm" x="15.2" y="-121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_628">
+        <volumeref ref="ft_hodo_p30_628"/>
+        <position name="ft_hodo_p30_628_pos" unit="mm" x="45.6" y="-121.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_629">
+        <volumeref ref="ft_hodo_p30_629"/>
+        <position name="ft_hodo_p30_629_pos" unit="mm" x="-45.6" y="-91.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_712">
+        <volumeref ref="ft_hodo_p30_712"/>
+        <position name="ft_hodo_p30_712_pos" unit="mm" x="136.8" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_714">
+        <volumeref ref="ft_hodo_p30_714"/>
+        <position name="ft_hodo_p30_714_pos" unit="mm" x="106.4" y="-106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_715">
+        <volumeref ref="ft_hodo_p30_715"/>
+        <position name="ft_hodo_p30_715_pos" unit="mm" x="106.4" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_716">
+        <volumeref ref="ft_hodo_p30_716"/>
+        <position name="ft_hodo_p30_716_pos" unit="mm" x="76" y="-136.8" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_717">
+        <volumeref ref="ft_hodo_p30_717"/>
+        <position name="ft_hodo_p30_717_pos" unit="mm" x="76" y="-106.4" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_718">
+        <volumeref ref="ft_hodo_p30_718"/>
+        <position name="ft_hodo_p30_718_pos" unit="mm" x="76" y="-76" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_722">
+        <volumeref ref="ft_hodo_p30_722"/>
+        <position name="ft_hodo_p30_722_pos" unit="mm" x="136.8" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_724">
+        <volumeref ref="ft_hodo_p30_724"/>
+        <position name="ft_hodo_p30_724_pos" unit="mm" x="106.4" y="-106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_725">
+        <volumeref ref="ft_hodo_p30_725"/>
+        <position name="ft_hodo_p30_725_pos" unit="mm" x="106.4" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_726">
+        <volumeref ref="ft_hodo_p30_726"/>
+        <position name="ft_hodo_p30_726_pos" unit="mm" x="76" y="-136.8" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_727">
+        <volumeref ref="ft_hodo_p30_727"/>
+        <position name="ft_hodo_p30_727_pos" unit="mm" x="76" y="-106.4" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_728">
+        <volumeref ref="ft_hodo_p30_728"/>
+        <position name="ft_hodo_p30_728_pos" unit="mm" x="76" y="-76" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_811">
+        <volumeref ref="ft_hodo_p30_811"/>
+        <position name="ft_hodo_p30_811_pos" unit="mm" x="152" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8110">
+        <volumeref ref="ft_hodo_p30_8110"/>
+        <position name="ft_hodo_p30_8110_pos" unit="mm" x="91.2" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8111">
+        <volumeref ref="ft_hodo_p30_8111"/>
+        <position name="ft_hodo_p30_8111_pos" unit="mm" x="91.2" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8112">
+        <volumeref ref="ft_hodo_p30_8112"/>
+        <position name="ft_hodo_p30_8112_pos" unit="mm" x="91.2" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_812">
+        <volumeref ref="ft_hodo_p30_812"/>
+        <position name="ft_hodo_p30_812_pos" unit="mm" x="152" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_813">
+        <volumeref ref="ft_hodo_p30_813"/>
+        <position name="ft_hodo_p30_813_pos" unit="mm" x="152" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_814">
+        <volumeref ref="ft_hodo_p30_814"/>
+        <position name="ft_hodo_p30_814_pos" unit="mm" x="152" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_815">
+        <volumeref ref="ft_hodo_p30_815"/>
+        <position name="ft_hodo_p30_815_pos" unit="mm" x="121.6" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_816">
+        <volumeref ref="ft_hodo_p30_816"/>
+        <position name="ft_hodo_p30_816_pos" unit="mm" x="121.6" y="-15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_817">
+        <volumeref ref="ft_hodo_p30_817"/>
+        <position name="ft_hodo_p30_817_pos" unit="mm" x="121.6" y="15.2" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_818">
+        <volumeref ref="ft_hodo_p30_818"/>
+        <position name="ft_hodo_p30_818_pos" unit="mm" x="121.6" y="45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_819">
+        <volumeref ref="ft_hodo_p30_819"/>
+        <position name="ft_hodo_p30_819_pos" unit="mm" x="91.2" y="-45.6" z="-14.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_821">
+        <volumeref ref="ft_hodo_p30_821"/>
+        <position name="ft_hodo_p30_821_pos" unit="mm" x="152" y="-45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8210">
+        <volumeref ref="ft_hodo_p30_8210"/>
+        <position name="ft_hodo_p30_8210_pos" unit="mm" x="91.2" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8211">
+        <volumeref ref="ft_hodo_p30_8211"/>
+        <position name="ft_hodo_p30_8211_pos" unit="mm" x="91.2" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_8212">
+        <volumeref ref="ft_hodo_p30_8212"/>
+        <position name="ft_hodo_p30_8212_pos" unit="mm" x="91.2" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_822">
+        <volumeref ref="ft_hodo_p30_822"/>
+        <position name="ft_hodo_p30_822_pos" unit="mm" x="152" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_823">
+        <volumeref ref="ft_hodo_p30_823"/>
+        <position name="ft_hodo_p30_823_pos" unit="mm" x="152" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_824">
+        <volumeref ref="ft_hodo_p30_824"/>
+        <position name="ft_hodo_p30_824_pos" unit="mm" x="152" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_825">
+        <volumeref ref="ft_hodo_p30_825"/>
+        <position name="ft_hodo_p30_825_pos" unit="mm" x="121.6" y="-45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_826">
+        <volumeref ref="ft_hodo_p30_826"/>
+        <position name="ft_hodo_p30_826_pos" unit="mm" x="121.6" y="-15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_827">
+        <volumeref ref="ft_hodo_p30_827"/>
+        <position name="ft_hodo_p30_827_pos" unit="mm" x="121.6" y="15.2" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_828">
+        <volumeref ref="ft_hodo_p30_828"/>
+        <position name="ft_hodo_p30_828_pos" unit="mm" x="121.6" y="45.6" z="-3.2"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_p30_829">
+        <volumeref ref="ft_hodo_p30_829"/>
+        <position name="ft_hodo_p30_829_pos" unit="mm" x="91.2" y="-45.6" z="-3.2"/>
+      </physvol>
+    </volume>
+    <volume name="ft_hodo_ring">
+      <materialref ref="ft_peek"/>
+      <solidref ref="ft_hodo_ring"/>
+    </volume>
+    <volume name="ft_hodo">
+      <materialref ref="G4_AIR"/>
+      <solidref ref="ft_hodo"/>
+      <physvol copynumber="1" name="ft_hodo_vol">
+        <volumeref ref="ft_hodo_vol"/>
+        <position name="ft_hodo_vol_pos" unit="mm" x="0" y="0" z="1828.61"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_hodo_ring">
+        <volumeref ref="ft_hodo_ring"/>
+        <position name="ft_hodo_ring_pos" unit="mm" x="0" y="0" z="1829.11"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="ft_hodo"/>
+  </setup>
+
+</gdml>

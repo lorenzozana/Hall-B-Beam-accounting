@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <material Z="13" name="G4_Al" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="166"/>
+      <D unit="g/cm3" value="2.699"/>
+      <atom unit="g/mole" value="26.9815"/>
+    </material>
+    <isotope N="12" Z="6" name="C12">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C13">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C">
+      <fraction n="0.9893" ref="C12"/>
+      <fraction n="0.0107" ref="C13"/>
+    </element>
+    <isotope N="1" Z="1" name="H1">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H2">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H">
+      <fraction n="0.999885" ref="H1"/>
+      <fraction n="0.000115" ref="H2"/>
+    </element>
+    <isotope N="28" Z="14" name="Si28">
+      <atom unit="g/mole" value="27.9769"/>
+    </isotope>
+    <isotope N="29" Z="14" name="Si29">
+      <atom unit="g/mole" value="28.9765"/>
+    </isotope>
+    <isotope N="30" Z="14" name="Si30">
+      <atom unit="g/mole" value="29.9738"/>
+    </isotope>
+    <element name="Si">
+      <fraction n="0.922296077703922" ref="Si28"/>
+      <fraction n="0.0468319531680468" ref="Si29"/>
+      <fraction n="0.0308719691280309" ref="Si30"/>
+    </element>
+    <isotope N="16" Z="8" name="O16">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O17">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O18">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O">
+      <fraction n="0.99757" ref="O16"/>
+      <fraction n="0.00038" ref="O17"/>
+      <fraction n="0.00205" ref="O18"/>
+    </element>
+    <material name="myFR4" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="91.6023023672445"/>
+      <D unit="g/cm3" value="1.86"/>
+      <fraction n="0.4355" ref="C"/>
+      <fraction n="0.0365" ref="H"/>
+      <fraction n="0.2468" ref="Si"/>
+      <fraction n="0.2812" ref="O"/>
+    </material>
+    <isotope N="63" Z="29" name="Cu63">
+      <atom unit="g/mole" value="62.9296"/>
+    </isotope>
+    <isotope N="65" Z="29" name="Cu65">
+      <atom unit="g/mole" value="64.9278"/>
+    </isotope>
+    <element name="Cu">
+      <fraction n="0.6917" ref="Cu63"/>
+      <fraction n="0.3083" ref="Cu65"/>
+    </element>
+    <material name="G4_Cu" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="322"/>
+      <D unit="g/cm3" value="8.96"/>
+      <fraction n="1" ref="Cu"/>
+    </material>
+    <isotope N="1" Z="1" name="H1">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H2">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="Hydrogen">
+      <fraction n="0.999885" ref="H1"/>
+      <fraction n="0.000115" ref="H2"/>
+    </element>
+    <isotope N="14" Z="7" name="N14">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N15">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="N">
+      <fraction n="0.99632" ref="N14"/>
+      <fraction n="0.00368" ref="N15"/>
+    </element>
+    <isotope N="12" Z="6" name="C12">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C13">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="Carbon">
+      <fraction n="0.9893" ref="C12"/>
+      <fraction n="0.0107" ref="C13"/>
+    </element>
+    <material name="epoxy" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="63.5381789988798"/>
+      <D unit="g/cm3" value="1.16"/>
+      <fraction n="0.106147803743091" ref="Hydrogen"/>
+      <fraction n="0.0920041932327288" ref="N"/>
+      <fraction n="0.210185662544049" ref="O"/>
+      <fraction n="0.591662340480131" ref="Carbon"/>
+    </material>
+    <isotope N="36" Z="18" name="Ar36">
+      <atom unit="g/mole" value="35.9675"/>
+    </isotope>
+    <isotope N="38" Z="18" name="Ar38">
+      <atom unit="g/mole" value="37.9627"/>
+    </isotope>
+    <isotope N="40" Z="18" name="Ar40">
+      <atom unit="g/mole" value="39.9624"/>
+    </isotope>
+    <element name="Ar">
+      <fraction n="0.003365" ref="Ar36"/>
+      <fraction n="0.000632" ref="Ar38"/>
+      <fraction n="0.996003" ref="Ar40"/>
+    </element>
+    <material name="mmgas" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="173.384324165729"/>
+      <D unit="g/cm3" value="0.00170335"/>
+      <fraction n="0.95" ref="Ar"/>
+      <fraction n="0.0086707" ref="H"/>
+      <fraction n="0.0413293" ref="C"/>
+    </material>
+    <material name="myKapton" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="77.8216278621204"/>
+      <D unit="g/cm3" value="1.42"/>
+      <fraction n="0.026362" ref="H"/>
+      <fraction n="0.691133" ref="C"/>
+      <fraction n="0.07327" ref="N"/>
+      <fraction n="0.209235" ref="O"/>
+    </material>
+    <isotope N="55" Z="25" name="Mn55">
+      <atom unit="g/mole" value="54.938"/>
+    </isotope>
+    <element name="Mn">
+      <fraction n="1" ref="Mn55"/>
+    </element>
+    <isotope N="50" Z="24" name="Cr50">
+      <atom unit="g/mole" value="49.946"/>
+    </isotope>
+    <isotope N="52" Z="24" name="Cr52">
+      <atom unit="g/mole" value="51.9405"/>
+    </isotope>
+    <isotope N="53" Z="24" name="Cr53">
+      <atom unit="g/mole" value="52.9407"/>
+    </isotope>
+    <isotope N="54" Z="24" name="Cr54">
+      <atom unit="g/mole" value="53.9389"/>
+    </isotope>
+    <element name="Cr">
+      <fraction n="0.04345" ref="Cr50"/>
+      <fraction n="0.83789" ref="Cr52"/>
+      <fraction n="0.09501" ref="Cr53"/>
+      <fraction n="0.02365" ref="Cr54"/>
+    </element>
+    <isotope N="58" Z="28" name="Ni58">
+      <atom unit="g/mole" value="57.9353"/>
+    </isotope>
+    <isotope N="60" Z="28" name="Ni60">
+      <atom unit="g/mole" value="59.9308"/>
+    </isotope>
+    <isotope N="61" Z="28" name="Ni61">
+      <atom unit="g/mole" value="60.9311"/>
+    </isotope>
+    <isotope N="62" Z="28" name="Ni62">
+      <atom unit="g/mole" value="61.9283"/>
+    </isotope>
+    <isotope N="64" Z="28" name="Ni64">
+      <atom unit="g/mole" value="63.928"/>
+    </isotope>
+    <element name="Ni">
+      <fraction n="0.680769" ref="Ni58"/>
+      <fraction n="0.262231" ref="Ni60"/>
+      <fraction n="0.011399" ref="Ni61"/>
+      <fraction n="0.036345" ref="Ni62"/>
+      <fraction n="0.009256" ref="Ni64"/>
+    </element>
+    <isotope N="54" Z="26" name="Fe54">
+      <atom unit="g/mole" value="53.9396"/>
+    </isotope>
+    <isotope N="56" Z="26" name="Fe56">
+      <atom unit="g/mole" value="55.9349"/>
+    </isotope>
+    <isotope N="57" Z="26" name="Fe57">
+      <atom unit="g/mole" value="56.9354"/>
+    </isotope>
+    <isotope N="58" Z="26" name="Fe58">
+      <atom unit="g/mole" value="57.9333"/>
+    </isotope>
+    <element name="Fe">
+      <fraction n="0.05845" ref="Fe54"/>
+      <fraction n="0.91754" ref="Fe56"/>
+      <fraction n="0.02119" ref="Fe57"/>
+      <fraction n="0.00282" ref="Fe58"/>
+    </element>
+    <material name="mmmesh" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="280.927103569437"/>
+      <D unit="g/cm3" value="4.3615"/>
+      <fraction n="0.02" ref="Mn"/>
+      <fraction n="0.01" ref="Si"/>
+      <fraction n="0.19" ref="Cr"/>
+      <fraction n="0.1" ref="Ni"/>
+      <fraction n="0.68" ref="Fe"/>
+    </material>
+    <material name="myPhRes" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="81"/>
+      <D unit="g/cm3" value="1.42"/>
+      <fraction n="1" ref="C"/>
+    </material>
+    <material name="ResistPaste" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="81"/>
+      <D unit="g/cm3" value="1.0773"/>
+      <fraction n="1" ref="C"/>
+    </material>
+    <material name="mmstrips" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="322"/>
+      <D unit="g/cm3" value="9.19642218246869"/>
+      <fraction n="1" ref="Cu"/>
+    </material>
+    <material name="G4_AIR" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="85.7"/>
+      <D unit="g/cm3" value="0.00120479"/>
+      <fraction n="0.000124000124000124" ref="C"/>
+      <fraction n="0.755267755267755" ref="N"/>
+      <fraction n="0.231781231781232" ref="O"/>
+      <fraction n="0.0128270128270128" ref="Ar"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="ft_trk_assembly_B1" x="91.69" y="3" z="7.8"/>
+    <box lunit="mm" name="ft_trk_assembly_B2" x="91.69" y="3" z="7.8"/>
+    <box lunit="mm" name="ft_trk_assembly_B3" x="91.69" y="3" z="7.8"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_assembly_R1" rmax="67" rmin="60" startphi="0" z="7.8"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_assembly_R2" rmax="163.5" rmin="158.7" startphi="0" z="7.8"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_assembly_R3" rmax="170" rmin="163.5" startphi="0" z="9"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_drift_X_L1" rmax="158.5" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_drift_X_L2" rmax="158.5" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_drift_Y_L1" rmax="158.5" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_drift_Y_L2" rmax="158.5" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_driftel_X_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_driftel_X_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_driftel_Y_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_driftel_Y_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_epoxy_X_L1" rmax="170" rmin="60" startphi="0" z="0.1"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_epoxy_X_L2" rmax="170" rmin="60" startphi="0" z="0.1"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_epoxy_Y_L1" rmax="170" rmin="60" startphi="0" z="0.1"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_epoxy_Y_L2" rmax="170" rmin="60" startphi="0" z="0.1"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas1_X_L1" rmax="143.16" rmin="71.43" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas1_X_L2" rmax="143.16" rmin="71.43" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas1_Y_L1" rmax="143.16" rmin="71.43" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas1_Y_L2" rmax="143.16" rmin="71.43" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas2_X_L1" rmax="151.5" rmin="67" startphi="0" z="4.988"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas2_X_L2" rmax="151.5" rmin="67" startphi="0" z="4.988"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas2_Y_L1" rmax="151.5" rmin="67" startphi="0" z="4.988"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_gas2_Y_L2" rmax="151.5" rmin="67" startphi="0" z="4.988"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_X_L1_R1" rmax="170" rmin="60" startphi="0" z="0.075"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_X_L1_R2" rmax="158.5" rmin="60" startphi="0" z="0.0499999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_X_L2_R1" rmax="170" rmin="60" startphi="0" z="0.075"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_X_L2_R2" rmax="158.5" rmin="60" startphi="0" z="0.0499999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_Y_L1_R1" rmax="170" rmin="60" startphi="0" z="0.075"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_Y_L1_R2" rmax="158.5" rmin="60" startphi="0" z="0.0499999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_Y_L2_R1" rmax="170" rmin="60" startphi="0" z="0.075"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_kapton_Y_L2_R2" rmax="158.5" rmin="60" startphi="0" z="0.0499999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_mesh_X_L1" rmax="170" rmin="60" startphi="0" z="0.018"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_mesh_X_L2" rmax="170" rmin="60" startphi="0" z="0.018"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_mesh_Y_L1" rmax="170" rmin="60" startphi="0" z="0.018"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_mesh_Y_L2" rmax="170" rmin="60" startphi="0" z="0.018"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_pcboard_X_L1" rmax="170" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_pcboard_X_L2" rmax="170" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_pcboard_Y_L1" rmax="170" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_pcboard_Y_L2" rmax="170" rmin="60" startphi="0" z="0.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L1_R1" rmax="71.43" rmin="60" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L1_R2" rmax="170" rmin="143.16" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L1_R3" rmax="71.43" rmin="60" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L1_R4" rmax="170" rmin="143.16" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L2_R1" rmax="71.43" rmin="60" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L2_R2" rmax="170" rmin="143.16" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L2_R3" rmax="71.43" rmin="60" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_X_L2_R4" rmax="170" rmin="143.16" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L1_R1" rmax="71.43" rmin="60" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L1_R2" rmax="170" rmin="143.16" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L1_R3" rmax="71.43" rmin="60" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L1_R4" rmax="170" rmin="143.16" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L2_R1" rmax="71.43" rmin="60" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L2_R2" rmax="170" rmin="143.16" startphi="0" z="0.128"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L2_R3" rmax="71.43" rmin="60" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_phrst_Y_L2_R4" rmax="170" rmin="143.16" startphi="0" z="0.0639999999999998"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_resiststrips_X_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.02"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_resiststrips_X_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.02"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_resiststrips_Y_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.02"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_resiststrips_Y_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.02"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E1" rmax="170" rmin="158.5" startphi="-2.45" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E10" rmax="170" rmin="158.5" startphi="132.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E11" rmax="170" rmin="158.5" startphi="147.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E12" rmax="170" rmin="158.5" startphi="162.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E13" rmax="170" rmin="158.5" startphi="177.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E14" rmax="170" rmin="158.5" startphi="192.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E15" rmax="170" rmin="158.5" startphi="207.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E16" rmax="170" rmin="158.5" startphi="222.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E17" rmax="170" rmin="158.5" startphi="237.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E18" rmax="170" rmin="158.5" startphi="252.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E19" rmax="170" rmin="158.5" startphi="267.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E2" rmax="170" rmin="158.5" startphi="12.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E20" rmax="170" rmin="158.5" startphi="282.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E21" rmax="170" rmin="158.5" startphi="297.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E22" rmax="170" rmin="158.5" startphi="312.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E23" rmax="170" rmin="158.5" startphi="327.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E24" rmax="170" rmin="158.5" startphi="337.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E25" rmax="170" rmin="158.5" startphi="347.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E3" rmax="170" rmin="158.5" startphi="27.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E4" rmax="170" rmin="158.5" startphi="42.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E5" rmax="170" rmin="158.5" startphi="57.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E6" rmax="170" rmin="158.5" startphi="72.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E7" rmax="170" rmin="158.5" startphi="87.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E8" rmax="170" rmin="158.5" startphi="102.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L1_E9" rmax="170" rmin="158.5" startphi="117.55" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_X_L1_R1" rmax="67" rmin="60" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_X_L1_R2" rmax="158.5" rmin="151.5" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E1" rmax="170" rmin="158.5" startphi="-2.45" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E10" rmax="170" rmin="158.5" startphi="132.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E11" rmax="170" rmin="158.5" startphi="147.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E12" rmax="170" rmin="158.5" startphi="162.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E13" rmax="170" rmin="158.5" startphi="177.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E14" rmax="170" rmin="158.5" startphi="192.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E15" rmax="170" rmin="158.5" startphi="207.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E16" rmax="170" rmin="158.5" startphi="222.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E17" rmax="170" rmin="158.5" startphi="237.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E18" rmax="170" rmin="158.5" startphi="252.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E19" rmax="170" rmin="158.5" startphi="267.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E2" rmax="170" rmin="158.5" startphi="12.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E20" rmax="170" rmin="158.5" startphi="282.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E21" rmax="170" rmin="158.5" startphi="297.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E22" rmax="170" rmin="158.5" startphi="312.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E23" rmax="170" rmin="158.5" startphi="327.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E24" rmax="170" rmin="158.5" startphi="337.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E25" rmax="170" rmin="158.5" startphi="347.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E3" rmax="170" rmin="158.5" startphi="27.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E4" rmax="170" rmin="158.5" startphi="42.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E5" rmax="170" rmin="158.5" startphi="57.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E6" rmax="170" rmin="158.5" startphi="72.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E7" rmax="170" rmin="158.5" startphi="87.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E8" rmax="170" rmin="158.5" startphi="102.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_X_L2_E9" rmax="170" rmin="158.5" startphi="117.55" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_X_L2_R1" rmax="67" rmin="60" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_X_L2_R2" rmax="158.5" rmin="151.5" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E1" rmax="170" rmin="158.5" startphi="-2.45" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E10" rmax="170" rmin="158.5" startphi="132.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E11" rmax="170" rmin="158.5" startphi="147.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E12" rmax="170" rmin="158.5" startphi="162.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E13" rmax="170" rmin="158.5" startphi="177.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E14" rmax="170" rmin="158.5" startphi="192.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E15" rmax="170" rmin="158.5" startphi="207.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E16" rmax="170" rmin="158.5" startphi="222.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E17" rmax="170" rmin="158.5" startphi="237.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E18" rmax="170" rmin="158.5" startphi="252.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E19" rmax="170" rmin="158.5" startphi="267.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E2" rmax="170" rmin="158.5" startphi="12.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E20" rmax="170" rmin="158.5" startphi="282.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E21" rmax="170" rmin="158.5" startphi="297.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E22" rmax="170" rmin="158.5" startphi="312.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E23" rmax="170" rmin="158.5" startphi="327.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E24" rmax="170" rmin="158.5" startphi="337.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E25" rmax="170" rmin="158.5" startphi="347.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E3" rmax="170" rmin="158.5" startphi="27.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E4" rmax="170" rmin="158.5" startphi="42.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E5" rmax="170" rmin="158.5" startphi="57.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E6" rmax="170" rmin="158.5" startphi="72.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E7" rmax="170" rmin="158.5" startphi="87.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E8" rmax="170" rmin="158.5" startphi="102.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L1_E9" rmax="170" rmin="158.5" startphi="117.55" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_Y_L1_R1" rmax="67" rmin="60" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_Y_L1_R2" rmax="158.5" rmin="151.5" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E1" rmax="170" rmin="158.5" startphi="-2.45" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E10" rmax="170" rmin="158.5" startphi="132.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E11" rmax="170" rmin="158.5" startphi="147.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E12" rmax="170" rmin="158.5" startphi="162.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E13" rmax="170" rmin="158.5" startphi="177.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E14" rmax="170" rmin="158.5" startphi="192.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E15" rmax="170" rmin="158.5" startphi="207.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E16" rmax="170" rmin="158.5" startphi="222.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E17" rmax="170" rmin="158.5" startphi="237.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E18" rmax="170" rmin="158.5" startphi="252.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E19" rmax="170" rmin="158.5" startphi="267.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E2" rmax="170" rmin="158.5" startphi="12.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E20" rmax="170" rmin="158.5" startphi="282.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E21" rmax="170" rmin="158.5" startphi="297.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E22" rmax="170" rmin="158.5" startphi="312.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E23" rmax="170" rmin="158.5" startphi="327.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E24" rmax="170" rmin="158.5" startphi="337.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E25" rmax="170" rmin="158.5" startphi="347.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E3" rmax="170" rmin="158.5" startphi="27.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E4" rmax="170" rmin="158.5" startphi="42.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E5" rmax="170" rmin="158.5" startphi="57.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E6" rmax="170" rmin="158.5" startphi="72.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E7" rmax="170" rmin="158.5" startphi="87.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E8" rmax="170" rmin="158.5" startphi="102.55" z="5"/>
+    <tube aunit="deg" deltaphi="4.9" lunit="mm" name="ft_trk_ring_Y_L2_E9" rmax="170" rmin="158.5" startphi="117.55" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_Y_L2_R1" rmax="67" rmin="60" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_ring_Y_L2_R2" rmax="158.5" rmin="151.5" startphi="0" z="5"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_strips_X_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_strips_X_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_strips_Y_L1" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_strips_Y_L2" rmax="143.66" rmin="70.43" startphi="0" z="0.012"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_support_R1" rmax="59.75" rmin="40" startphi="0" z="14"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_support_R2" rmax="50" rmin="40" startphi="0" z="31.2"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_support_R3" rmax="50" rmin="40" startphi="0" z="5.39999999999986"/>
+    <tube aunit="deg" deltaphi="360" lunit="mm" name="ft_trk_support_R4" rmax="67" rmin="59.75" startphi="0" z="4"/>
+    <polycone aunit="deg" deltaphi="360" lunit="mm" name="ft_trk" startphi="0">
+      <zplane rmax="59.75" rmin="40" z="1760"/>
+      <zplane rmax="59.75" rmin="40" z="1770"/>
+      <zplane rmax="170" rmin="40" z="1770"/>
+      <zplane rmax="170" rmin="40" z="1809"/>
+      <zplane rmax="50" rmin="40" z="1809"/>
+      <zplane rmax="50" rmin="40" z="1810.6"/>
+    </polycone>
+  </solids>
+
+  <structure>
+    <volume name="ft_trk_assembly_B1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_B1"/>
+    </volume>
+    <volume name="ft_trk_assembly_B2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_B2"/>
+    </volume>
+    <volume name="ft_trk_assembly_B3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_B3"/>
+    </volume>
+    <volume name="ft_trk_assembly_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_R1"/>
+    </volume>
+    <volume name="ft_trk_assembly_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_R2"/>
+    </volume>
+    <volume name="ft_trk_assembly_R3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_assembly_R3"/>
+    </volume>
+    <volume name="ft_trk_drift_X_L1">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_drift_X_L1"/>
+    </volume>
+    <volume name="ft_trk_drift_X_L2">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_drift_X_L2"/>
+    </volume>
+    <volume name="ft_trk_drift_Y_L1">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_drift_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_drift_Y_L2">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_drift_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_driftel_X_L1">
+      <materialref ref="G4_Cu"/>
+      <solidref ref="ft_trk_driftel_X_L1"/>
+    </volume>
+    <volume name="ft_trk_driftel_X_L2">
+      <materialref ref="G4_Cu"/>
+      <solidref ref="ft_trk_driftel_X_L2"/>
+    </volume>
+    <volume name="ft_trk_driftel_Y_L1">
+      <materialref ref="G4_Cu"/>
+      <solidref ref="ft_trk_driftel_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_driftel_Y_L2">
+      <materialref ref="G4_Cu"/>
+      <solidref ref="ft_trk_driftel_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_epoxy_X_L1">
+      <materialref ref="epoxy"/>
+      <solidref ref="ft_trk_epoxy_X_L1"/>
+    </volume>
+    <volume name="ft_trk_epoxy_X_L2">
+      <materialref ref="epoxy"/>
+      <solidref ref="ft_trk_epoxy_X_L2"/>
+    </volume>
+    <volume name="ft_trk_epoxy_Y_L1">
+      <materialref ref="epoxy"/>
+      <solidref ref="ft_trk_epoxy_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_epoxy_Y_L2">
+      <materialref ref="epoxy"/>
+      <solidref ref="ft_trk_epoxy_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_gas1_X_L1">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas1_X_L1"/>
+    </volume>
+    <volume name="ft_trk_gas1_X_L2">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas1_X_L2"/>
+    </volume>
+    <volume name="ft_trk_gas1_Y_L1">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas1_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_gas1_Y_L2">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas1_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_gas2_X_L1">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas2_X_L1"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_trk"/>
+    </volume>
+    <volume name="ft_trk_gas2_X_L2">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas2_X_L2"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_trk"/>
+    </volume>
+    <volume name="ft_trk_gas2_Y_L1">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas2_Y_L1"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_trk"/>
+    </volume>
+    <volume name="ft_trk_gas2_Y_L2">
+      <materialref ref="mmgas"/>
+      <solidref ref="ft_trk_gas2_Y_L2"/>
+      <auxiliary auxtype="SensDet" auxvalue="ft_trk"/>
+    </volume>
+    <volume name="ft_trk_kapton_X_L1_R1">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_X_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_kapton_X_L1_R2">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_X_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_kapton_X_L2_R1">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_X_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_kapton_X_L2_R2">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_X_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_kapton_Y_L1_R1">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_Y_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_kapton_Y_L1_R2">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_Y_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_kapton_Y_L2_R1">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_Y_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_kapton_Y_L2_R2">
+      <materialref ref="myKapton"/>
+      <solidref ref="ft_trk_kapton_Y_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_mesh_X_L1">
+      <materialref ref="mmmesh"/>
+      <solidref ref="ft_trk_mesh_X_L1"/>
+    </volume>
+    <volume name="ft_trk_mesh_X_L2">
+      <materialref ref="mmmesh"/>
+      <solidref ref="ft_trk_mesh_X_L2"/>
+    </volume>
+    <volume name="ft_trk_mesh_Y_L1">
+      <materialref ref="mmmesh"/>
+      <solidref ref="ft_trk_mesh_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_mesh_Y_L2">
+      <materialref ref="mmmesh"/>
+      <solidref ref="ft_trk_mesh_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_pcboard_X_L1">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_pcboard_X_L1"/>
+    </volume>
+    <volume name="ft_trk_pcboard_X_L2">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_pcboard_X_L2"/>
+    </volume>
+    <volume name="ft_trk_pcboard_Y_L1">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_pcboard_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_pcboard_Y_L2">
+      <materialref ref="myFR4"/>
+      <solidref ref="ft_trk_pcboard_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L1_R1">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L1_R2">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L1_R3">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L1_R3"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L1_R4">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L1_R4"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L2_R1">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L2_R2">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L2_R3">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L2_R3"/>
+    </volume>
+    <volume name="ft_trk_phrst_X_L2_R4">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_X_L2_R4"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L1_R1">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L1_R2">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L1_R3">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L1_R3"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L1_R4">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L1_R4"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L2_R1">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L2_R2">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L2_R3">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L2_R3"/>
+    </volume>
+    <volume name="ft_trk_phrst_Y_L2_R4">
+      <materialref ref="myPhRes"/>
+      <solidref ref="ft_trk_phrst_Y_L2_R4"/>
+    </volume>
+    <volume name="ft_trk_resiststrips_X_L1">
+      <materialref ref="ResistPaste"/>
+      <solidref ref="ft_trk_resiststrips_X_L1"/>
+    </volume>
+    <volume name="ft_trk_resiststrips_X_L2">
+      <materialref ref="ResistPaste"/>
+      <solidref ref="ft_trk_resiststrips_X_L2"/>
+    </volume>
+    <volume name="ft_trk_resiststrips_Y_L1">
+      <materialref ref="ResistPaste"/>
+      <solidref ref="ft_trk_resiststrips_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_resiststrips_Y_L2">
+      <materialref ref="ResistPaste"/>
+      <solidref ref="ft_trk_resiststrips_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E1"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E10">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E10"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E11">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E11"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E12">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E12"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E13">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E13"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E14">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E14"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E15">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E15"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E16">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E16"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E17">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E17"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E18">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E18"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E19">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E19"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E2"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E20">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E20"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E21">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E21"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E22">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E22"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E23">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E23"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E24">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E24"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E25">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E25"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E3"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E4">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E4"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E5">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E5"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E6">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E6"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E7">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E7"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E8">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E8"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_E9">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_E9"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L1_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E1"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E10">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E10"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E11">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E11"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E12">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E12"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E13">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E13"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E14">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E14"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E15">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E15"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E16">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E16"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E17">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E17"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E18">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E18"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E19">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E19"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E2"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E20">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E20"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E21">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E21"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E22">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E22"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E23">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E23"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E24">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E24"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E25">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E25"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E3"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E4">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E4"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E5">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E5"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E6">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E6"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E7">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E7"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E8">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E8"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_E9">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_E9"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_ring_X_L2_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_X_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E1"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E10">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E10"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E11">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E11"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E12">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E12"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E13">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E13"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E14">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E14"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E15">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E15"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E16">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E16"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E17">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E17"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E18">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E18"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E19">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E19"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E2"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E20">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E20"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E21">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E21"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E22">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E22"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E23">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E23"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E24">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E24"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E25">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E25"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E3"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E4">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E4"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E5">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E5"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E6">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E6"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E7">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E7"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E8">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E8"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_E9">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_E9"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_R1"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L1_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L1_R2"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E1"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E10">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E10"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E11">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E11"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E12">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E12"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E13">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E13"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E14">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E14"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E15">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E15"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E16">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E16"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E17">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E17"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E18">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E18"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E19">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E19"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E2"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E20">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E20"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E21">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E21"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E22">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E22"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E23">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E23"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E24">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E24"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E25">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E25"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E3"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E4">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E4"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E5">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E5"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E6">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E6"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E7">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E7"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E8">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E8"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_E9">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_E9"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_R1"/>
+    </volume>
+    <volume name="ft_trk_ring_Y_L2_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_ring_Y_L2_R2"/>
+    </volume>
+    <volume name="ft_trk_strips_X_L1">
+      <materialref ref="mmstrips"/>
+      <solidref ref="ft_trk_strips_X_L1"/>
+    </volume>
+    <volume name="ft_trk_strips_X_L2">
+      <materialref ref="mmstrips"/>
+      <solidref ref="ft_trk_strips_X_L2"/>
+    </volume>
+    <volume name="ft_trk_strips_Y_L1">
+      <materialref ref="mmstrips"/>
+      <solidref ref="ft_trk_strips_Y_L1"/>
+    </volume>
+    <volume name="ft_trk_strips_Y_L2">
+      <materialref ref="mmstrips"/>
+      <solidref ref="ft_trk_strips_Y_L2"/>
+    </volume>
+    <volume name="ft_trk_support_R1">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_support_R1"/>
+    </volume>
+    <volume name="ft_trk_support_R2">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_support_R2"/>
+    </volume>
+    <volume name="ft_trk_support_R3">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_support_R3"/>
+    </volume>
+    <volume name="ft_trk_support_R4">
+      <materialref ref="G4_Al"/>
+      <solidref ref="ft_trk_support_R4"/>
+    </volume>
+    <volume name="ft_trk">
+      <materialref ref="G4_AIR"/>
+      <solidref ref="ft_trk"/>
+      <physvol copynumber="1" name="ft_trk_assembly_B1">
+        <volumeref ref="ft_trk_assembly_B1"/>
+        <position name="ft_trk_assembly_B1_pos" unit="mm" x="112.845" y="0" z="1789.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_assembly_B2">
+        <volumeref ref="ft_trk_assembly_B2"/>
+        <position name="ft_trk_assembly_B2_pos" unit="mm" x="-56.4225" y="97.726636690055" z="1789.989"/>
+        <rotation name="ft_trk_assembly_B2_rot" unit="deg" x="0" y="0" z="-120"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_assembly_B3">
+        <volumeref ref="ft_trk_assembly_B3"/>
+        <position name="ft_trk_assembly_B3_pos" unit="mm" x="-56.4225" y="-97.7266366900549" z="1789.989"/>
+        <rotation name="ft_trk_assembly_B3_rot" unit="deg" x="0" y="0" z="120"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_assembly_R1">
+        <volumeref ref="ft_trk_assembly_R1"/>
+        <position name="ft_trk_assembly_R1_pos" unit="mm" x="0" y="0" z="1789.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_assembly_R2">
+        <volumeref ref="ft_trk_assembly_R2"/>
+        <position name="ft_trk_assembly_R2_pos" unit="mm" x="0" y="0" z="1789.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_assembly_R3">
+        <volumeref ref="ft_trk_assembly_R3"/>
+        <position name="ft_trk_assembly_R3_pos" unit="mm" x="0" y="0" z="1789.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_drift_X_L1">
+        <volumeref ref="ft_trk_drift_X_L1"/>
+        <position name="ft_trk_drift_X_L1_pos" unit="mm" x="0" y="0" z="1774.155"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_drift_X_L2">
+        <volumeref ref="ft_trk_drift_X_L2"/>
+        <position name="ft_trk_drift_X_L2_pos" unit="mm" x="0" y="0" z="1794.389"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_drift_Y_L1">
+        <volumeref ref="ft_trk_drift_Y_L1"/>
+        <position name="ft_trk_drift_Y_L1_pos" unit="mm" x="0" y="0" z="1785.589"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_drift_Y_L2">
+        <volumeref ref="ft_trk_drift_Y_L2"/>
+        <position name="ft_trk_drift_Y_L2_pos" unit="mm" x="0" y="0" z="1805.823"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_driftel_X_L1">
+        <volumeref ref="ft_trk_driftel_X_L1"/>
+        <position name="ft_trk_driftel_X_L1_pos" unit="mm" x="0" y="0" z="1774.261"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_driftel_X_L2">
+        <volumeref ref="ft_trk_driftel_X_L2"/>
+        <position name="ft_trk_driftel_X_L2_pos" unit="mm" x="0" y="0" z="1794.495"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_driftel_Y_L1">
+        <volumeref ref="ft_trk_driftel_Y_L1"/>
+        <position name="ft_trk_driftel_Y_L1_pos" unit="mm" x="0" y="0" z="1785.483"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_driftel_Y_L2">
+        <volumeref ref="ft_trk_driftel_Y_L2"/>
+        <position name="ft_trk_driftel_Y_L2_pos" unit="mm" x="0" y="0" z="1805.717"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_epoxy_X_L1">
+        <volumeref ref="ft_trk_epoxy_X_L1"/>
+        <position name="ft_trk_epoxy_X_L1_pos" unit="mm" x="0" y="0" z="1779.822"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_epoxy_X_L2">
+        <volumeref ref="ft_trk_epoxy_X_L2"/>
+        <position name="ft_trk_epoxy_X_L2_pos" unit="mm" x="0" y="0" z="1800.056"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_epoxy_Y_L1">
+        <volumeref ref="ft_trk_epoxy_Y_L1"/>
+        <position name="ft_trk_epoxy_Y_L1_pos" unit="mm" x="0" y="0" z="1779.922"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_epoxy_Y_L2">
+        <volumeref ref="ft_trk_epoxy_Y_L2"/>
+        <position name="ft_trk_epoxy_Y_L2_pos" unit="mm" x="0" y="0" z="1800.156"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas1_X_L1">
+        <volumeref ref="ft_trk_gas1_X_L1"/>
+        <position name="ft_trk_gas1_X_L1_pos" unit="mm" x="0" y="0" z="1779.401"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas1_X_L2">
+        <volumeref ref="ft_trk_gas1_X_L2"/>
+        <position name="ft_trk_gas1_X_L2_pos" unit="mm" x="0" y="0" z="1799.635"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas1_Y_L1">
+        <volumeref ref="ft_trk_gas1_Y_L1"/>
+        <position name="ft_trk_gas1_Y_L1_pos" unit="mm" x="0" y="0" z="1780.343"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas1_Y_L2">
+        <volumeref ref="ft_trk_gas1_Y_L2"/>
+        <position name="ft_trk_gas1_Y_L2_pos" unit="mm" x="0" y="0" z="1800.577"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas2_X_L1">
+        <volumeref ref="ft_trk_gas2_X_L1"/>
+        <position name="ft_trk_gas2_X_L1_pos" unit="mm" x="0" y="0" z="1776.761"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas2_X_L2">
+        <volumeref ref="ft_trk_gas2_X_L2"/>
+        <position name="ft_trk_gas2_X_L2_pos" unit="mm" x="0" y="0" z="1796.995"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas2_Y_L1">
+        <volumeref ref="ft_trk_gas2_Y_L1"/>
+        <position name="ft_trk_gas2_Y_L1_pos" unit="mm" x="0" y="0" z="1782.983"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_gas2_Y_L2">
+        <volumeref ref="ft_trk_gas2_Y_L2"/>
+        <position name="ft_trk_gas2_Y_L2_pos" unit="mm" x="0" y="0" z="1803.217"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_X_L1_R1">
+        <volumeref ref="ft_trk_kapton_X_L1_R1"/>
+        <position name="ft_trk_kapton_X_L1_R1_pos" unit="mm" x="0" y="0" z="1779.5225"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_X_L1_R2">
+        <volumeref ref="ft_trk_kapton_X_L1_R2"/>
+        <position name="ft_trk_kapton_X_L1_R2_pos" unit="mm" x="0" y="0" z="1774.025"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_X_L2_R1">
+        <volumeref ref="ft_trk_kapton_X_L2_R1"/>
+        <position name="ft_trk_kapton_X_L2_R1_pos" unit="mm" x="0" y="0" z="1799.7565"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_X_L2_R2">
+        <volumeref ref="ft_trk_kapton_X_L2_R2"/>
+        <position name="ft_trk_kapton_X_L2_R2_pos" unit="mm" x="0" y="0" z="1794.259"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_Y_L1_R1">
+        <volumeref ref="ft_trk_kapton_Y_L1_R1"/>
+        <position name="ft_trk_kapton_Y_L1_R1_pos" unit="mm" x="0" y="0" z="1780.2215"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_Y_L1_R2">
+        <volumeref ref="ft_trk_kapton_Y_L1_R2"/>
+        <position name="ft_trk_kapton_Y_L1_R2_pos" unit="mm" x="0" y="0" z="1785.719"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_Y_L2_R1">
+        <volumeref ref="ft_trk_kapton_Y_L2_R1"/>
+        <position name="ft_trk_kapton_Y_L2_R1_pos" unit="mm" x="0" y="0" z="1800.4555"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_kapton_Y_L2_R2">
+        <volumeref ref="ft_trk_kapton_Y_L2_R2"/>
+        <position name="ft_trk_kapton_Y_L2_R2_pos" unit="mm" x="0" y="0" z="1805.953"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_mesh_X_L1">
+        <volumeref ref="ft_trk_mesh_X_L1"/>
+        <position name="ft_trk_mesh_X_L1_pos" unit="mm" x="0" y="0" z="1779.328"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_mesh_X_L2">
+        <volumeref ref="ft_trk_mesh_X_L2"/>
+        <position name="ft_trk_mesh_X_L2_pos" unit="mm" x="0" y="0" z="1799.562"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_mesh_Y_L1">
+        <volumeref ref="ft_trk_mesh_Y_L1"/>
+        <position name="ft_trk_mesh_Y_L1_pos" unit="mm" x="0" y="0" z="1780.416"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_mesh_Y_L2">
+        <volumeref ref="ft_trk_mesh_Y_L2"/>
+        <position name="ft_trk_mesh_Y_L2_pos" unit="mm" x="0" y="0" z="1800.65"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_pcboard_X_L1">
+        <volumeref ref="ft_trk_pcboard_X_L1"/>
+        <position name="ft_trk_pcboard_X_L1_pos" unit="mm" x="0" y="0" z="1779.672"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_pcboard_X_L2">
+        <volumeref ref="ft_trk_pcboard_X_L2"/>
+        <position name="ft_trk_pcboard_X_L2_pos" unit="mm" x="0" y="0" z="1799.906"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_pcboard_Y_L1">
+        <volumeref ref="ft_trk_pcboard_Y_L1"/>
+        <position name="ft_trk_pcboard_Y_L1_pos" unit="mm" x="0" y="0" z="1780.072"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_pcboard_Y_L2">
+        <volumeref ref="ft_trk_pcboard_Y_L2"/>
+        <position name="ft_trk_pcboard_Y_L2_pos" unit="mm" x="0" y="0" z="1800.306"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L1_R1">
+        <volumeref ref="ft_trk_phrst_X_L1_R1"/>
+        <position name="ft_trk_phrst_X_L1_R1_pos" unit="mm" x="0" y="0" z="1779.401"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L1_R2">
+        <volumeref ref="ft_trk_phrst_X_L1_R2"/>
+        <position name="ft_trk_phrst_X_L1_R2_pos" unit="mm" x="0" y="0" z="1779.401"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L1_R3">
+        <volumeref ref="ft_trk_phrst_X_L1_R3"/>
+        <position name="ft_trk_phrst_X_L1_R3_pos" unit="mm" x="0" y="0" z="1779.287"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L1_R4">
+        <volumeref ref="ft_trk_phrst_X_L1_R4"/>
+        <position name="ft_trk_phrst_X_L1_R4_pos" unit="mm" x="0" y="0" z="1779.287"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L2_R1">
+        <volumeref ref="ft_trk_phrst_X_L2_R1"/>
+        <position name="ft_trk_phrst_X_L2_R1_pos" unit="mm" x="0" y="0" z="1799.635"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L2_R2">
+        <volumeref ref="ft_trk_phrst_X_L2_R2"/>
+        <position name="ft_trk_phrst_X_L2_R2_pos" unit="mm" x="0" y="0" z="1799.635"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L2_R3">
+        <volumeref ref="ft_trk_phrst_X_L2_R3"/>
+        <position name="ft_trk_phrst_X_L2_R3_pos" unit="mm" x="0" y="0" z="1799.521"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_X_L2_R4">
+        <volumeref ref="ft_trk_phrst_X_L2_R4"/>
+        <position name="ft_trk_phrst_X_L2_R4_pos" unit="mm" x="0" y="0" z="1799.521"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L1_R1">
+        <volumeref ref="ft_trk_phrst_Y_L1_R1"/>
+        <position name="ft_trk_phrst_Y_L1_R1_pos" unit="mm" x="0" y="0" z="1780.343"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L1_R2">
+        <volumeref ref="ft_trk_phrst_Y_L1_R2"/>
+        <position name="ft_trk_phrst_Y_L1_R2_pos" unit="mm" x="0" y="0" z="1780.343"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L1_R3">
+        <volumeref ref="ft_trk_phrst_Y_L1_R3"/>
+        <position name="ft_trk_phrst_Y_L1_R3_pos" unit="mm" x="0" y="0" z="1780.457"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L1_R4">
+        <volumeref ref="ft_trk_phrst_Y_L1_R4"/>
+        <position name="ft_trk_phrst_Y_L1_R4_pos" unit="mm" x="0" y="0" z="1780.457"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L2_R1">
+        <volumeref ref="ft_trk_phrst_Y_L2_R1"/>
+        <position name="ft_trk_phrst_Y_L2_R1_pos" unit="mm" x="0" y="0" z="1800.577"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L2_R2">
+        <volumeref ref="ft_trk_phrst_Y_L2_R2"/>
+        <position name="ft_trk_phrst_Y_L2_R2_pos" unit="mm" x="0" y="0" z="1800.577"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L2_R3">
+        <volumeref ref="ft_trk_phrst_Y_L2_R3"/>
+        <position name="ft_trk_phrst_Y_L2_R3_pos" unit="mm" x="0" y="0" z="1800.691"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_phrst_Y_L2_R4">
+        <volumeref ref="ft_trk_phrst_Y_L2_R4"/>
+        <position name="ft_trk_phrst_Y_L2_R4_pos" unit="mm" x="0" y="0" z="1800.691"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_resiststrips_X_L1">
+        <volumeref ref="ft_trk_resiststrips_X_L1"/>
+        <position name="ft_trk_resiststrips_X_L1_pos" unit="mm" x="0" y="0" z="1779.475"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_resiststrips_X_L2">
+        <volumeref ref="ft_trk_resiststrips_X_L2"/>
+        <position name="ft_trk_resiststrips_X_L2_pos" unit="mm" x="0" y="0" z="1799.709"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_resiststrips_Y_L1">
+        <volumeref ref="ft_trk_resiststrips_Y_L1"/>
+        <position name="ft_trk_resiststrips_Y_L1_pos" unit="mm" x="0" y="0" z="1780.269"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_resiststrips_Y_L2">
+        <volumeref ref="ft_trk_resiststrips_Y_L2"/>
+        <position name="ft_trk_resiststrips_Y_L2_pos" unit="mm" x="0" y="0" z="1800.503"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E1">
+        <volumeref ref="ft_trk_ring_X_L1_E1"/>
+        <position name="ft_trk_ring_X_L1_E1_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E10">
+        <volumeref ref="ft_trk_ring_X_L1_E10"/>
+        <position name="ft_trk_ring_X_L1_E10_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E11">
+        <volumeref ref="ft_trk_ring_X_L1_E11"/>
+        <position name="ft_trk_ring_X_L1_E11_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E12">
+        <volumeref ref="ft_trk_ring_X_L1_E12"/>
+        <position name="ft_trk_ring_X_L1_E12_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E13">
+        <volumeref ref="ft_trk_ring_X_L1_E13"/>
+        <position name="ft_trk_ring_X_L1_E13_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E14">
+        <volumeref ref="ft_trk_ring_X_L1_E14"/>
+        <position name="ft_trk_ring_X_L1_E14_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E15">
+        <volumeref ref="ft_trk_ring_X_L1_E15"/>
+        <position name="ft_trk_ring_X_L1_E15_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E16">
+        <volumeref ref="ft_trk_ring_X_L1_E16"/>
+        <position name="ft_trk_ring_X_L1_E16_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E17">
+        <volumeref ref="ft_trk_ring_X_L1_E17"/>
+        <position name="ft_trk_ring_X_L1_E17_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E18">
+        <volumeref ref="ft_trk_ring_X_L1_E18"/>
+        <position name="ft_trk_ring_X_L1_E18_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E19">
+        <volumeref ref="ft_trk_ring_X_L1_E19"/>
+        <position name="ft_trk_ring_X_L1_E19_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E2">
+        <volumeref ref="ft_trk_ring_X_L1_E2"/>
+        <position name="ft_trk_ring_X_L1_E2_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E20">
+        <volumeref ref="ft_trk_ring_X_L1_E20"/>
+        <position name="ft_trk_ring_X_L1_E20_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E21">
+        <volumeref ref="ft_trk_ring_X_L1_E21"/>
+        <position name="ft_trk_ring_X_L1_E21_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E22">
+        <volumeref ref="ft_trk_ring_X_L1_E22"/>
+        <position name="ft_trk_ring_X_L1_E22_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E23">
+        <volumeref ref="ft_trk_ring_X_L1_E23"/>
+        <position name="ft_trk_ring_X_L1_E23_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E24">
+        <volumeref ref="ft_trk_ring_X_L1_E24"/>
+        <position name="ft_trk_ring_X_L1_E24_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E25">
+        <volumeref ref="ft_trk_ring_X_L1_E25"/>
+        <position name="ft_trk_ring_X_L1_E25_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E3">
+        <volumeref ref="ft_trk_ring_X_L1_E3"/>
+        <position name="ft_trk_ring_X_L1_E3_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E4">
+        <volumeref ref="ft_trk_ring_X_L1_E4"/>
+        <position name="ft_trk_ring_X_L1_E4_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E5">
+        <volumeref ref="ft_trk_ring_X_L1_E5"/>
+        <position name="ft_trk_ring_X_L1_E5_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E6">
+        <volumeref ref="ft_trk_ring_X_L1_E6"/>
+        <position name="ft_trk_ring_X_L1_E6_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E7">
+        <volumeref ref="ft_trk_ring_X_L1_E7"/>
+        <position name="ft_trk_ring_X_L1_E7_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E8">
+        <volumeref ref="ft_trk_ring_X_L1_E8"/>
+        <position name="ft_trk_ring_X_L1_E8_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_E9">
+        <volumeref ref="ft_trk_ring_X_L1_E9"/>
+        <position name="ft_trk_ring_X_L1_E9_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_R1">
+        <volumeref ref="ft_trk_ring_X_L1_R1"/>
+        <position name="ft_trk_ring_X_L1_R1_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L1_R2">
+        <volumeref ref="ft_trk_ring_X_L1_R2"/>
+        <position name="ft_trk_ring_X_L1_R2_pos" unit="mm" x="0" y="0" z="1776.755"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E1">
+        <volumeref ref="ft_trk_ring_X_L2_E1"/>
+        <position name="ft_trk_ring_X_L2_E1_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E10">
+        <volumeref ref="ft_trk_ring_X_L2_E10"/>
+        <position name="ft_trk_ring_X_L2_E10_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E11">
+        <volumeref ref="ft_trk_ring_X_L2_E11"/>
+        <position name="ft_trk_ring_X_L2_E11_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E12">
+        <volumeref ref="ft_trk_ring_X_L2_E12"/>
+        <position name="ft_trk_ring_X_L2_E12_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E13">
+        <volumeref ref="ft_trk_ring_X_L2_E13"/>
+        <position name="ft_trk_ring_X_L2_E13_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E14">
+        <volumeref ref="ft_trk_ring_X_L2_E14"/>
+        <position name="ft_trk_ring_X_L2_E14_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E15">
+        <volumeref ref="ft_trk_ring_X_L2_E15"/>
+        <position name="ft_trk_ring_X_L2_E15_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E16">
+        <volumeref ref="ft_trk_ring_X_L2_E16"/>
+        <position name="ft_trk_ring_X_L2_E16_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E17">
+        <volumeref ref="ft_trk_ring_X_L2_E17"/>
+        <position name="ft_trk_ring_X_L2_E17_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E18">
+        <volumeref ref="ft_trk_ring_X_L2_E18"/>
+        <position name="ft_trk_ring_X_L2_E18_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E19">
+        <volumeref ref="ft_trk_ring_X_L2_E19"/>
+        <position name="ft_trk_ring_X_L2_E19_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E2">
+        <volumeref ref="ft_trk_ring_X_L2_E2"/>
+        <position name="ft_trk_ring_X_L2_E2_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E20">
+        <volumeref ref="ft_trk_ring_X_L2_E20"/>
+        <position name="ft_trk_ring_X_L2_E20_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E21">
+        <volumeref ref="ft_trk_ring_X_L2_E21"/>
+        <position name="ft_trk_ring_X_L2_E21_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E22">
+        <volumeref ref="ft_trk_ring_X_L2_E22"/>
+        <position name="ft_trk_ring_X_L2_E22_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E23">
+        <volumeref ref="ft_trk_ring_X_L2_E23"/>
+        <position name="ft_trk_ring_X_L2_E23_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E24">
+        <volumeref ref="ft_trk_ring_X_L2_E24"/>
+        <position name="ft_trk_ring_X_L2_E24_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E25">
+        <volumeref ref="ft_trk_ring_X_L2_E25"/>
+        <position name="ft_trk_ring_X_L2_E25_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E3">
+        <volumeref ref="ft_trk_ring_X_L2_E3"/>
+        <position name="ft_trk_ring_X_L2_E3_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E4">
+        <volumeref ref="ft_trk_ring_X_L2_E4"/>
+        <position name="ft_trk_ring_X_L2_E4_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E5">
+        <volumeref ref="ft_trk_ring_X_L2_E5"/>
+        <position name="ft_trk_ring_X_L2_E5_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E6">
+        <volumeref ref="ft_trk_ring_X_L2_E6"/>
+        <position name="ft_trk_ring_X_L2_E6_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E7">
+        <volumeref ref="ft_trk_ring_X_L2_E7"/>
+        <position name="ft_trk_ring_X_L2_E7_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E8">
+        <volumeref ref="ft_trk_ring_X_L2_E8"/>
+        <position name="ft_trk_ring_X_L2_E8_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_E9">
+        <volumeref ref="ft_trk_ring_X_L2_E9"/>
+        <position name="ft_trk_ring_X_L2_E9_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_R1">
+        <volumeref ref="ft_trk_ring_X_L2_R1"/>
+        <position name="ft_trk_ring_X_L2_R1_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_X_L2_R2">
+        <volumeref ref="ft_trk_ring_X_L2_R2"/>
+        <position name="ft_trk_ring_X_L2_R2_pos" unit="mm" x="0" y="0" z="1796.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E1">
+        <volumeref ref="ft_trk_ring_Y_L1_E1"/>
+        <position name="ft_trk_ring_Y_L1_E1_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E10">
+        <volumeref ref="ft_trk_ring_Y_L1_E10"/>
+        <position name="ft_trk_ring_Y_L1_E10_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E11">
+        <volumeref ref="ft_trk_ring_Y_L1_E11"/>
+        <position name="ft_trk_ring_Y_L1_E11_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E12">
+        <volumeref ref="ft_trk_ring_Y_L1_E12"/>
+        <position name="ft_trk_ring_Y_L1_E12_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E13">
+        <volumeref ref="ft_trk_ring_Y_L1_E13"/>
+        <position name="ft_trk_ring_Y_L1_E13_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E14">
+        <volumeref ref="ft_trk_ring_Y_L1_E14"/>
+        <position name="ft_trk_ring_Y_L1_E14_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E15">
+        <volumeref ref="ft_trk_ring_Y_L1_E15"/>
+        <position name="ft_trk_ring_Y_L1_E15_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E16">
+        <volumeref ref="ft_trk_ring_Y_L1_E16"/>
+        <position name="ft_trk_ring_Y_L1_E16_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E17">
+        <volumeref ref="ft_trk_ring_Y_L1_E17"/>
+        <position name="ft_trk_ring_Y_L1_E17_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E18">
+        <volumeref ref="ft_trk_ring_Y_L1_E18"/>
+        <position name="ft_trk_ring_Y_L1_E18_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E19">
+        <volumeref ref="ft_trk_ring_Y_L1_E19"/>
+        <position name="ft_trk_ring_Y_L1_E19_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E2">
+        <volumeref ref="ft_trk_ring_Y_L1_E2"/>
+        <position name="ft_trk_ring_Y_L1_E2_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E20">
+        <volumeref ref="ft_trk_ring_Y_L1_E20"/>
+        <position name="ft_trk_ring_Y_L1_E20_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E21">
+        <volumeref ref="ft_trk_ring_Y_L1_E21"/>
+        <position name="ft_trk_ring_Y_L1_E21_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E22">
+        <volumeref ref="ft_trk_ring_Y_L1_E22"/>
+        <position name="ft_trk_ring_Y_L1_E22_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E23">
+        <volumeref ref="ft_trk_ring_Y_L1_E23"/>
+        <position name="ft_trk_ring_Y_L1_E23_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E24">
+        <volumeref ref="ft_trk_ring_Y_L1_E24"/>
+        <position name="ft_trk_ring_Y_L1_E24_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E25">
+        <volumeref ref="ft_trk_ring_Y_L1_E25"/>
+        <position name="ft_trk_ring_Y_L1_E25_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E3">
+        <volumeref ref="ft_trk_ring_Y_L1_E3"/>
+        <position name="ft_trk_ring_Y_L1_E3_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E4">
+        <volumeref ref="ft_trk_ring_Y_L1_E4"/>
+        <position name="ft_trk_ring_Y_L1_E4_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E5">
+        <volumeref ref="ft_trk_ring_Y_L1_E5"/>
+        <position name="ft_trk_ring_Y_L1_E5_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E6">
+        <volumeref ref="ft_trk_ring_Y_L1_E6"/>
+        <position name="ft_trk_ring_Y_L1_E6_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E7">
+        <volumeref ref="ft_trk_ring_Y_L1_E7"/>
+        <position name="ft_trk_ring_Y_L1_E7_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E8">
+        <volumeref ref="ft_trk_ring_Y_L1_E8"/>
+        <position name="ft_trk_ring_Y_L1_E8_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_E9">
+        <volumeref ref="ft_trk_ring_Y_L1_E9"/>
+        <position name="ft_trk_ring_Y_L1_E9_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_R1">
+        <volumeref ref="ft_trk_ring_Y_L1_R1"/>
+        <position name="ft_trk_ring_Y_L1_R1_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L1_R2">
+        <volumeref ref="ft_trk_ring_Y_L1_R2"/>
+        <position name="ft_trk_ring_Y_L1_R2_pos" unit="mm" x="0" y="0" z="1782.989"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E1">
+        <volumeref ref="ft_trk_ring_Y_L2_E1"/>
+        <position name="ft_trk_ring_Y_L2_E1_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E10">
+        <volumeref ref="ft_trk_ring_Y_L2_E10"/>
+        <position name="ft_trk_ring_Y_L2_E10_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E11">
+        <volumeref ref="ft_trk_ring_Y_L2_E11"/>
+        <position name="ft_trk_ring_Y_L2_E11_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E12">
+        <volumeref ref="ft_trk_ring_Y_L2_E12"/>
+        <position name="ft_trk_ring_Y_L2_E12_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E13">
+        <volumeref ref="ft_trk_ring_Y_L2_E13"/>
+        <position name="ft_trk_ring_Y_L2_E13_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E14">
+        <volumeref ref="ft_trk_ring_Y_L2_E14"/>
+        <position name="ft_trk_ring_Y_L2_E14_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E15">
+        <volumeref ref="ft_trk_ring_Y_L2_E15"/>
+        <position name="ft_trk_ring_Y_L2_E15_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E16">
+        <volumeref ref="ft_trk_ring_Y_L2_E16"/>
+        <position name="ft_trk_ring_Y_L2_E16_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E17">
+        <volumeref ref="ft_trk_ring_Y_L2_E17"/>
+        <position name="ft_trk_ring_Y_L2_E17_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E18">
+        <volumeref ref="ft_trk_ring_Y_L2_E18"/>
+        <position name="ft_trk_ring_Y_L2_E18_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E19">
+        <volumeref ref="ft_trk_ring_Y_L2_E19"/>
+        <position name="ft_trk_ring_Y_L2_E19_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E2">
+        <volumeref ref="ft_trk_ring_Y_L2_E2"/>
+        <position name="ft_trk_ring_Y_L2_E2_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E20">
+        <volumeref ref="ft_trk_ring_Y_L2_E20"/>
+        <position name="ft_trk_ring_Y_L2_E20_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E21">
+        <volumeref ref="ft_trk_ring_Y_L2_E21"/>
+        <position name="ft_trk_ring_Y_L2_E21_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E22">
+        <volumeref ref="ft_trk_ring_Y_L2_E22"/>
+        <position name="ft_trk_ring_Y_L2_E22_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E23">
+        <volumeref ref="ft_trk_ring_Y_L2_E23"/>
+        <position name="ft_trk_ring_Y_L2_E23_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E24">
+        <volumeref ref="ft_trk_ring_Y_L2_E24"/>
+        <position name="ft_trk_ring_Y_L2_E24_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E25">
+        <volumeref ref="ft_trk_ring_Y_L2_E25"/>
+        <position name="ft_trk_ring_Y_L2_E25_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E3">
+        <volumeref ref="ft_trk_ring_Y_L2_E3"/>
+        <position name="ft_trk_ring_Y_L2_E3_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E4">
+        <volumeref ref="ft_trk_ring_Y_L2_E4"/>
+        <position name="ft_trk_ring_Y_L2_E4_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E5">
+        <volumeref ref="ft_trk_ring_Y_L2_E5"/>
+        <position name="ft_trk_ring_Y_L2_E5_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E6">
+        <volumeref ref="ft_trk_ring_Y_L2_E6"/>
+        <position name="ft_trk_ring_Y_L2_E6_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E7">
+        <volumeref ref="ft_trk_ring_Y_L2_E7"/>
+        <position name="ft_trk_ring_Y_L2_E7_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E8">
+        <volumeref ref="ft_trk_ring_Y_L2_E8"/>
+        <position name="ft_trk_ring_Y_L2_E8_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_E9">
+        <volumeref ref="ft_trk_ring_Y_L2_E9"/>
+        <position name="ft_trk_ring_Y_L2_E9_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_R1">
+        <volumeref ref="ft_trk_ring_Y_L2_R1"/>
+        <position name="ft_trk_ring_Y_L2_R1_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_ring_Y_L2_R2">
+        <volumeref ref="ft_trk_ring_Y_L2_R2"/>
+        <position name="ft_trk_ring_Y_L2_R2_pos" unit="mm" x="0" y="0" z="1803.223"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_strips_X_L1">
+        <volumeref ref="ft_trk_strips_X_L1"/>
+        <position name="ft_trk_strips_X_L1_pos" unit="mm" x="0" y="0" z="1779.566"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_strips_X_L2">
+        <volumeref ref="ft_trk_strips_X_L2"/>
+        <position name="ft_trk_strips_X_L2_pos" unit="mm" x="0" y="0" z="1799.8"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_strips_Y_L1">
+        <volumeref ref="ft_trk_strips_Y_L1"/>
+        <position name="ft_trk_strips_Y_L1_pos" unit="mm" x="0" y="0" z="1780.178"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_strips_Y_L2">
+        <volumeref ref="ft_trk_strips_Y_L2"/>
+        <position name="ft_trk_strips_Y_L2_pos" unit="mm" x="0" y="0" z="1800.412"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_support_R1">
+        <volumeref ref="ft_trk_support_R1"/>
+        <position name="ft_trk_support_R1_pos" unit="mm" x="0" y="0" z="1767"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_support_R2">
+        <volumeref ref="ft_trk_support_R2"/>
+        <position name="ft_trk_support_R2_pos" unit="mm" x="0" y="0" z="1789.6"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_support_R3">
+        <volumeref ref="ft_trk_support_R3"/>
+        <position name="ft_trk_support_R3_pos" unit="mm" x="0" y="0" z="1807.9"/>
+      </physvol>
+      <physvol copynumber="1" name="ft_trk_support_R4">
+        <volumeref ref="ft_trk_support_R4"/>
+        <position name="ft_trk_support_R4_pos" unit="mm" x="0" y="0" z="1772"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="ft_trk"/>
+  </setup>
+
+</gdml>
