@@ -3,9 +3,11 @@
 Version: 2
 Title: 
 Input: hall-b_cone.inp
+Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
 Page: Flair
+Source: MagneticField/magfld_solenoid_2.f
 DefMain: True
 LinkPrg: lfluka
 F77bound: True
@@ -104,13 +106,29 @@ Plot: Red
 	basisu: 1 0 0
 	basisv: 0 1 0
 	boundaries: 1
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
 	coord: X-Y
-	extends: 429.982 262.152
+	cpd: 0
+	extends: 429.982 266.032
+	grid: 0
+	index: 0
 	labels: 1
 	layer: 3D
 	origin: -39.9834 72.3029 180
 	subtype: Material
 	title: GeoViewer Red plot
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
 End
 
 # Geometry plot "GeoViewer Green plot"
@@ -121,10 +139,10 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 137.499 80.5149
+	extends: 0.695094 0.430678
 	labels: 1
 	layer: Media
-	origin: 22.9461 0 -23.1288
+	origin: -0.0869009 0 -126.614
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -137,10 +155,10 @@ Plot: Blue
 	basisv: 0.00429914 0.999986 -0.00301168
 	boundaries: 1
 	coord: U-V
-	extends: 120 73.1617
+	extends: 172.8 106.912
 	labels: 1
 	layer: 3D
-	origin: -47.2966 2.27096 -62.1405
+	origin: -36.1556 -2.09841 -80.6683
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -152,11 +170,89 @@ Plot: Magenta
 	basisu: -1 0 0
 	basisv: 0 1 0
 	boundaries: 1
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
 	coord: X-Y
-	extends: 27.9082 16.3421
+	cpd: 0
+	extends: 27.9082 17.2918
+	grid: 0
+	index: 0
 	labels: 1
 	layer: Media
 	origin: -10.7597 -2.56528 0
 	subtype: Material
 	title: GeoViewer Magenta plot
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# Geometry plot "Plot #6"
+Plot: hall-b_cone_plot06
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	boundaries: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: Z-X
+	cpd: 0
+	extends: 300 300
+	grid: 0
+	index: 0
+	labels: 0
+	origin: 0 0 0
+	subtype: Field Intensity
+	title: Plot #6
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# Geometry plot "Plot #6"
+Plot: hall-b_cone_plot07
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 0 1 0
+	boundaries: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: Z-Y
+	cpd: 0
+	extends: 300 300
+	grid: 0
+	index: 1
+	labels: 0
+	origin: 0 0 -127
+	subtype: Field Intensity
+	title: Plot #6
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
 End
