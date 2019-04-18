@@ -73,6 +73,36 @@ Material: NIOBIUM
 End
 
 # Material
+Material: DEUTERIU
+	alpha: 0
+	color: #6070D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: ZINK
+	alpha: 0
+	color: #B01070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: AP1d
+	alpha: 0
+	color: #70D090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
 Material: SS304L
 	alpha: 0
 	color: #20B070
@@ -92,11 +122,53 @@ Material: MANGANES
 	specular: 0.0
 End
 
+# Material
+Material: He4TG
+	alpha: 0
+	color: #203090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
 # Geometry Information
 Geometry:
 	Frame.bsplit: 0.5
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.5
+	Frame.tsplit: 0.01
+	Frame.vsplit: 0.99
+
+	# Layer
+	Layer: Media
+		Image: True
+		Image._visible: True
+		Image.file: Target_cad1.png
+		Image.marker: 7
+		Image.marker.0: 1114.0 754.25 0.0 0.0 -127.2
+		Image.marker.1: 981.25 754.5 0.0 0.0 -133.5
+		Image.marker.2: 981.25 679.75 3.5 0.0 -133.5
+		Image.marker.3: 981.75 828.5 -3.5 0.0 -133.5
+		Image.marker.4: 284.0 754.75 0.0 0.0 -166.8
+		Image.marker.5: 283.75 667.0 4.3 0.0 -166.8
+		Image.marker.6: 284.0 848.2 -4.3 0.0 -166.8
+		Options.shortcut: F3
+		Show._visible: True
+		layer: Media
+	End
+
+	# Layer
+	Layer: 3D
+		3D: True
+		3D._visible: True
+		3D.edgedetect: 1
+		Options.shortcut: F4
+		Options.viewport: 0
+		Show: 0
+		Show.lattice: 1
+		Show.voxel: 1
+		deflights: 1
+		layer: 3D
+	End
 End
 
 # Geometry plot "GeoViewer Red plot"
@@ -113,12 +185,12 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 429.982 266.032
+	extends: 120 8020.01
 	grid: 0
 	index: 0
 	labels: 1
 	layer: 3D
-	origin: -39.9834 72.3029 180
+	origin: -30.0975 12.9388 180
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -139,10 +211,10 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 0.695094 0.430678
+	extends: 5.16461 3.08952
 	labels: 1
 	layer: Media
-	origin: -0.0869009 0 -126.614
+	origin: 0.804252 0 -131.967
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -151,14 +223,14 @@ End
 Plot: Blue
 	Format: .eps
 	Type:   Geometry
-	basisu: -0.515677 0.00479735 0.85677
-	basisv: 0.00429914 0.999986 -0.00301168
+	basisu: -0.484843 -0.0320857 0.874012
+	basisv: 0.335922 0.915844 0.219968
 	boundaries: 1
 	coord: U-V
-	extends: 172.8 106.912
+	extends: 69.4444 0.0684181
 	labels: 1
 	layer: 3D
-	origin: -36.1556 -2.09841 -80.6683
+	origin: 7.70981 -24.997 -144.25
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -167,22 +239,22 @@ End
 Plot: Magenta
 	Format: .eps
 	Type:   Geometry
-	basisu: -1 0 0
-	basisv: 0 1 0
+	basisu: 1 0 0
+	basisv: 0 0 -1
 	boundaries: 1
 	cbcolors: 0
 	cblog: 0
 	cbpalette: FLUKA
 	cbround: 0
 	cbtics: 0
-	coord: X-Y
+	coord: X-Z
 	cpd: 0
-	extends: 27.9082 17.2918
+	extends: 207.36 0.204497
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: -10.7597 -2.56528 0
+	origin: -133.807 -2.56528 -51.5347
 	subtype: Material
 	title: GeoViewer Magenta plot
 	x2log: 0

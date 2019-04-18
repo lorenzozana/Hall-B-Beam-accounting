@@ -8,6 +8,13 @@ BEAM
 BEAMPOS
 PHYSICS           1.                                                  COALESCE
 PHYSICS                                                               EVAPORAT
+!point           0.0       0.0    -127.2                              marker1
+!point           0.0       0.0    -133.5                              marker2
+!point           3.5       0.0    -133.5                              marker3
+!point          -3.5       0.0    -133.5                              marker4
+!point           0.0       0.0    -166.8                              marker5
+!point           4.3       0.0    -166.8                              marker6
+!point          -4.3       0.0    -166.8                              marker7
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 GEOBEGIN                                                              COMBNAME
     0    0          
@@ -18,8 +25,8 @@ SPH void       0.0 0.0 0.0 10000.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.2 0.25
 RPP tghold1    -1.3 1.3 -0.5 0.5 -127.357 -127.297
-RPP tghold2    34.97 35.03 -0.5 0.5 -137. -125.097
-RPP tghold3    -35.03 -34.97 -0.5 0.5 -137. -125.097
+RPP tghold2    3. 3.5 -0.5 0.5 -150. -129.9
+RPP tghold3    -3.50 -3. -0.5 0.5 -150. -129.85
 TRC red_o      0.0 0.0 -72.17 0.0 0.0 88.346 3.7915 7.5295
 TRC red_i      0.0 0.0 -72.17 0.0 0.0 88.346 3.4615 7.1995
 RCC yel1_o     0.0 0.0 4.563 0.0 0.0 11.42 3.979
@@ -44,12 +51,24 @@ TRC blu2_i     0.0 0.0 5.761 0.0 0.0 10.332 9.6215 10.4385
 RCC sil1_o     0.0 0.0 36.163 0.0 0.0 66.151 3.96
 RCC sil1_i     0.0 0.0 36.163 0.0 0.0 66.151 3.64
 RCC sil2_o     0.0 0.0 92.021 0.0 0.0 2.187 10.1
+RPP Pmot       3.3 4.5 -0.5 0.5 -164.4 -161.7
+RPP Pmot1      3.4 4.4 -0.4 0.4 -164.25 -161.85
+RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
+$start_translat 0 0 -217.0363
+TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
+RCC sol1_o     0.0 0.0 0.0 0.0 0.0 178.344 102.
+RCC sol2_i     0.0 0.0 42.5 0.0 0.0 91.694 39.
+TRC sol3_i     0.0 0.0 134.194 0.0 0.0 441.5 39. 78.4
+$end_translat 
 END
 * Black hole
 BLKBODY      5 +blkbody -void
 * Void around
 HallAir      5 +void -target -red_o -yel1_o -yel2_o -gold1_o -purp1_o -purp2_o -blu1_o -blu2_o
-               -sil1_o -sil2_o -tghold1 -tghold2 -tghold3
+               -sil1_o -sil2_o -tghold1 -tghold2 -tghold3 -( +sol1_o -sol1_i -sol2_i -sol3_i )
+               -( +Pmot -Pmot1 ) -TGLIQ
+TGliq        5 +TGLIQ
+Motor        5 +Pmot -Pmot1
 Vacuum       5 +red_i -yel1_o -yel2_o -gold2_o -gold1_o
                | +yel1_i
                | +yel2_i -sil1_o
@@ -78,11 +97,16 @@ ConBlu       5 +blu1_o -blu1_i
                | +blu2_o -blu2_i
 ConSil       5 +sil1_o -sil1_i
                | +sil2_o -sil1_o
+SOLEN        5 +sol1_o -sol1_i -sol2_i -sol3_i
 END
 GEOEND
 * Aluminum oxide
 *
 MATERIAL                            3.97                              AL2O3
+MATERIAL                             8.8                              AP1d
+COMPOUND       -0.63    COPPER     -0.26    NICKEL    -0.005  MANGANESAP1d
+COMPOUND      -0.011      LEAD    -0.006       TIN   -0.0025      IRONAP1d
+COMPOUND     -0.0855      ZINK                                        AP1d
 MATERIAL                            17.5                              W5Ni3Fe
 MATERIAL                            7.83                              SS304L
 COMPOUND    -0.69855      IRON      -.18  CHROMIUM      -.09    NICKELSS304L
@@ -93,6 +117,13 @@ MATERIAL         25.                7.44                              MANGANES
 MATERIAL         41.                8.57                              NIOBIUM
 MATERIAL         15.                 2.2                              PHOSPHO
 MATERIAL         16.                  2.                              SULFUR
+MATERIAL         30.               7.133                              ZINK
+MATERIAL          1.    2.0079     0.169                            2.DEUTERIU
+MATERIAL          2.    4.0026 1.6632E-4                            4.HELIUM
+MATERIAL                          0.1249                              He4TG
+COMPOUND         1.0    HELIUM                                        He4TG
+MAT-PROP                            41.8    HELIUM
+STERNHEI     11.1393    2.2017    3.6122   0.13443    5.8347       0.0HELIUM
 MAT-PROP                            180.    SULFUR
 STERNHEI      4.6659     0.158    2.7159   0.33992    2.6456       .14SULFUR
 MAT-PROP                            173.   PHOSPHO
@@ -115,6 +146,7 @@ STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
 ASSIGNMA      COPPER    TARGET
+ASSIGNMA         AIR     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
 ASSIGNMA     W5Ni3Fe    ConYel
@@ -124,6 +156,8 @@ ASSIGNMA        LEAD   ConRed2
 ASSIGNMA     W5Ni3Fe    ConBlu
 ASSIGNMA     W5Ni3Fe    ConSil
 ASSIGNMA       AL2O3    TGHOLD
+ASSIGNMA        IRON     SOLEN                            1.
+ASSIGNMA        AP1d     Motor                            1.
 MGNFIELD         30.     0.001      0.01
 LAM-BIAS                  0.02              PHOTON    PHOTON
 * Set the random number seed
