@@ -2,11 +2,11 @@
 # FLUKA Project file
 Version: 2
 Title: 
-Input: hall-b_cone.inp
+Input: hall-b_cone_H2.inp
 Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
-Page: Flair
+Page: Input
 Source: MagneticField/magfld_solenoid_2.f
 DefMain: True
 LinkPrg: lfluka
@@ -17,9 +17,836 @@ F77dline: False
 Run: <default>
 	Prev:     0
 	Last:     5
-	Status:   0
+	Status:   2
 	Pid:      0
-	StartRun: 0
+	StartRun: 1556304629
+	Family:  hall-b_cone_H2_aa hall-b_cone_H2_ab hall-b_cone_H2_ac hall-b_cone_H2_ad hall-b_cone_H2_ae hall-b_cone_H2_af hall-b_cone_H2_ag hall-b_cone_H2_ah hall-b_cone_H2_ai hall-b_cone_H2_aj hall-b_cone_H2_ak hall-b_cone_H2_al hall-b_cone_H2_am hall-b_cone_H2_an hall-b_cone_H2_ao hall-b_cone_H2_ap hall-b_cone_H2_aq hall-b_cone_H2_ar hall-b_cone_H2_as hall-b_cone_H2_at hall-b_cone_H2_au hall-b_cone_H2_av hall-b_cone_H2_aw hall-b_cone_H2_ax hall-b_cone_H2_ay hall-b_cone_H2_az hall-b_cone_H2_ba hall-b_cone_H2_bb hall-b_cone_H2_bc hall-b_cone_H2_bd
+
+	# USRxxx data file: hall-b_cone_H2_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_aa
+	Rnd:      123457
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4754
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_aa_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_aa_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ab
+	Rnd:      123458
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4759
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ab_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ab_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ac
+	Rnd:      123459
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4763
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ac_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ac_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ad
+	Rnd:      123460
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4782
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ad_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ad_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ae
+	Rnd:      123461
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4818
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ae_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ae_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_af
+	Rnd:      123462
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4871
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_af_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_af_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ag
+	Rnd:      123463
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4913
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ag_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ag_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ah
+	Rnd:      123464
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4943
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ah_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ah_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ai
+	Rnd:      123465
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      4977
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ai_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ai_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_aj
+	Rnd:      123466
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5014
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_aj_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_aj_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ak
+	Rnd:      123467
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5042
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ak_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ak_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_al
+	Rnd:      123468
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5073
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_al_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_al_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_am
+	Rnd:      123469
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5101
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_am_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_am_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_an
+	Rnd:      123470
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5133
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_an_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_an_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ao
+	Rnd:      123471
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5162
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ao_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ao_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ap
+	Rnd:      123472
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5191
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ap_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ap_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_aq
+	Rnd:      123473
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5223
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_aq_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_aq_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ar
+	Rnd:      123474
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5257
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ar_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ar_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_as
+	Rnd:      123475
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5288
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_as_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_as_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_at
+	Rnd:      123476
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5334
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_at_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_at_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_au
+	Rnd:      123477
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5372
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_au_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_au_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_av
+	Rnd:      123478
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5397
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_av_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_av_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_aw
+	Rnd:      123479
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5429
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_aw_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_aw_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ax
+	Rnd:      123480
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5466
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ax_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ax_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ay
+	Rnd:      123481
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5491
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ay_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ay_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_az
+	Rnd:      123482
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5522
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_az_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_az_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_ba
+	Rnd:      123483
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5555
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_ba_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_ba_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_bb
+	Rnd:      123484
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5587
+	StartRun: 1556305771
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_bb_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_bb_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_bc
+	Rnd:      123485
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5617
+	StartRun: 1556305772
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_bc_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_bc_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_cone_H2_bd
+	Rnd:      123486
+	Prev:     0
+	Last:     5
+	Status:   2
+	Pid:      5651
+	StartRun: 1556305772
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_H2_bd_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_cone_H2_bd_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
 End
 
 # Material
@@ -63,6 +890,16 @@ Material: 92W5Ni3Fe
 End
 
 # Material
+Material: H-LIQUID
+	alpha: 0
+	color: #A070B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
 Material: NIOBIUM
 	alpha: 0
 	color: #7030D0
@@ -83,9 +920,9 @@ Material: DEUTERIU
 End
 
 # Material
-Material: ZINK
+Material: MANGANES
 	alpha: 0
-	color: #B01070
+	color: #B050D0
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -113,9 +950,9 @@ Material: SS304L
 End
 
 # Material
-Material: MANGANES
+Material: ZINK
 	alpha: 0
-	color: #B050D0
+	color: #B01070
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -161,10 +998,11 @@ Geometry:
 		3D: True
 		3D._visible: True
 		3D.edgedetect: 1
+		3D.fov: 22.8
 		3D.shadows: 0
 		Options.shortcut: F4
 		Options.viewport: 0
-		Show: 0
+		Show._visible: True
 		Show.lattice: 1
 		Show.voxel: 1
 		deflights: 1
@@ -186,12 +1024,12 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 120 70.1084
+	extends: 11.2157 6.55262
 	grid: 0
 	index: 0
 	labels: 1
 	layer: 3D
-	origin: -30.0975 12.9388 180
+	origin: 2.25135 -2.0913 180
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -212,10 +1050,10 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 38.3735 22.4413
+	extends: 95.4855 55.8411
 	labels: 1
 	layer: Media
-	origin: 4.89437 0 -174.13
+	origin: 15.6804 0 -182.293
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -228,10 +1066,10 @@ Plot: Blue
 	basisv: 0.128648 0.991566 0.015721
 	boundaries: 1
 	coord: U-V
-	extends: 120 69.9901
+	extends: 27.9082 16.2775
 	labels: 1
 	layer: 3D
-	origin: -21.6434 23.1328 -163.902
+	origin: -26.6636 2.3991 -136.326
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -250,12 +1088,12 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 207.36 6819.85
+	extends: 358.319 209.196
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: -258.223 -2.56528 -51.5347
+	origin: -110.992 -2.56528 -94.7412
 	subtype: Material
 	title: GeoViewer Magenta plot
 	x2log: 0
@@ -326,6 +1164,84 @@ Plot: hall-b_cone_plot07
 	y2log: 0
 	y2tics: 0
 	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone H2 21"
+Plot: hall-b_cone_H2_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: hall-b_cone_H2_21.bnn
+	det: 2
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 0.13308896180486671
+	lw.0: 0
+	max: 2.42593687E-05
+	min: 2.32584088E-15
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone H2 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone H2 23"
+Plot: hall-b_cone_H2_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 4
+	file.0: hall-b_cone_H2_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D hall-b cone H2 23
+	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
 	zlog: 0
 	ztics: 0
 End

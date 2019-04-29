@@ -3,18 +3,11 @@ TITLE
 * Set the defaults for precision simulations
 DEFAULTS                                                              PRECISIO
 * Define the beam characteristics
-BEAM
+BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
 * Define the beam position
-BEAMPOS
+BEAMPOS          0.0       0.0     -138.       0.0       0.0
 PHYSICS           1.                                                  COALESCE
 PHYSICS                                                               EVAPORAT
-!point           0.0       0.0    -127.2                              marker1
-!point           0.0       0.0    -133.5                              marker2
-!point           3.5       0.0    -133.5                              marker3
-!point          -3.5       0.0    -133.5                              marker4
-!point           0.0       0.0    -166.8                              marker5
-!point           4.3       0.0    -166.8                              marker6
-!point          -4.3       0.0    -166.8                              marker7
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 GEOBEGIN                                                              COMBNAME
     0    0          
@@ -24,14 +17,14 @@ SPH blkbody    0.0 0.0 0.0 100000.
 SPH void       0.0 0.0 0.0 10000.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.0141 0.25
-RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
+RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 0.5 0.5
 RPP tghold1    -1.3 1.3 -0.5 0.5 -127.357 -127.297
-RPP tghold2    3.0 3.5 -0.5 0.5 -167.0 -129.9
+RPP tghold2    3. 3.5 -0.5 0.5 -167. -129.9
 RPP tghold3    -3.50 -3. -0.5 0.5 -167. -129.85
 RCC tgc1_o     0.0 0.0 -138.25 0.0 0.0 1.05 2.7
 RCC tgc1_i     0.0 0.0 -138.25 0.0 0.0 .6 2.55
 RCC tgc2_i     0.0 0.0 -137.65 0.0 0.0 .65 2.25
-TRC tgc3_i     0.0 0.0 -137.0 0.0 0.0 1.6 2.25 1.155
+TRC tgc3_i     0.0 0.0 -137. 0.0 0.0 1.6 2.25 1.155
 TRC tgc4_i     0.0 0.0 -135.4 0.0 0.0 6.4 1.1765 0.745
 TRC tgc2_o     0.0 0.0 -137.2 0.0 0.0 2.05 2.7 1.16
 TRC tgc3_o     0.0 0.0 -135.15 0.0 0.0 6.15 1.16 0.75
@@ -73,11 +66,12 @@ BLKBODY      5 +blkbody -void
 * Void around
 HallAir      5 +void -target -red_o -yel1_o -yel2_o -gold1_o -purp1_o -purp2_o -blu1_o -blu2_o
                -sil1_o -sil2_o -tghold1 -tghold2 -tghold3 -( +sol1_o -sol1_i -sol2_i -sol3_i )
-               -( +Pmot -Pmot1 ) -tgc1_o -tgc2_o -tgc3_o
+               -Pmot -tgc1_o -tgc2_o -tgc3_o
                | +tgc1_i
                | +tgc2_i
                | +tgc3_i -TGLIQ
                | +tgc4_i -TGLIQ
+Motor1       5 +Pmot1
 TGliq        5 +TGLIQ
 TGAL         5 +tgc1_o -tgc1_i -tgc2_i
                | +tgc2_o -tgc2_i -tgc3_i -tgc4_i
@@ -135,7 +129,10 @@ MATERIAL         30.               7.133                              ZINK
 MATERIAL          1.    2.0079     0.169                            2.DEUTERIU
 MATERIAL          2.    4.0026 1.6632E-4                            4.HELIUM
 MATERIAL                          0.1249                              He4TG
-COMPOUND         1.0    HELIUM                                        He4TG
+COMPOUND          1.    HELIUM                                        He4TG
+MATERIAL          1.              0.0708                              H-LIQUID
+MAT-PROP                            21.8  H-LIQUID
+STERNHEI      3.2632    0.4759    1.9215   0.13483    5.6249       0.0H-LIQUID
 MAT-PROP                            41.8    HELIUM
 STERNHEI     11.1393    2.2017    3.6122   0.13443    5.8347       0.0HELIUM
 MAT-PROP                            180.    SULFUR
@@ -156,10 +153,13 @@ COMPOUND        -.92  TUNGSTEN      -.05    NICKEL      -.03      IRONW5Ni3Fe
 COMPOUND    -.470749    OXYGEN  -.529251  ALUMINUM                    AL2O3
 MAT-PROP                           145.2     AL2O3
 STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
+LOW-MAT         ZINK       30.       -2.      296.                    ZINC
+LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
-ASSIGNMA        LEAD    TARGET
+ASSIGNMA     SILICON    Motor1                            1.
+ASSIGNMA        LEAD    TARGET                            1.
 ASSIGNMA         AIR     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
@@ -172,11 +172,23 @@ ASSIGNMA     W5Ni3Fe    ConSil
 ASSIGNMA       AL2O3    TGHOLD
 ASSIGNMA        IRON     SOLEN                            1.
 ASSIGNMA        AP1d     Motor                            1.
-ASSIGNMA    ALUMINUM      TGAL     Motor                  1.
+ASSIGNMA    ALUMINUM      TGAL                            1.
 MGNFIELD         30.     0.001      0.01
 LAM-BIAS                  0.02              PHOTON    PHOTON
+USRBIN           10.      DOSE      -21.       50.       50.       0.0Dose
+USRBIN          -50.      -50.     -180.      200.      200.      180. &
+USRBIN           10.   DOSE-EM      -21.       50.       50.       0.0DoseEM
+USRBIN          -50.      -50.     -180.      200.      200.      180. &
+USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
+USRBDX           0.1  0.000001      100.                            1. &
+USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
+USRBDX           0.1  0.000001      100.                            1. &
+USRBDX           -1.    PROTON      -23.   HallAir     Motor          p_motor
+USRBDX           0.1  0.000001      100.                            1. &
+USRBDX           -1.    PHOTON      -23.   HallAir     Motor          p_motor
+USRBDX           0.1  0.000001      100.                            1. &
 * Set the random number seed
-RANDOMIZ          1.
+RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START
+START          1000.
 STOP
