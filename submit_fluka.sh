@@ -1,7 +1,7 @@
 file="timeline.txt"
 # 3600/5 = 720
 hconv=720 
-run_per_conf=20
+run_per_conf=100
 sub=0
 shift=0
 here_pos=`pwd`
@@ -24,33 +24,33 @@ while read line ; do
     energy=`echo $energy |  sed 's/ /*/g'`
     energy=`awk -vp=$energy 'BEGIN{printf "%4s",p}'`
     #added 1 second in order to avoid overlapping on the last one in time
-    shift1=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 3601 }'`
-    shift2=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 43201 }'`
-    shift3=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 86401 }'`
-    shift4=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 604801 }'`
-    shift5=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 2592001 }'`
-    echo "Conf n.="$conf_n "target="$target " seconds="$seconds "current="$current " energy="$energy " shift="$shift
-    perl -pe "s/.*/BEAM            -$energy             .142857      -0.1      -0.1          ELECTRON/ if $. == 6" < hall-b_cone_${target}.inp >  hallB_target_${target}_${conf_n}.inp
-    j=0
-    while [ $j -le ${run_per_conf} ] 
-    do
-	rn=`perl -e 'my $minimum = 1E8 ; my $range = 9E7 ; my $random_number = int(rand($range)) + $minimum ; print $random_number '`
-	perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 195" < hallB_target_${target}_${conf_n}.inp > hallB_target_${target}_${conf_n}_${j}.inp 
-	echo "PROJECT: radcon" > farmrun_radcon_hall${conf_n}_${j}.jsub 
-	echo "TRACK: simulation" >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	echo "JOBNAME: HallBtarget"${conf_n} >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	echo "COMMAND: ~/Hall-B/run_fluka_multiple.sh" >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	echo "MEMORY: 2000 MB" >> farmrun_radcon_hall${conf_n}_${j}.jsub                        
-	echo "OS: centos7" >> farmrun_radcon_hall${conf_n}_${j}.jsub                            
-	echo "INPUT_FILES: "${here_pos}"/hallB_target_"${target}"_"${conf_n}"_"${j}".inp" >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	if [ ${sub} -eq "1" ]                                                                               
-        then
-	    echo "Submitting job Conf n." $conf_n " n." $j
-	    jsub farmrun_radcon_hall${conf_n}_${j}.jsub
-	fi
-	((j=j+1))
-    done
-    shift=`awk -vp=$hours -vq=$hconv -vr=$shift 'BEGIN{printf "%d" ,p * q * 5 + r }'`
+    if [ "${target}" == "NO" ]
+    then
+	echo "No target time"
+    else
+	echo "Conf n.="$conf_n "target="$target " seconds="$seconds "current="$current " energy="$energy " shift="$shift
+	perl -pe "s/.*/BEAM            -$energy             .142857      -0.1      -0.1          ELECTRON/ if $. == 6" < hall-b_cone_${target}.inp >  hallB_target_${target}_${conf_n}.inp
+	j=0
+	while [ $j -le ${run_per_conf} ] 
+	do
+	    rn=`perl -e 'my $minimum = 1E8 ; my $range = 9E7 ; my $random_number = int(rand($range)) + $minimum ; print $random_number '`
+	    perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 195" < hallB_target_${target}_${conf_n}.inp > hallB_target_${target}_${conf_n}_${j}.inp 
+	    echo "PROJECT: radcon" > farmrun_radcon_hall${conf_n}_${j}.jsub 
+	    echo "TRACK: simulation" >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	    echo "JOBNAME: HallBtarget"${conf_n} >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	    echo "COMMAND: ~/Hall-B/Hall-B-Beam-accounting/run_fluka.tcsh" >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	    echo "MEMORY: 2000 MB" >> farmrun_radcon_hall${conf_n}_${j}.jsub                        
+	    echo "OS: centos7" >> farmrun_radcon_hall${conf_n}_${j}.jsub                            
+	    echo "INPUT_FILES: "${here_pos}"/hallB_target_"${target}"_"${conf_n}"_"${j}".inp" >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	    if [ ${sub} -eq "1" ]                                                                               
+            then
+		echo "Submitting job Conf n." $conf_n " n." $j
+		jsub farmrun_radcon_hall${conf_n}_${j}.jsub
+	    fi
+	    ((j=j+1))
+	done
+	shift=`awk -vp=$hours -vq=$hconv -vr=$shift 'BEGIN{printf "%d" ,p * q * 5 + r }'`
+    fi
 done < $file_rev
 
 # read the file in reverse
