@@ -30,19 +30,19 @@ while read line ; do
     shift4=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 604801 }'`
     shift5=`awk -vp=$shift 'BEGIN{printf "%7d" ,p + 2592001 }'`
     echo "Conf n.="$conf_n "target="$target " seconds="$seconds "current="$current " energy="$energy " shift="$shift
-    perl -pe "s/.*/BEAM           -$energy             .142857      0.01      0.01          ELECTRON/ if $. == 6 ; s/.*/DCYTIMES    $shift1.  $shift2.  $shift3.  $shift4.  $shift5./ if $. == 1066" < hallC_beampipe_${target}.inp >  hallC_beampipe_${target}_${conf_n}.inp
+    perl -pe "s/.*/BEAM            -$energy             .142857      -0.1      -0.1          ELECTRON/ if $. == 6" < hall-b_cone_${target}.inp >  hallB_target_${target}_${conf_n}.inp
     j=0
     while [ $j -le ${run_per_conf} ] 
     do
 	rn=`perl -e 'my $minimum = 1E8 ; my $range = 9E7 ; my $random_number = int(rand($range)) + $minimum ; print $random_number '`
-	perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 9" < hallC_beampipe_${target}_${conf_n}.inp > hallC_beampipe_${target}_${conf_n}_${j}.inp 
+	perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 195" < hallB_target_${target}_${conf_n}.inp > hallB_target_${target}_${conf_n}_${j}.inp 
 	echo "PROJECT: radcon" > farmrun_radcon_hall${conf_n}_${j}.jsub 
 	echo "TRACK: simulation" >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	echo "JOBNAME: HallC_beampipe"${conf_n} >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	echo "COMMAND: ~/Hall-C/run_fluka_multiple.sh" >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	echo "JOBNAME: HallBtarget"${conf_n} >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	echo "COMMAND: ~/Hall-B/run_fluka_multiple.sh" >> farmrun_radcon_hall${conf_n}_${j}.jsub
 	echo "MEMORY: 2000 MB" >> farmrun_radcon_hall${conf_n}_${j}.jsub                        
 	echo "OS: centos7" >> farmrun_radcon_hall${conf_n}_${j}.jsub                            
-	echo "INPUT_FILES: "${here_pos}"/hallC_beampipe_"${target}"_"${conf_n}"_"${j}".inp" >> farmrun_radcon_hall${conf_n}_${j}.jsub
+	echo "INPUT_FILES: "${here_pos}"/hallB_target_"${target}"_"${conf_n}"_"${j}".inp" >> farmrun_radcon_hall${conf_n}_${j}.jsub
 	if [ ${sub} -eq "1" ]                                                                               
         then
 	    echo "Submitting job Conf n." $conf_n " n." $j

@@ -6,8 +6,6 @@ DEFAULTS                                                              PRECISIO
 BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
 * Define the beam position
 BEAMPOS          0.0       0.0     -138.       0.0       0.0
-PHYSICS           1.                                                  COALESCE
-PHYSICS                                                               EVAPORAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT          ELECTNUC
 GEOBEGIN                                                              COMBNAME
@@ -18,7 +16,7 @@ SPH blkbody    0.0 0.0 0.0 100000.
 SPH void       0.0 0.0 0.0 10000.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.0966 0.25
-RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5.0 0.5
+RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
 RPP tghold1    -1.3 1.3 -0.5 0.5 -127.357 -127.297
 RPP tghold2    3. 3.5 -0.5 0.5 -167. -129.9
 RPP tghold3    -3.50 -3. -0.5 0.5 -167. -129.85
@@ -185,16 +183,18 @@ USRBIN           11.      DOSE      -21.       50.       0.0       0.0Dose
 USRBIN           0.0       0.0     -180.      100.        1.      180. &
 USRBIN           11.   DOSE-EM      -21.       50.       0.0       0.0DoseEM
 USRBIN           0.0       0.0     -180.      100.        1.      180. &
+USRBIN           11.  SI1MEVNE      -21.       50.       0.0       0.01MeVeq
+USRBIN           0.0       0.0     -180.      100.        1.      180. &
 USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.    PROTON      -23.   HallAir     Motor          p_motor
 USRBDX           0.1  0.000001      100.                            1. &
-USRBDX           -1.    PHOTON      -23.   HallAir     Motor          p_motor
+USRBDX           -1.    PHOTON      -23.   HallAir     Motor          ph_motor
 USRBDX           0.1  0.000001      100.                            1. &
 * Set the random number seed
 RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START          1000.
+START         10000.
 STOP

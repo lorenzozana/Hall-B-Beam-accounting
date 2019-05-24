@@ -2,12 +2,13 @@
 # FLUKA Project file
 Version: 2
 Title: 
-Input: hall-b_cone_Pb.inp
+Input: hall-b_cone_Ar.inp
 Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
 Page: Flair
 Source: MagneticField/magfld_solenoid_2.f
+Source: Source/source_ea_double_new.f
 DefMain: True
 LinkPrg: lfluka
 F77bound: True
@@ -16,13 +17,12 @@ F77dline: False
 # Run information
 Run: <default>
 	Prev:     0
-	Last:     5
+	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1556304629
-	Family:  hall-b_cone_Pb_aa hall-b_cone_Pb_ab hall-b_cone_Pb_ac hall-b_cone_Pb_ad hall-b_cone_Pb_ae hall-b_cone_Pb_af hall-b_cone_Pb_ag hall-b_cone_Pb_ah hall-b_cone_Pb_ai hall-b_cone_Pb_aj hall-b_cone_Pb_ak hall-b_cone_Pb_al hall-b_cone_Pb_am hall-b_cone_Pb_an hall-b_cone_Pb_ao hall-b_cone_Pb_ap hall-b_cone_Pb_aq hall-b_cone_Pb_ar hall-b_cone_Pb_as hall-b_cone_Pb_at hall-b_cone_Pb_au hall-b_cone_Pb_av hall-b_cone_Pb_aw hall-b_cone_Pb_ax hall-b_cone_Pb_ay hall-b_cone_Pb_az hall-b_cone_Pb_ba hall-b_cone_Pb_bb hall-b_cone_Pb_bc hall-b_cone_Pb_bd
+	StartRun: 1558459548
 
-	# USRxxx data file: hall-b_cone_Pb_21.bnn
+	# USRxxx data file: hall-b_cone_Ar_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
@@ -30,819 +30,17 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: hall-b_cone_Pb_23.bnx
+	# USRxxx data file: hall-b_cone_Ar_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
-End
 
-# Run information
-Run: hall-b_cone_Pb_aa
-	Rnd:      123457
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_aa_21.bnn
+	# USRxxx data file: hall-b_cone_Ar_25.bnx
 	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_aa_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ab
-	Rnd:      123458
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ab_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ab_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ac
-	Rnd:      123459
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ac_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ac_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ad
-	Rnd:      123460
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ad_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ad_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ae
-	Rnd:      123461
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ae_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ae_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_af
-	Rnd:      123462
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_af_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_af_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ag
-	Rnd:      123463
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ag_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ag_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ah
-	Rnd:      123464
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ah_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ah_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ai
-	Rnd:      123465
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ai_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ai_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_aj
-	Rnd:      123466
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_aj_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_aj_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ak
-	Rnd:      123467
-	Prev:     0
-	Last:     5
-	Status:   3
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ak_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ak_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_al
-	Rnd:      123468
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_al_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_al_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_am
-	Rnd:      123469
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_am_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_am_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_an
-	Rnd:      123470
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_an_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_an_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ao
-	Rnd:      123471
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820974
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ao_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ao_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ap
-	Rnd:      123472
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ap_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ap_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_aq
-	Rnd:      123473
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_aq_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_aq_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ar
-	Rnd:      123474
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ar_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ar_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_as
-	Rnd:      123475
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_as_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_as_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_at
-	Rnd:      123476
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_at_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_at_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_au
-	Rnd:      123477
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_au_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_au_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_av
-	Rnd:      123478
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_av_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_av_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_aw
-	Rnd:      123479
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_aw_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_aw_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ax
-	Rnd:      123480
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ax_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ax_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ay
-	Rnd:      123481
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ay_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ay_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_az
-	Rnd:      123482
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_az_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_az_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_ba
-	Rnd:      123483
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_ba_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_ba_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_bb
-	Rnd:      123484
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_bb_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_bb_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_bc
-	Rnd:      123485
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_bc_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_bc_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
-		Type: x
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-End
-
-# Run information
-Run: hall-b_cone_Pb_bd
-	Rnd:      123486
-	Prev:     0
-	Last:     5
-	Status:   5
-	Pid:      0
-	StartRun: 1556820975
-	Parent:    <default>
-
-	# USRxxx data file: hall-b_cone_Pb_bd_21.bnn
-	Data: \I_\U.\e
-		Unit: 21
-		Type: b
-		Rule: +,\I\d\d\d_fort\.\U
-		Rule: +,\I\d\d\d_ftn\.\U
-	End
-
-	# USRxxx data file: hall-b_cone_Pb_bd_23.bnx
-	Data: \I_\U.\e
-		Unit: 23
+		Unit: 25
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
@@ -920,9 +118,9 @@ Material: DEUTERIU
 End
 
 # Material
-Material: ZINK
+Material: MANGANES
 	alpha: 0
-	color: #B01070
+	color: #B050D0
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -950,9 +148,9 @@ Material: SS304L
 End
 
 # Material
-Material: MANGANES
+Material: ZINK
 	alpha: 0
-	color: #B050D0
+	color: #B01070
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -1011,9 +209,9 @@ Geometry:
 		Show.voxel: 1
 		Usrbin: True
 		Usrbin._visible: True
-		Usrbin.file: hall-b_cone_Pb_21.bnn
+		Usrbin.det: 2
+		Usrbin.file: hall-b_cone_Si_21.bnn
 		Usrbin.norm: 1.0
-		Usrbin.palette: Palette
 		deflights: 1
 		layer: 3D
 	End
@@ -1033,7 +231,7 @@ Plot: Red
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 2.93756 2.20317
+	extends: 2.93756 0.00289415
 	grid: 0
 	index: 0
 	labels: 1
@@ -1059,10 +257,10 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 18.5057 13.8793
+	extends: 55.2577 0.0544948
 	labels: 1
 	layer: Media
-	origin: 2.66725 0 -171.403
+	origin: 3.16594 0 -163.673
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -1075,10 +273,10 @@ Plot: Blue
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 144 108
+	extends: 120 71.7851
 	labels: 1
 	layer: 3D
-	origin: 15.3556 0 -108.84
+	origin: -7.67102 0 -100.057
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -1097,7 +295,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 69.4446 4633.5
+	extends: 69.4446 4641.21
 	grid: 0
 	index: 0
 	labels: 1
@@ -1188,17 +386,17 @@ Plot: hall-b_cone_H2_21_plot
 	cbround: 0
 	cbtics: 1
 	cpd: 0
-	datafile: hall-b_cone_H2_21.bnn
-	det: 2
+	datafile: Run/hallB_target_H2_7_25001_fort.21
+	det: 1
 	errors: 0
 	geo: -Auto-
 	grid: 0
 	hist: 2D Projection
 	index: 0
-	int: 0.13368259854488448
+	int: 0.13501866436338178
 	lw.0: 0
-	max: 2.42223741E-05
-	min: 2.19403371E-16
+	max: 4.91600344E-03
+	min: 1.82898922E-12
 	proj: Y
 	ps.0: 0
 	pt.0: 0
@@ -1230,7 +428,7 @@ Plot: hall-b_cone_H2_23_plot
 	cbtics: 0
 	cpd: 0
 	det.0: 6
-	file.0: hall-b_cone_H2_23_tab.lis
+	file.0: Run/accumulated_spectrum_23_tab.lis
 	grid: 0
 	index: 0
 	key.0: 1
@@ -1266,17 +464,17 @@ Plot: hall-b_cone_Pb_21_plot
 	cbround: 0
 	cbtics: 1
 	cpd: 0
-	datafile: hall-b_cone_Pb_21.bnn
-	det: 2
+	datafile: hall-b_cone_Si_21.bnn
+	det: 1
 	errors: 0
 	geo: -Auto-
 	grid: 0
 	hist: 2D Projection
 	index: 0
-	int: 0.12301085840854042
+	int: 0.12344914562872088
 	lw.0: 0
-	max: 2.84615974E-03
-	min: 9.58065136E-17
+	max: 2.97443592E-03
+	min: 4.32072862E-14
 	proj: Y
 	ps.0: 0
 	pt.0: 0
@@ -1307,7 +505,7 @@ Plot: hall-b_cone_Pb_23_plot
 	cbround: 0
 	cbtics: 0
 	cpd: 0
-	det.0: 6
+	det.0: 2
 	file.0: hall-b_cone_Pb_23_tab.lis
 	grid: 0
 	index: 0
@@ -1321,6 +519,121 @@ Plot: hall-b_cone_Pb_23_plot
 	show.0: 1
 	title: USR-1D hall-b cone Pb 23
 	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone NO 21"
+Plot: hall-b_cone_NO_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: hall-b_cone_NO_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 4.6592595559504284E-005
+	lw.0: 0
+	max: 5.67185343E-05
+	min: 1.05681761E-12
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone NO 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone NO 23"
+Plot: hall-b_cone_NO_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: hall-b_cone_NO_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D hall-b cone NO 23
+	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone NO 25"
+Plot: hall-b_cone_NO_25_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 2
+	file.0: hall-b_cone_NO_25_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 2
+	show.0: 1
+	title: USR-1D hall-b cone NO 25
+	with.0: points
 	x.0: 2
 	x2log: 0
 	x2tics: 0
