@@ -169,13 +169,13 @@ End
 
 # Geometry Information
 Geometry:
-	Frame.bsplit: 0.99
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.01
+	Frame.bsplit: 0.5
+	Frame.tsplit: 0.01
+	Frame.vsplit: 0.99
 
 	# Layer
 	Layer: Media
-		Image: True
+		3D.fov: 22.8
 		Image._visible: True
 		Image.file: Target_cad1.png
 		Image.marker: 7
@@ -187,12 +187,17 @@ Geometry:
 		Image.marker.5: 283.75 667.0 4.3 0.0 -166.8
 		Image.marker.6: 284.0 848.2 -4.3 0.0 -166.8
 		Options.shortcut: F3
+		Palette.alphamin: 1
+		Palette.max: 1e+14
+		Palette.min: 10000.0
 		Show._visible: True
 		layer: Media
 	End
 
 	# Layer
 	Layer: 3D
+		: True
+		._visible: True
 		3D: True
 		3D._visible: True
 		3D.edgedetect: 1
@@ -202,16 +207,20 @@ Geometry:
 		Options.viewport: 0
 		Palette: True
 		Palette._visible: True
-		Palette.max: 0.01
-		Palette.min: 1e-12
+		Palette.alphamin: 1
+		Palette.max: 1e+14
+		Palette.min: 10000.0
 		Show._visible: True
 		Show.lattice: 1
 		Show.voxel: 1
 		Usrbin: True
 		Usrbin._visible: True
-		Usrbin.det: 2
-		Usrbin.file: hall-b_cone_Si_21.bnn
-		Usrbin.norm: 1.0
+		Usrbin.alpha: 0
+		Usrbin.det: 1
+		Usrbin.file: Run3/dose_Si_14_21.bnn
+		Usrbin.input: 0
+		Usrbin.norm: 1.28911E+16
+		Usrbin.palette: Palette
 		deflights: 1
 		layer: 3D
 	End
@@ -231,12 +240,12 @@ Plot: Red
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 2.93756 0.00289415
+	extends: 8.77151 585.255
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: -0.297847 -4.49994 -171
+	origin: -4.52802 2.10105 -171
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -257,10 +266,10 @@ Plot: Green
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 55.2577 0.0544948
+	extends: 410.57 245.607
 	labels: 1
-	layer: Media
-	origin: 3.16594 0 -163.673
+	layer: 3D
+	origin: 1.13155 0 -285.582
 	subtype: Material
 	title: GeoViewer Green plot
 End
@@ -273,10 +282,10 @@ Plot: Blue
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 120 71.7851
+	extends: 2.60841 1.95631
 	labels: 1
-	layer: 3D
-	origin: -7.67102 0 -100.057
+	layer: Media
+	origin: 2.14324 0 -169.894
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -295,7 +304,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 69.4446 4641.21
+	extends: 69.4446 52.0834
 	grid: 0
 	index: 0
 	labels: 1
@@ -386,17 +395,17 @@ Plot: hall-b_cone_H2_21_plot
 	cbround: 0
 	cbtics: 1
 	cpd: 0
-	datafile: Run/hallB_target_H2_7_25001_fort.21
-	det: 1
+	datafile: Run3/accumulated_dose_21.bnn
+	det: 3
 	errors: 0
 	geo: -Auto-
 	grid: 0
 	hist: 2D Projection
 	index: 0
-	int: 0.13501866436338178
+	int: 11.279292045742832
 	lw.0: 0
-	max: 4.91600344E-03
-	min: 1.82898922E-12
+	max: 0.104778923
+	min: 1.51495456E-16
 	proj: Y
 	ps.0: 0
 	pt.0: 0
@@ -427,8 +436,8 @@ Plot: hall-b_cone_H2_23_plot
 	cbround: 0
 	cbtics: 0
 	cpd: 0
-	det.0: 6
-	file.0: Run/accumulated_spectrum_23_tab.lis
+	det.0: 0
+	file.0: Run3/spectrum_Pb_16_23_tab.lis
 	grid: 0
 	index: 0
 	key.0: 1
@@ -505,8 +514,8 @@ Plot: hall-b_cone_Pb_23_plot
 	cbround: 0
 	cbtics: 0
 	cpd: 0
-	det.0: 2
-	file.0: hall-b_cone_Pb_23_tab.lis
+	det.0: 0
+	file.0: Run3/accumulated_spectrum_23.bnx
 	grid: 0
 	index: 0
 	key.0: 1
@@ -514,11 +523,12 @@ Plot: hall-b_cone_Pb_23_plot
 	lw.0: 2
 	name.0: Detector 1
 	ndetectors: 1
+	norm.0: 3.766355E+19
 	ps.0: 1
 	pt.0: 0
 	show.0: 1
 	title: USR-1D hall-b cone Pb 23
-	with.0: histerror
+	with.0: errorbars
 	x.0: 2
 	x2log: 0
 	x2tics: 0
