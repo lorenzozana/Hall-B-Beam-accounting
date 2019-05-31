@@ -42,7 +42,9 @@ while read line ; do
 	    echo "MEMORY: 2000 MB" >> farmrun_radcon_hall${conf_n}_${j}.jsub                        
 	    echo "OS: centos7" >> farmrun_radcon_hall${conf_n}_${j}.jsub                            
 	    echo "INPUT_FILES: "${here_pos}"/hallB_target_"${target}"_"${conf_n}"_"${j}".inp" >> farmrun_radcon_hall${conf_n}_${j}.jsub
-	    if [ ${sub} -eq "1" ]                                                                               
+	    sub=0
+	    sub=`ls -1 /volatile/clas12/zana/hallB_target_${target}_${conf_n}_${j}*_fort.21 | wc -l`
+	    if [ ${sub} -eq "0" ]                                                                               
             then
 		echo "Submitting job Conf n." $conf_n " n." $j
 		jsub farmrun_radcon_hall${conf_n}_${j}.jsub
@@ -52,5 +54,3 @@ while read line ; do
 	shift=`awk -vp=$hours -vq=$hconv -vr=$shift 'BEGIN{printf "%d" ,p * q * 5 + r }'`
     fi
 done < $file_rev
-
-# read the file in reverse
