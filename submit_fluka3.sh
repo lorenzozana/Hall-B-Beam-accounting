@@ -34,7 +34,7 @@ while read line ; do
 	while [ $j -le ${run_per_conf} ] 
 	do
 	    rn=`perl -e 'my $minimum = 1E8 ; my $range = 9E7 ; my $random_number = int(rand($range)) + $minimum ; print $random_number '`
-	    perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 195" < hallB_target_${target}_${conf_n}.inp > hallB_target_${target}_${conf_n}_${j}.inp 
+	    perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 197" < hallB_target_${target}_${conf_n}.inp > hallB_target_${target}_${conf_n}_${j}.inp 
 	    echo "PROJECT: radcon" > farmrun_radcon_hall${conf_n}_${j}.jsub 
 	    echo "TRACK: simulation" >> farmrun_radcon_hall${conf_n}_${j}.jsub
 	    echo "JOBNAME: HallBtarget"${conf_n} >> farmrun_radcon_hall${conf_n}_${j}.jsub

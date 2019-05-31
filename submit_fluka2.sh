@@ -41,7 +41,7 @@ while read line ; do
 	while [ $j -le ${run_per_conf} ] 
 	do
 	    rn=`perl -e 'my $minimum = 1E8 ; my $range = 9E7 ; my $random_number = int(rand($range)) + $minimum ; print $random_number '`
-	    perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 195" < Run2/hallB_target_${target}_${conf_n}.inp > Run2/hallB_target_${target}_${conf_n}_${j}.inp 
+	    perl -pe "s/.*/RANDOMIZ          1.$rn./ if $. == 197" < Run2/hallB_target_${target}_${conf_n}.inp > Run2/hallB_target_${target}_${conf_n}_${j}.inp 
 	    echo "nice /home/zana/Fluka/flutil/rfluka -e /home/zana/Hall-B/solenoid.exe -M 1 hallB_target_"${target}"_"${conf_n}"_"${j} >> Run2/list_exec.txt 
 	    ((j=j+1))
 	done
