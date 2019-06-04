@@ -180,11 +180,11 @@ MGNFIELD         30.     0.001      0.01
 LAM-BIAS                  0.02              PHOTON    PHOTON
 LAM-BIAS                  0.02            ELECTRON  ELECTRON
 USRBIN           11.      DOSE      -21.       50.       0.0      180.Dose
-USRBIN           0.0       0.0     -180.       50.        1.      180. &
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
-USRBIN           0.0       0.0     -180.       50.        1.      180. &
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
-USRBIN           0.0       0.0     -180.       50.        1.      180. &
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
@@ -196,5 +196,5 @@ USRBDX           0.1  0.000001      100.                            1. &
 * Set the random number seed
 RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START         10000.
+START        100000.
 STOP
