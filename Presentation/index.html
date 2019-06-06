@@ -1,0 +1,319 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Implementation of different simulation packages for radiation estimates at Jlab</title>
+
+    
+    <meta name="description" content="Hall-B Targets simulation for Run group M" />
+    <meta name="author" content="Lorenzo Zana" />
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+      MathJax.Hub.Config({
+      jax: ["input/TeX","output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']],
+      processEscapes: true
+      }
+      });
+    </script>
+    <script>
+        (function(d,ua){
+            if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+                d.className += " supported ";
+            }
+        })(document.documentElement, navigator.userAgent.toLowerCase());
+    </script>
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/prefixfree.js"></script>
+</head>
+<body>
+
+<div class="fallback-message">
+    <p>This presentation was build for latest <b>Chrome</b> or <b>Safari</b> browser.</p>
+    <p>You are viewing simplified view, but most of the CSS 3D will not work for you, sorry.</p>
+</div>
+
+<div id="impress">
+
+<div id="title" class="step" data-x="0" data-y="170" data-scale="0.9">
+    <h1>
+        <span class="d2">Simulation</span>
+        <span class="short">of</span><span class="transform">Accumulated</span>
+        <span class="d3">Radiation dose</span>
+	<span class="short">for</span><span class="transform">Solid/Liquid target cell (USM)</span>
+    </h1>
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="mailto:zana@jlab.org">zana@jlab.org</a></br>
+         <span class="name"><it>Radiation Control Department</it></span>
+        <a class="cognifide" href="http://www.jlab.org"><img src="img/Jlab_logo.png" width="180" /></a>
+    </span>
+
+</div>
+
+
+<div id="fluka_prex1" class="step" data-x="-970" data-y="300" data-rotate="0" data-scale="0.3">
+    <h1>Fluka simulation</h1>
+    
+    <h3><b>Code</b> repository</h3>
+    <ul>
+      <li>The code is available on <a class="cognifide" href="https://github.com/lorenzozana/Hall-B-Beam-accounting"><img src="img/GitHub_Logo.png" width="80" />click on</a></li>
+      <li>Please use it for reference and further updates</li>
+      <li>Full simulation with magnetic field in FLUKA</li>
+      <li>Modified source term for electronuclear</li>
+    </ul>
+</div>
+
+<div id="fluka_prex2" class="step" data-x="-970" data-y="600" data-rotate="0" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Target Cell implementation</li>
+    </ul>
+    <img class="littlegraph" src="../../PREX/Sc_Attac/Full_design/images/1w_fulldesign_side_ss.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_prex2" class="step" data-x="-970" data-y="600" data-rotate-x="90" data-scale="0.3">
+  <img class="graph" src="../../PREX/Sc_Attac/Full_design/images/1w_fulldesign_side_ss.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_prex3" class="step" data-x="-970" data-y="900" data-rotate="0" data-scale="0.3">
+    <h3>Model of Full Hall-A</h3>
+    
+    <img class="graph" src="../../PREX/Pictures/prex_sim_pictures/side_witharms.jpeg" alt="transform2d"/>
+</div>
+
+
+
+<div id="fluka_solid1" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
+  <h1>Fluka simulation</h1>
+        <h3><b>SoLID</b> collaboration</h3>
+	<ul>
+	  <li>Responsible for Radiation and activation studies for the collaboration</li>
+	  <li>Passed scrutiny of different panels for internal review</li> 
+	  <li>Defended the project in front of an international panel at the Director Review</li>
+	  <li>Answered all the question arised from the different panels in the latest version of the document (<a href="http://hallaweb.jlab.org/12GeV/SoLID/download/doc/solid_precdr_2017.pdf">here the official document</a> my contribution from page 180)</li>
+	</ul>
+    </ul>
+</div>
+
+<div id="fluka_solid2" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.2">
+    <h3>SoLID in Full Hall-A</h3>
+    
+    <img class="graph" src="img/Solid-pics/SoLID_Hall.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid3" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.2">
+    <h3>SoLID comparing with design (here the CLEO coil)</h3>
+    
+    <img class="littlegraph" src="img/Solid-pics/SoLID_coil.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid4" class="step" data-x="-500" data-y="900" data-rotate="0" data-scale="0.2">
+    <h3>SoLID activation in first baffle (different materials) </h3>
+    dose in $\left(\frac{mrem}{h}\right)$
+    <img class="graph" src="img/Solid-pics/First_baffle_material.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate="0" data-scale="0.2">
+    <h3>SoLID activation in first baffle </h3>
+    <ul>
+      <li>on left Residual Nuclei for Lead Target after 1hour cooling (Z vs A) 
+      <li>on right $\gamma$ spectrum in Curie at 2 different cooling times</li>
+    </ul>
+    <img class="littlegraph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
+</div>
+<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate-x="90" data-scale="0.2">
+  <img class="graph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
+</div>
+<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate="0" data-scale="0.2">
+    <h3>Activation study with SoLID </h3>
+    <ul>
+      <li> power deposited
+      <li> dose in $\left(\frac{mrem}{h}\right)$
+    </ul>
+    <img class="littlegraph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
+</div>
+<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate-y="90" data-scale="0.2">
+    <img class="graph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
+</div>
+
+<div id="geant4_prex1" class="step" data-x="500" data-y="300" data-rotate="0" data-scale="0.3">
+    <h1>GEANT4 simulation</h1>
+    
+    <h3><b>PREX</b> collaboration</h3>
+    <ul>
+      <li>Simulation </li>
+      <li>1MeV neutron equivalent studies for radiation inside the Hall</li>
+      <li>Model of the Full Hall-A with Arms and target environment</li>
+    </ul>
+</div>
+
+<div id="geant4_prex3" class="step" data-x="500" data-y="700" data-rotate-y="90" data-scale="0.2">
+  <img class="graph" src="../../PREX/Pictures/prex_sim_pictures/anim_top.gif" alt="transform2d"/>
+</div>
+
+
+<div id="geant4_prex3" class="step" data-x="500" data-y="700" data-rotate="0" data-scale="0.2">
+    <h3>PREX: Vertex 1MeV equivalent radiation</h3>
+    <img class="graph" src="../..//PREX/Shield_study/pictures/anim_Scattering_chamber_vert_zy.gif" alt="transform2d"/>
+</div>
+
+<div id="geant4_prex4" class="step" data-x="500" data-y="900" data-rotate="0" data-scale="0.2">
+    <h3>PREX: Direction 1MeV equivalent radiation</h3>
+    <img class="graph" src="../..//PREX/Shield_study/pictures/anim_Scattering_chamber_NIEL_pl2.gif" alt="transform2d"/>
+</div>
+
+
+<div id="geant4_solid1" class="step" data-x="970" data-y="300" data-rotate="0" data-scale="0.3">
+  <h1>GEANT4 simulation</h1>
+        <h3><b>SoLID</b> collaboration</h3>
+	<ul>
+	  <li> 1MeV equivalent neutron radiation on GEM
+	</ul>
+    </ul>
+</div>
+
+
+<div id="geant4_solid2" class="step" data-x="970" data-y="500" data-rotate="0" data-scale="0.2">
+    <h3>SoLID radiation on GEM</h3>
+    <ul>
+      <li> 1MeV equivalent neutron radiation on GEM 
+    </ul>
+    <img class="middlegraph" src="img/Solid-pics/SoLID_GEM.png" alt="transform2d"/>
+</div>
+
+<div id="geant4_fluka1" class="step" data-x="0" data-y="250" data-z="100" data-rotate="0" data-scale="0.3">
+  <h1>FLUKA + GEANT4 </h1>
+        <h4>Sometimes it is important to use both simulation to reach your result</h4>
+	<ul>
+	  <li> For example if you need to determine the activation from a part of equipment that is in proximity to anhighly activated material </li>
+	  <li> This was the case for PREX where one wanted to determing the activation of the materials in proximity of the highly activated collimator </li>
+	  <li> FLUKA is the best program for activation studies, but lacks the possibility to remove some material at a later time for activation purposes </li>
+	</ul>
+    </ul>
+</div>
+
+<div id="geant4_fluka2" class="step" data-x="0" data-y="420" data-z="100" data-rotate="0" data-scale="0.15">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> The material in question of this study was the attachment surrounding the collimator </li>
+      <li> Fluxes on the material was determined using GEANT4, since there was direct line on sight from the target (where GEANT4 gave more accurate description of the neutron fluxes) </li>
+    </ul>
+</div>
+<div id="geant4_fluka2" class="step" data-x="0" data-y="400" data-z="100" data-rotate="0" data-rotate-x="90" data-scale="0.15">
+    <img class="middlegraph" src="../..//PREX/Sc_Attac/Selection_flux/imgs/geant4_flux_1bin.gif" alt="transform2d"/>
+</div>
+
+<div id="geant4_fluka3" class="step" data-x="0" data-y="550" data-z="100" data-rotate="0" data-scale="0.15">
+    <h3>FLUKA + GEANT4</h3>
+    <b>The flux has been characterized</b>, depending on:
+    <ul>
+      <li> Particle id ($e^-,e^+,n,p,\gamma$) </li>
+      <li> Place of intersection with the Scattering Chamber Attachment surface  </li>
+      <li> Angle of intersection and energy spectrum</li>
+    </ul>
+    <h4><b>Information is then used in FLUKA simulation for activation studies</b></h4>
+    <ul>
+      <li> Can be used together to give a single answer </li>
+      <li> Each particle contribution could be studied separately for improve shielding design to mitigate activation </li>
+    </ul>
+</div>
+
+<div id="geant4_fluka4" class="step" data-x="0" data-y="700" data-z="100" data-rotate="0" data-scale="0.15">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> TOGETHER: Comparison of different materials </li>
+    </ul>
+    <img class="middlegraph" src="../..//PREX/Sc_Attac/1week/images/1w_full_scattach_0.png" alt="transform2d"/>
+</div>
+
+<div id="geant4_fluka5" class="step" data-x="0" data-y="830" data-z="100" data-rotate="0" data-scale="0.15">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> SEPARATE: Comparison $\gamma$(left) vs neutron(right) </li>
+    </ul>
+    <img class="littlegraph" src="../..//PREX/Sc_Attac/Comparison/images/1w_gamma_al.png" alt="geant4_fluka5"/>
+    <img class="littlegraph" src="../..//PREX/Sc_Attac/Comparison/images/1w_neutron_al.png" alt="geant4_fluka5"/>
+    
+</div>
+
+
+<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2">
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="../../">@lorenzozana</a>
+        <a class="cognifide" href="http://www2.ph.ed.ac.uk/nuclear/"><img src="img/1017px-University_of_Edinburgh_logo.svg.png" width="100" /></a>
+    </span>
+</div>
+
+</div>
+
+<script src="js/impress.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9117370-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
