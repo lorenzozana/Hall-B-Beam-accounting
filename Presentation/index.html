@@ -46,7 +46,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Implementation of different simulation packages for radiation estimates at Jlab</title>
+    <title>Simulation for USM target Run Group M</title>
 
     
     <meta name="description" content="Hall-B Targets simulation for Run group M" />
@@ -100,7 +100,7 @@
 </div>
 
 
-<div id="fluka_prex1" class="step" data-x="-970" data-y="300" data-rotate="0" data-scale="0.3">
+<div id="fluka_prex1" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
     <h1>Fluka simulation</h1>
     
     <h3><b>Code</b> repository</h3>
@@ -112,185 +112,105 @@
     </ul>
 </div>
 
-<div id="fluka_prex2" class="step" data-x="-970" data-y="600" data-rotate="0" data-scale="0.3">
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate="0" data-scale="0.3">
     <h4>Status Simulation</h4>
     <ul>
       <li> Target Cell implementation</li>
     </ul>
-    <img class="littlegraph" src="../../PREX/Sc_Attac/Full_design/images/1w_fulldesign_side_ss.png" alt="transform2d"/>
+    <img class="graph" src="img/HallBTg/status_target_cell.png"/>
+</div>
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate-y="90" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Moller Cone and Magnet</li>
+    </ul>
+    <img class="graph" src="img/HallBTg/status_target_enclosure.png"/>
+</div>
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate-x="90" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Magnetic Field</li>
+    </ul>
+    <img class="graph" src="img/HallBTg/SolenoidField.png" />
 </div>
 
-<div id="fluka_prex2" class="step" data-x="-970" data-y="600" data-rotate-x="90" data-scale="0.3">
-  <img class="graph" src="../../PREX/Sc_Attac/Full_design/images/1w_fulldesign_side_ss.png" alt="transform2d"/>
-</div>
-
-<div id="fluka_prex3" class="step" data-x="-970" data-y="900" data-rotate="0" data-scale="0.3">
-    <h3>Model of Full Hall-A</h3>
-    
-    <img class="graph" src="../../PREX/Pictures/prex_sim_pictures/side_witharms.jpeg" alt="transform2d"/>
-</div>
 
 
 
-<div id="fluka_solid1" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
-  <h1>Fluka simulation</h1>
-        <h3><b>SoLID</b> collaboration</h3>
+
+<div id="fluka_solid1" class="step" data-x="0" data-y="600" data-rotate="0" data-scale="0.3">
+  <h1>Accumulated Dose Run Group M</h1>
 	<ul>
-	  <li>Responsible for Radiation and activation studies for the collaboration</li>
-	  <li>Passed scrutiny of different panels for internal review</li> 
-	  <li>Defended the project in front of an international panel at the Director Review</li>
-	  <li>Answered all the question arised from the different panels in the latest version of the document (<a href="http://hallaweb.jlab.org/12GeV/SoLID/download/doc/solid_precdr_2017.pdf">here the official document</a> my contribution from page 180)</li>
+	  <li>For exposure pattern used the <a href="https://wiki.jlab.org/clas12-run/index.php/Run_Group_M#tab=Short_Term_Schedule"> beam schedule</a> given at the ERR </li>
+	  <li>For the USM target Cell I have used <a href"https://github.com/lorenzozana/Hall-B-Beam-accounting/blob/master/timeline.txt">this</a> schedule</li> 
 	</ul>
     </ul>
 </div>
 
-<div id="fluka_solid2" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.2">
-    <h3>SoLID in Full Hall-A</h3>
+<div id="fluka_solid2" class="step" data-x="600" data-y="600" data-rotate="0" data-scale="0.2">
+  <ul>
+    <li>  Accumulated Dose(rad) for full experiment</li>
+  </ul>
     
-    <img class="graph" src="img/Solid-pics/SoLID_Hall.png" alt="transform2d"/>
+    <img class="graph" src="img/HallBTg/dose_rad.png" alt="transform2d"/>
 </div>
 
-<div id="fluka_solid3" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.2">
-    <h3>SoLID comparing with design (here the CLEO coil)</h3>
+<div id="fluka_solid2" class="step" data-x="600" data-y="400" data-rotate="0" data-scale="0.2">
+   <ul>
+    <li> Accumulated Dose(rad) for full experiment (just EM)</li>
+  </ul>
     
-    <img class="littlegraph" src="img/Solid-pics/SoLID_coil.png" alt="transform2d"/>
+    <img class="graph" src="img/HallBTg/dose_rad_em.png" alt="transform2d"/>
 </div>
 
-<div id="fluka_solid4" class="step" data-x="-500" data-y="900" data-rotate="0" data-scale="0.2">
-    <h3>SoLID activation in first baffle (different materials) </h3>
-    dose in $\left(\frac{mrem}{h}\right)$
-    <img class="graph" src="img/Solid-pics/First_baffle_material.png" alt="transform2d"/>
-</div>
-
-<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate="0" data-scale="0.2">
-    <h3>SoLID activation in first baffle </h3>
+<div id="fluka_solid3" class="step" data-x="600" data-y="200" data-rotate="0" data-scale="0.2">
     <ul>
-      <li>on left Residual Nuclei for Lead Target after 1hour cooling (Z vs A) 
-      <li>on right $\gamma$ spectrum in Curie at 2 different cooling times</li>
-    </ul>
-    <img class="littlegraph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
-</div>
-<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate-x="90" data-scale="0.2">
-  <img class="graph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
-</div>
-<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate="0" data-scale="0.2">
-    <h3>Activation study with SoLID </h3>
-    <ul>
-      <li> power deposited
-      <li> dose in $\left(\frac{mrem}{h}\right)$
-    </ul>
-    <img class="littlegraph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
-</div>
-<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate-y="90" data-scale="0.2">
-    <img class="graph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
-</div>
-
-<div id="geant4_prex1" class="step" data-x="500" data-y="300" data-rotate="0" data-scale="0.3">
-    <h1>GEANT4 simulation</h1>
+    <li>Accumulated Dose(rad) for full experiment (Motor)</li>
+  </ul>
     
-    <h3><b>PREX</b> collaboration</h3>
+    <img class="graph" src="img/HallBTg/dose_rad_zoom2.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid3" class="step" data-x="600" data-y="0" data-rotate="0" data-scale="0.2">
     <ul>
-      <li>Simulation </li>
-      <li>1MeV neutron equivalent studies for radiation inside the Hall</li>
-      <li>Model of the Full Hall-A with Arms and target environment</li>
-    </ul>
-</div>
-
-<div id="geant4_prex3" class="step" data-x="500" data-y="700" data-rotate-y="90" data-scale="0.2">
-  <img class="graph" src="../../PREX/Pictures/prex_sim_pictures/anim_top.gif" alt="transform2d"/>
-</div>
-
-
-<div id="geant4_prex3" class="step" data-x="500" data-y="700" data-rotate="0" data-scale="0.2">
-    <h3>PREX: Vertex 1MeV equivalent radiation</h3>
-    <img class="graph" src="../..//PREX/Shield_study/pictures/anim_Scattering_chamber_vert_zy.gif" alt="transform2d"/>
-</div>
-
-<div id="geant4_prex4" class="step" data-x="500" data-y="900" data-rotate="0" data-scale="0.2">
-    <h3>PREX: Direction 1MeV equivalent radiation</h3>
-    <img class="graph" src="../..//PREX/Shield_study/pictures/anim_Scattering_chamber_NIEL_pl2.gif" alt="transform2d"/>
-</div>
-
-
-<div id="geant4_solid1" class="step" data-x="970" data-y="300" data-rotate="0" data-scale="0.3">
-  <h1>GEANT4 simulation</h1>
-        <h3><b>SoLID</b> collaboration</h3>
-	<ul>
-	  <li> 1MeV equivalent neutron radiation on GEM
-	</ul>
-    </ul>
-</div>
-
-
-<div id="geant4_solid2" class="step" data-x="970" data-y="500" data-rotate="0" data-scale="0.2">
-    <h3>SoLID radiation on GEM</h3>
-    <ul>
-      <li> 1MeV equivalent neutron radiation on GEM 
-    </ul>
-    <img class="middlegraph" src="img/Solid-pics/SoLID_GEM.png" alt="transform2d"/>
-</div>
-
-<div id="geant4_fluka1" class="step" data-x="0" data-y="250" data-z="100" data-rotate="0" data-scale="0.3">
-  <h1>FLUKA + GEANT4 </h1>
-        <h4>Sometimes it is important to use both simulation to reach your result</h4>
-	<ul>
-	  <li> For example if you need to determine the activation from a part of equipment that is in proximity to anhighly activated material </li>
-	  <li> This was the case for PREX where one wanted to determing the activation of the materials in proximity of the highly activated collimator </li>
-	  <li> FLUKA is the best program for activation studies, but lacks the possibility to remove some material at a later time for activation purposes </li>
-	</ul>
-    </ul>
-</div>
-
-<div id="geant4_fluka2" class="step" data-x="0" data-y="420" data-z="100" data-rotate="0" data-scale="0.15">
-    <h3>FLUKA + GEANT4</h3>
-    <ul>
-      <li> The material in question of this study was the attachment surrounding the collimator </li>
-      <li> Fluxes on the material was determined using GEANT4, since there was direct line on sight from the target (where GEANT4 gave more accurate description of the neutron fluxes) </li>
-    </ul>
-</div>
-<div id="geant4_fluka2" class="step" data-x="0" data-y="400" data-z="100" data-rotate="0" data-rotate-x="90" data-scale="0.15">
-    <img class="middlegraph" src="../..//PREX/Sc_Attac/Selection_flux/imgs/geant4_flux_1bin.gif" alt="transform2d"/>
-</div>
-
-<div id="geant4_fluka3" class="step" data-x="0" data-y="550" data-z="100" data-rotate="0" data-scale="0.15">
-    <h3>FLUKA + GEANT4</h3>
-    <b>The flux has been characterized</b>, depending on:
-    <ul>
-      <li> Particle id ($e^-,e^+,n,p,\gamma$) </li>
-      <li> Place of intersection with the Scattering Chamber Attachment surface  </li>
-      <li> Angle of intersection and energy spectrum</li>
-    </ul>
-    <h4><b>Information is then used in FLUKA simulation for activation studies</b></h4>
-    <ul>
-      <li> Can be used together to give a single answer </li>
-      <li> Each particle contribution could be studied separately for improve shielding design to mitigate activation </li>
-    </ul>
-</div>
-
-<div id="geant4_fluka4" class="step" data-x="0" data-y="700" data-z="100" data-rotate="0" data-scale="0.15">
-    <h3>FLUKA + GEANT4</h3>
-    <ul>
-      <li> TOGETHER: Comparison of different materials </li>
-    </ul>
-    <img class="middlegraph" src="../..//PREX/Sc_Attac/1week/images/1w_full_scattach_0.png" alt="transform2d"/>
-</div>
-
-<div id="geant4_fluka5" class="step" data-x="0" data-y="830" data-z="100" data-rotate="0" data-scale="0.15">
-    <h3>FLUKA + GEANT4</h3>
-    <ul>
-      <li> SEPARATE: Comparison $\gamma$(left) vs neutron(right) </li>
-    </ul>
-    <img class="littlegraph" src="../..//PREX/Sc_Attac/Comparison/images/1w_gamma_al.png" alt="geant4_fluka5"/>
-    <img class="littlegraph" src="../..//PREX/Sc_Attac/Comparison/images/1w_neutron_al.png" alt="geant4_fluka5"/>
+    <li>Accumulated Dose(rad) for full experiment (just EM) (Motor)</li>
+  </ul>
     
+    <img class="graph" src="img/HallBTg/dose_rad_em_zoom2.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid4" class="step" data-x="600" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutron fluence</li>
+  </ul>
+    
+    <img class="graph" src="img/HallBTg/1MeVeq.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid5" class="step" data-x="0" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutronfluence for full experiment</li>
+  </ul>
+    
+    <img class="graph" src="img/HallBTg/1MeVeq_zoom.png" alt="transform2d"/>
+</div>
+
+<div id="fluka_solid6" class="step" data-x="-500" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Spectrum on the motor</li>
+  </ul>
+    
+    <img class="graph" src="img/HallBTg/spectrum_accumulated.png" alt="transform2d"/>
 </div>
 
 
-<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2">
+
+
+<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2.5">
     <span class="author">
         <i>by</i><br/>
         <span class="name">Lorenzo Zana</span> <a href="../../">@lorenzozana</a>
-        <a class="cognifide" href="http://www2.ph.ed.ac.uk/nuclear/"><img src="img/1017px-University_of_Edinburgh_logo.svg.png" width="100" /></a>
+	 <a class="cognifide" href="http://www.jlab.org"><img src="img/Jlab_logo.png" width="180" /></a>
     </span>
 </div>
 
