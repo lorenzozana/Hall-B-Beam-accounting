@@ -1,0 +1,10 @@
+Target		density(mg/cm2)		Thickness(cm)
+Pb		160			0.0141
+Sn		230			0.0315
+Ca		417			0.269
+Si		225			0.0966
+C		380			0.168
+4He		650			5.20
+D2		850			5.03
+Ar		700			0.501
+water(+C)	1000			0.62
