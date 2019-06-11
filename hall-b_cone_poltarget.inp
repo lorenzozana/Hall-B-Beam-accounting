@@ -73,6 +73,28 @@ RCC HSE_2_o    0.0 0.0 4.955 0.0 0.0 -16.445 4.13
 RCC HSE_2_i    0.0 0.0 4.955 0.0 0.0 -16.445 4.03
 RCC HSE_3_o    0.0 0.0 -11.49 0.0 0.0 -2.92 4.24
 RCC HSE_3_i    0.0 0.0 -11.49 0.0 0.0 -2.92 4.135
+RCC IBE1_o     0.0 0.0 -3.8 0.0 0.0 -6.04 1.15
+RCC IBE1_i     0.0 0.0 -3.8025 0.0 0.0 -6.04 1.1
+RCC IBE2_o     0.0 0.0 -9.967 0.0 0.0 -0.635 1.44
+RCC IBE2_i     0.0 0.0 -9.967 0.0 0.0 -0.635 1.1
+RCC IBE3_o     0.0 0.0 -9.84 0.0 0.0 -0.127 1.456
+RCC IBE3_i     0.0 0.0 -9.84 0.0 0.0 -0.127 1.1
+RCC TGho1_o    0.0 0.0 -3.525 0.0 0.0 0.050 1.143
+RCC TGho1_i    0.0 0.0 -3.525 0.0 0.0 0.050 1.0
+RCC TGho2_o    0.0 0.0 -1.525 0.0 0.0 0.050 1.27
+RCC TGho2_i    0.0 0.0 -1.525 0.0 0.0 0.050 1.0
+RCC TGho3_o    0.0 0.0 -3.5 0.0 0.0 2.0 1.003
+RCC TGho3_i    0.0 0.0 -3.5 0.0 0.0 2.0 1.0
+RCC TGho3_1w   0.0 0.0 -3.5 0.0 0.0 -0.0050 1.0
+RCC TGho3_2w   0.0 0.0 -1.5 0.0 0.0 0.0050 1.0
+RCC TGho1_o1   0.0 0.0 3.525 0.0 0.0 -0.050 1.143
+RCC TGho1_i1   0.0 0.0 3.525 0.0 0.0 -0.050 1.0
+RCC TGho2_o1   0.0 0.0 1.525 0.0 0.0 -0.050 1.27
+RCC TGho2_i1   0.0 0.0 1.525 0.0 0.0 -0.050 1.0
+RCC TGho3_o1   0.0 0.0 3.5 0.0 0.0 -2.0 1.003
+RCC TGho3_i1   0.0 0.0 3.5 0.0 0.0 -2.0 1.0
+RCC TGho3_3w   0.0 0.0 3.5 0.0 0.0 0.0050 1.0
+RCC TGho3_4w   0.0 0.0 1.5 0.0 0.0 -0.0050 1.0
 $end_translat 
 $start_translat 0 0 -217.0363
 TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
@@ -84,13 +106,19 @@ END
 * Black hole
 BLKBODY      5 +blkbody -void
 * Void around
-HallAir      5 +void -target -red_o -yel1_o -yel2_o -gold1_o -purp1_o -purp2_o -blu1_o -blu2_o -sil1_o -sil2_o
-               -(+sol1_o -sol1_i -sol2_i -sol3_i) -TGLIQ -HSE_2_o -HSE_3_o  -( +HSE_1_o -HSE_cut )
+HallAir      5 +void -red_o -yel1_o -yel2_o -gold1_o -purp1_o -purp2_o -blu1_o -blu2_o -sil1_o -sil2_o
+               -(+sol1_o -sol1_i -sol2_i -sol3_i) -HSE_2_o -HSE_3_o  -( +HSE_1_o -HSE_cut )
                | +HSE_1_i -coilS_o -coi4_o -HSE_cut
                | +HSE_2_i -coilS_o -coi1_o -coi2_o -coi3_o -coi4_o
                | +HSE_3_i -coilS_o
-               | +coilS_i -target
-TGliq        5 +TGLIQ
+               | +coilS_i -IBE1_o -IBE2_o -IBE3_o -TGho1_o -TGho2_o -TGho3_o -TGho1_o1 -TGho2_o1 -TGho3_o1
+               | +IBE1_i
+               | +IBE2_i
+               | +IBE3_i
+               | +TGho1_i -TGho3_i -TGho3_1w
+               | +TGho2_i -TGho3_i -TGho3_2w
+               | +TGho1_i1 -TGho3_i1 -TGho3_3w
+               | +TGho2_i1 -TGho3_i1 -TGho3_4w
 Vacuum       5 +red_i -yel1_o -yel2_o -gold2_o -gold1_o
                | +yel1_i
                | +yel2_i -sil1_o
@@ -101,8 +129,6 @@ Vacuum       5 +red_i -yel1_o -yel2_o -gold2_o -gold1_o
                | +blu1_i -red_o
                | +blu2_i -red_o
                | +sil1_i
-* Target
-TARGET       5 +target
 ConeRed      5 +red_o -red_i -gold1_o -gold2_o
 ConYel       5 +yel1_o -yel1_i
                | +yel2_o -yel2_i -yel1_i -sil1_o
@@ -125,6 +151,21 @@ COILS        5 +coilS_o -coilS_i
 HSE          5 +HSE_1_o -HSE_1_i -HSE_cut
                | +HSE_2_o -HSE_2_i
                | +HSE_3_o -HSE_3_i
+IBE          5 +IBE1_o -IBE1_i
+               | +IBE2_o -IBE2_i
+               | +IBE3_o -IBE3_i
+TGD_h        5 +TGho1_o -TGho1_i
+               | +TGho2_o -TGho2_i
+               | +TGho3_o -TGho3_i
+TGH_h        5 +TGho1_o1 -TGho1_i1
+               | +TGho2_o1 -TGho2_i1
+               | +TGho3_o1 -TGho3_i1
+TGD          5 +TGho3_i
+TGH          5 +TGho3_i1
+TGDw         5 +TGho3_1w
+               | +TGho3_2w
+               | +TGho3_3w
+               | +TGho3_4w
 END
 GEOEND
 * Aluminum oxide
@@ -180,11 +221,27 @@ MAT-PROP                           145.2     AL2O3
 STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
 LOW-MAT         ZINK       30.       -2.      296.                    ZINC
 LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
+MATERIAL                           2.135                              PCTFE
+COMPOUND      -0.207    CARBON    -0.302  CHLORINE    -0.491  FLUORINEPCTFE
+MATERIAL         17.           0.0029947                              CHLORINE
+MATERIAL          9.           0.0015803                              FLUORINE
+MAT-PROP                           115.0  FLUORINE
+STERNHEI     10.9653    1.8433    4.4096   0.11083    3.2962       0.0FLUORINE
+MAT-PROP                           174.0  CHLORINE
+STERNHEI     11.1421    1.5555    4.2994   0.19849    2.9702       0.0CHLORINE
+MATERIAL                           1.007                              ND3
+COMPOUND      -0.714  NITROGEN    -0.286  HYDROGEN                    ND3
+MATERIAL                           0.147                              CoolHe
+COMPOUND         1.0    HELIUM                                        CoolHe
+MATERIAL                          0.6622                              sND3
+COMPOUND      -0.912       ND3    -0.088    CoolHe                    sND3
+MATERIAL                           0.867                              NH3
+COMPOUND      -0.833  NITROGEN    -0.167  HYDROGEN                    NH3
+MATERIAL                          0.5782                              sNH3
+COMPOUND        -0.9       NH3      -0.1    CoolHe                    sNH3
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
-ASSIGNMA         AIR    TARGET                            1.
-ASSIGNMA        GOLD     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
 ASSIGNMA     W5Ni3Fe    ConYel
@@ -195,7 +252,11 @@ ASSIGNMA     W5Ni3Fe    ConBlu
 ASSIGNMA     W5Ni3Fe    ConSil
 ASSIGNMA        IRON     SOLEN                            1.
 ASSIGNMA     CoilMAT    TGCOIL                            1.
-ASSIGNMA    ALUMINUM     COILS       HSE                  1.
+ASSIGNMA    ALUMINUM     COILS       IBE                  1.
+ASSIGNMA        sND3       TGD
+ASSIGNMA        sNH3       TGH
+ASSIGNMA       PCTFE     TGD_h     TGH_h
+ASSIGNMA    ALUMINUM      TGDw
 MGNFIELD         30.     0.001      0.01
 LAM-BIAS                  0.02              PHOTON    PHOTON
 LAM-BIAS                  0.02            ELECTRON  ELECTRON
@@ -205,13 +266,13 @@ USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
-USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
+USRBDX           -1.   NEUTRON      -23.   HallAir    TGCOIL          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
-USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
+USRBDX           -1.  ELECTRON      -23.   HallAir    TGCOIL          e_motor
 USRBDX           0.1  0.000001      100.                            1. &
-USRBDX           -1.    PROTON      -23.   HallAir     Motor          p_motor
+USRBDX           -1.    PROTON      -23.   HallAir    TGCOIL          p_motor
 USRBDX           0.1  0.000001      100.                            1. &
-USRBDX           -1.    PHOTON      -23.   HallAir     Motor          ph_motor
+USRBDX           -1.    PHOTON      -23.   HallAir    TGCOIL          ph_motor
 USRBDX           0.1  0.000001      100.                            1. &
 * Set the random number seed
 RANDOMIZ          1.   123456.
