@@ -6,6 +6,7 @@ DEFAULTS                                                              PRECISIO
 BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
 * Define the beam position
 BEAMPOS          0.0       0.0     -138.       0.0       0.0
+PHYSICS           3.                                                  EVAPORAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT          ELECTNUC
 GEOBEGIN                                                              COMBNAME
@@ -56,9 +57,9 @@ RCC Cmot1      0.0 0.0 -172.45 0.0 0.0 2.7 4.5
 RCC Cmot2      0.0 0.0 -172.3 0.0 0.0 2.4 3.4
 RCC Cmot3      0.0 0.0 -172.3 0.0 0.0 2.4 4.4
 $start_translat 0 0 -127.327
-RCC coi1_o     0.0 0.0 -1.45 0.0 0.0 1.2 3.0
+RCC coi1_o     0.0 0.0 -1.45 0.0 0.0 1.2 3.
 RCC coi1_i     0.0 0.0 -1.45 0.0 0.0 1.2 2.93
-RCC coi2_o     0.0 0.0 -4.95 0.0 0.0 1.2 3.0
+RCC coi2_o     0.0 0.0 -4.95 0.0 0.0 1.2 3.
 RCC coi2_i     0.0 0.0 -4.95 0.0 0.0 1.2 2.93
 RCC coi3_i     0.0 0.0 0.35 0.0 0.0 1.16 2.93
 RCC coi3_o     0.0 0.0 0.35 0.0 0.0 1.16 2.99
@@ -80,21 +81,21 @@ RCC IBE2_i     0.0 0.0 -9.967 0.0 0.0 -0.635 1.1
 RCC IBE3_o     0.0 0.0 -9.84 0.0 0.0 -0.127 1.456
 RCC IBE3_i     0.0 0.0 -9.84 0.0 0.0 -0.127 1.1
 RCC TGho1_o    0.0 0.0 -3.525 0.0 0.0 0.050 1.143
-RCC TGho1_i    0.0 0.0 -3.525 0.0 0.0 0.050 1.0
+RCC TGho1_i    0.0 0.0 -3.525 0.0 0.0 0.050 1.
 RCC TGho2_o    0.0 0.0 -1.525 0.0 0.0 0.050 1.27
-RCC TGho2_i    0.0 0.0 -1.525 0.0 0.0 0.050 1.0
-RCC TGho3_o    0.0 0.0 -3.5 0.0 0.0 2.0 1.003
-RCC TGho3_i    0.0 0.0 -3.5 0.0 0.0 2.0 1.0
-RCC TGho3_1w   0.0 0.0 -3.5 0.0 0.0 -0.0050 1.0
-RCC TGho3_2w   0.0 0.0 -1.5 0.0 0.0 0.0050 1.0
+RCC TGho2_i    0.0 0.0 -1.525 0.0 0.0 0.050 1.
+RCC TGho3_o    0.0 0.0 -3.5 0.0 0.0 2. 1.003
+RCC TGho3_i    0.0 0.0 -3.5 0.0 0.0 2. 1.
+RCC TGho3_1w   0.0 0.0 -3.5 0.0 0.0 -0.0050 1.
+RCC TGho3_2w   0.0 0.0 -1.5 0.0 0.0 0.0050 1.
 RCC TGho1_o1   0.0 0.0 3.525 0.0 0.0 -0.050 1.143
-RCC TGho1_i1   0.0 0.0 3.525 0.0 0.0 -0.050 1.0
+RCC TGho1_i1   0.0 0.0 3.525 0.0 0.0 -0.050 1.
 RCC TGho2_o1   0.0 0.0 1.525 0.0 0.0 -0.050 1.27
-RCC TGho2_i1   0.0 0.0 1.525 0.0 0.0 -0.050 1.0
-RCC TGho3_o1   0.0 0.0 3.5 0.0 0.0 -2.0 1.003
-RCC TGho3_i1   0.0 0.0 3.5 0.0 0.0 -2.0 1.0
-RCC TGho3_3w   0.0 0.0 3.5 0.0 0.0 0.0050 1.0
-RCC TGho3_4w   0.0 0.0 1.5 0.0 0.0 -0.0050 1.0
+RCC TGho2_i1   0.0 0.0 1.525 0.0 0.0 -0.050 1.
+RCC TGho3_o1   0.0 0.0 3.5 0.0 0.0 -2. 1.003
+RCC TGho3_i1   0.0 0.0 3.5 0.0 0.0 -2. 1.
+RCC TGho3_3w   0.0 0.0 3.5 0.0 0.0 0.0050 1.
+RCC TGho3_4w   0.0 0.0 1.5 0.0 0.0 -0.0050 1.
 $end_translat 
 $start_translat 0 0 -217.0363
 TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
@@ -214,8 +215,8 @@ COMPOUND    -.470749    OXYGEN  -.529251  ALUMINUM                    AL2O3
 MATERIAL         41.                8.57                              NIOBIUM
 MATERIAL                         7.94686                              CoilMAT
 COMPOUND      -0.239  TITANIUM    -0.315    COPPER    -0.446   NIOBIUMCoilMAT
-MAT-PROP                           417.0   NIOBIUM
-MAT-PROP        40.0                       NIOBIUM                    DPA-ENER
+MAT-PROP                            417.   NIOBIUM
+MAT-PROP         40.                       NIOBIUM                    DPA-ENER
 STERNHEI      5.0141    0.1785    3.2201   0.13883     3.093      0.14NIOBIUM
 MAT-PROP                           145.2     AL2O3
 STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
@@ -225,14 +226,14 @@ MATERIAL                           2.135                              PCTFE
 COMPOUND      -0.207    CARBON    -0.302  CHLORINE    -0.491  FLUORINEPCTFE
 MATERIAL         17.           0.0029947                              CHLORINE
 MATERIAL          9.           0.0015803                              FLUORINE
-MAT-PROP                           115.0  FLUORINE
+MAT-PROP                            115.  FLUORINE
 STERNHEI     10.9653    1.8433    4.4096   0.11083    3.2962       0.0FLUORINE
-MAT-PROP                           174.0  CHLORINE
+MAT-PROP                            174.  CHLORINE
 STERNHEI     11.1421    1.5555    4.2994   0.19849    2.9702       0.0CHLORINE
 MATERIAL                           1.007                              ND3
 COMPOUND      -0.714  NITROGEN    -0.286  HYDROGEN                    ND3
 MATERIAL                           0.147                              CoolHe
-COMPOUND         1.0    HELIUM                                        CoolHe
+COMPOUND          1.    HELIUM                                        CoolHe
 MATERIAL                          0.6622                              sND3
 COMPOUND      -0.912       ND3    -0.088    CoolHe                    sND3
 MATERIAL                           0.867                              NH3
@@ -257,6 +258,10 @@ ASSIGNMA        sND3       TGD
 ASSIGNMA        sNH3       TGH
 ASSIGNMA       PCTFE     TGD_h     TGH_h
 ASSIGNMA    ALUMINUM      TGDw
+RADDECAY          1.        1.                       1008000
+IRRPROFI     604800.   6.25E10   345600.       0.0   604800.   6.25E10
+IRRPROFI     345600.       0.0   604800.   6.25E10       0.0       0.0
+DCYTIMES       3600.    21600.    86400.
 MGNFIELD         30.     0.001      0.01
 LAM-BIAS                  0.02              PHOTON    PHOTON
 LAM-BIAS                  0.02            ELECTRON  ELECTRON
@@ -266,6 +271,16 @@ USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.hall_1h
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.hall_6h
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.hall_1d
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
+DCYSCORE          1.                       hall_1h   hall_1h          USRBIN
+DCYSCORE          2.                       hall_6h   hall_6h          USRBIN
+DCYSCORE          3.                       hall_1d   hall_1d          USRBIN
+AUXSCORE      USRBIN                       hall_1h   hall_1d          EWT74
 USRBDX           -1.   NEUTRON      -23.   HallAir    TGCOIL          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.  ELECTRON      -23.   HallAir    TGCOIL          e_motor
