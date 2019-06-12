@@ -3090,7 +3090,7 @@ Material: AL2O3
 End
 
 # Material
-Material: CHLORINE
+Material: FLUORINE
 	alpha: 0
 	color: #503010
 	fuzz: 0.0
@@ -3110,9 +3110,9 @@ Material: PCTFE
 End
 
 # Material
-Material: CoolHe
+Material: NH3
 	alpha: 0
-	color: #301070
+	color: #D01030
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3120,9 +3120,19 @@ Material: CoolHe
 End
 
 # Material
-Material: CoilMAT
+Material: ZINK
 	alpha: 0
-	color: #101090
+	color: #B01070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CoolHe
+	alpha: 0
+	color: #301070
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3170,16 +3180,6 @@ Material: sNH3
 End
 
 # Material
-Material: NIOBIUM
-	alpha: 0
-	color: #7030D0
-	fuzz: 0.0
-	ior: 1.0
-	shine: 10.0
-	specular: 0.0
-End
-
-# Material
 Material: DEUTERIU
 	alpha: 0
 	color: #6070D0
@@ -3200,9 +3200,9 @@ Material: sND3
 End
 
 # Material
-Material: MANGANES
+Material: CHLORINE
 	alpha: 0
-	color: #B050D0
+	color: #503010
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3210,9 +3210,9 @@ Material: MANGANES
 End
 
 # Material
-Material: NH3
+Material: MANGANES
 	alpha: 0
-	color: #D01030
+	color: #B050D0
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3250,9 +3250,9 @@ Material: ND3
 End
 
 # Material
-Material: FLUORINE
+Material: NIOBIUM
 	alpha: 0
-	color: #503010
+	color: #7030D0
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3260,9 +3260,9 @@ Material: FLUORINE
 End
 
 # Material
-Material: ZINK
+Material: CoilMAT
 	alpha: 0
-	color: #B01070
+	color: #101090
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3317,14 +3317,13 @@ Geometry:
 		._visible: True
 		3D: True
 		3D._visible: True
-		3D.edgedetect: 1
+		3D.edgedetect: True
 		3D.fov: 22.8
-		3D.shadows: 0
+		3D.shadows: False
 		Options.shortcut: F4
-		Options.viewport: 0
-		Palette: True
+		Options.viewport: False
 		Palette._visible: True
-		Palette.alphamin: 1
+		Palette.alphamin: True
 		Palette.cpd: 10
 		Palette.max: 1e+12
 		Palette.min: 100000000.0
@@ -3334,14 +3333,21 @@ Geometry:
 		Palette2.max: 10000000000.0
 		Palette2.min: 1.0
 		Palette2.n: 80
+		Palette3: True
+		Palette3._visible: True
+		Palette3.cpd: 10
+		Palette3.max: 10.0
+		Palette3.min: 0.001
+		Palette3.n: 40
 		Show._visible: True
-		Show.lattice: 1
-		Show.voxel: 1
+		Show.lattice: True
+		Show.voxel: True
 		Usrbin: True
 		Usrbin._visible: True
-		Usrbin.det: 3
-		Usrbin.file: hall-b_cone_justGold_21.bnn
-		Usrbin.norm: 4.91E17
+		Usrbin.det: 4
+		Usrbin.file: poltarget_21.bnn
+		Usrbin.norm: 3.6E-4
+		Usrbin.palette: Palette3
 		deflights: 1
 		layer: 3D
 	End
@@ -3361,7 +3367,7 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 37.7159 2520.68
+	extends: 37.7159 4940.78
 	grid: 0
 	index: 0
 	labels: 1
@@ -3387,7 +3393,7 @@ Plot: Blue
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 48.2254 0.0475127
+	extends: 48.2254 0.151177
 	labels: 1
 	layer: Media
 	origin: 0.311907 0 -136.751
@@ -3409,7 +3415,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 83.3335 0.0821829
+	extends: 83.3335 0.261234
 	grid: 0
 	index: 0
 	labels: 1
@@ -4069,10 +4075,10 @@ Plot: Green
 	basisv: 0 -1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 137.499 82.2534
+	extends: 22.2069 18.3539
 	labels: 1
 	layer: 3D
-	origin: 0 -1.30533 -50.4403
+	origin: 0 1.22249 -114.803
 	subtype: Material
 	title: GeoViewer Green plot
 End
