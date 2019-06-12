@@ -1,0 +1,295 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Simulation for USM target Run Group M</title>
+
+    
+    <meta name="description" content="Hall-B Targets simulation for Run group M" />
+    <meta name="author" content="Lorenzo Zana" />
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+      MathJax.Hub.Config({
+      jax: ["input/TeX","output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']],
+      processEscapes: true
+      }
+      });
+    </script>
+    <script>
+        (function(d,ua){
+            if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+                d.className += " supported ";
+            }
+        })(document.documentElement, navigator.userAgent.toLowerCase());
+    </script>
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/prefixfree.js"></script>
+</head>
+<body>
+
+<div class="fallback-message">
+    <p>This presentation was build for latest <b>Chrome</b> or <b>Safari</b> browser.</p>
+    <p>You are viewing simplified view, but most of the CSS 3D will not work for you, sorry.</p>
+</div>
+
+<div id="impress">
+
+<div id="title" class="step" data-x="0" data-y="170" data-scale="0.9">
+    <h1>
+        <span class="d2">Simulation</span>
+        <span class="short">of</span><span class="transform">Accumulated</span>
+        <span class="d3">Radiation dose</span>
+	<span class="short">for</span><span class="transform">Solid/Liquid target cell (USM)</span>
+    </h1>
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="mailto:zana@jlab.org">zana@jlab.org</a></br>
+         <span class="name"><it>Radiation Control Department</it></span>
+        <a class="cognifide" href="http://www.jlab.org" target="_blank"><img src="img/Jlab_logo.png" width="180" /></a>
+    </span>
+
+</div>
+
+
+<div id="fluka_prex1" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
+    <h1>Fluka simulation</h1>
+    
+    <h3><b>Code</b> repository</h3>
+    <ul>
+      <li>The code is available on <a class="cognifide" href="https://github.com/lorenzozana/Hall-B-Beam-accounting"><img src="img/GitHub_Logo.png" width="80" />click on</a></li>
+      <li>Please use it for reference and further updates</li>
+      <li>Full simulation with magnetic field in FLUKA</li>
+      <li>Modified source term for electronuclear</li>
+    </ul>
+</div>
+
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate="0" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Target Cell implementation</li>
+    </ul>
+    <a href="img/HallBTg/status_target_cell.png" target="_blank"><img class="graph" src="img/HallBTg/status_target_cell.png"/></a>
+</div>
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate-y="90" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Moller Cone and Magnet</li>
+    </ul>
+    <a href="img/HallBTg/status_target_enclosure.png" target="_blank"><img class="graph" src="img/HallBTg/status_target_enclosure.png"/></a>
+</div>
+<div id="fluka_prex2" class="step" data-x="-500" data-y="600" data-rotate-x="90" data-scale="0.3">
+    <h4>Status Simulation</h4>
+    <ul>
+      <li> Magnetic Field</li>
+    </ul>
+     <a href="img/HallBTg/SolenoidField.jpg" target="_blank"><img class="graph" src="img/HallBTg/SolenoidField.png" /></a>
+</div>
+
+
+
+
+
+<div id="fluka_solid1" class="step" data-x="0" data-y="600" data-rotate="0" data-scale="0.3">
+  <h1>Accumulated Dose Run Group M</h1>
+	<ul>
+	  <li>For exposure pattern used the <a href="https://wiki.jlab.org/clas12-run/index.php/Run_Group_M#tab=Short_Term_Schedule" target="_blank"> beam schedule</a> given at the ERR </li>
+	  <li>For the USM target Cell I have used <a href="https://github.com/lorenzozana/Hall-B-Beam-accounting/blob/master/timeline.txt" target="_blank">this</a> schedule</li> 
+	</ul>
+    </ul>
+</div>
+
+<div id="fluka_solid2" class="step" data-x="600" data-y="600" data-rotate="0" data-scale="0.2">
+  <ul>
+    <li>  Accumulated Dose(rad) for full experiment</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_rad.png" target="_blank"><img class="graph" src="img/HallBTg/dose_rad.png" alt="Dose(rad)"/></a>
+</div>
+
+<div id="fluka_solid2" class="step" data-x="600" data-y="400" data-rotate="0" data-scale="0.2">
+   <ul>
+    <li> Accumulated Dose(rad) for full experiment (just EM)</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_rad_em.png" target="_blank"><img class="graph" src="img/HallBTg/dose_rad_em.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid3" class="step" data-x="600" data-y="200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated Dose(rad) for full experiment (Motor)</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_rad_zoom2.png" target="_blank"><img class="graph" src="img/HallBTg/dose_rad_zoom2.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid3" class="step" data-x="600" data-y="0" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated Dose(rad) for full experiment (just EM) (Motor)</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_rad_em_zoom2.png" target="blank"><img class="graph" src="img/HallBTg/dose_rad_em_zoom2.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid4" class="step" data-x="600" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutron fluence</li>
+  </ul>
+    
+    <a href="img/HallBTg/1MeVeq.png" target="_blank"><img class="graph" src="img/HallBTg/1MeVeq.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid5" class="step" data-x="0" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutron fluence</li>
+  </ul>
+    
+    <a href="img/HallBTg/1MeVeq_zoom.png" target="_blank"><img class="graph" src="img/HallBTg/1MeVeq_zoom.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid6" class="step" data-x="-500" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Spectrum on the motor</li>
+  </ul>
+    
+    <a href="img/HallBTg/spectrum_accumulated.jpg" target="_blank"><img class="graph" src="img/HallBTg/spectrum_accumulated.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid7" class="step" data-x="-1000" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>With Magnetic Field $1MeV_{eq}$ neutron fluence Pb target</li>
+  </ul>
+    
+    <a href="img/HallBTg/1MeVeq_Pb_field.png" target="_blank"><img class="graph" src="img/HallBTg/1MeVeq_Pb_field.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid8" class="step" data-x="-1000" data-y="0" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>NO Magnetic Field $1MeV_{eq}$ neutron fluence Pb target</li>
+  </ul>
+    
+    <a href="img/HallBTg/1MeVeq_Pb_NOfield.png" target="_blank"><img class="graph" src="img/HallBTg/1MeVeq_Pb_NOfield.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid9" class="step" data-x="-1000" data-y="200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>With Magnetic Field Dose(rad) Pb target</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_Pb_field.png" target="_blank"><img class="graph" src="img/HallBTg/dose_Pb_field.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid10" class="step" data-x="-1000" data-y="400" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>NO Magnetic Field Dose(rad) Pb target</li>
+  </ul>
+    
+    <a href="img/HallBTg/dose_Pb_NOfield.png" target="_blank"><img class="graph" src="img/HallBTg/dose_Pb_NOfield.png" alt="transform2d"/></a>
+</div>
+
+
+<div id="fluka_solid11" class="step" data-x="-1400" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>$1MeV_{eq}$ neutron fluence $H_2$ target $(\int I dt = 108mC)$</li>
+  </ul>
+    
+    <a href="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid12" class="step" data-x="-1400" data-y="0" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>$1MeV_{eq}$ neutron fluence $D_2$ target  $(\int I dt = 108mC)$ </li>
+  </ul>
+    
+    <a href="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_solid13" class="step" data-x="-1400" data-y="200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>$1MeV_{eq}$ neutron fluence accumulated USM target  $(\int I dt = 129mC)$</li>
+  </ul>
+    
+    <a href="img/HallBTg/1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/1MeVeq2.png" alt="transform2d"/></a>
+</div>
+
+
+
+<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2.5">
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="../../">@lorenzozana</a>
+	 <a class="cognifide" href="http://www.jlab.org"><img src="img/Jlab_logo.png" width="180" /></a>
+    </span>
+</div>
+
+</div>
+
+<script src="js/impress.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9117370-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

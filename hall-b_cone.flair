@@ -18,7 +18,7 @@ F77dline: False
 Run: <default>
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
 	StartRun: 1559661672
 	Family:  hall-b_cone_poltarget_aa hall-b_cone_poltarget_ab hall-b_cone_poltarget_ac hall-b_cone_poltarget_ad hall-b_cone_poltarget_ae hall-b_cone_poltarget_af hall-b_cone_poltarget_ag hall-b_cone_poltarget_ah hall-b_cone_poltarget_ai hall-b_cone_poltarget_aj hall-b_cone_poltarget_ak hall-b_cone_poltarget_al hall-b_cone_poltarget_am hall-b_cone_poltarget_an hall-b_cone_poltarget_ao hall-b_cone_poltarget_ap hall-b_cone_poltarget_aq hall-b_cone_poltarget_ar hall-b_cone_poltarget_as hall-b_cone_poltarget_at hall-b_cone_poltarget_au hall-b_cone_poltarget_av hall-b_cone_poltarget_aw hall-b_cone_poltarget_ax hall-b_cone_poltarget_ay hall-b_cone_poltarget_az hall-b_cone_poltarget_ba hall-b_cone_poltarget_bb hall-b_cone_poltarget_bc hall-b_cone_poltarget_bd hall-b_cone_poltarget_be hall-b_cone_poltarget_bf hall-b_cone_poltarget_bg hall-b_cone_poltarget_bh hall-b_cone_poltarget_bi
@@ -27,64 +27,82 @@ Run: <default>
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_poltarget_ar001_fort.21
-		Rule: +,hall-b_cone_poltarget_az001_fort.21
-		Rule: +,hall-b_cone_poltarget_ap001_fort.21
-		Rule: +,hall-b_cone_poltarget_ae001_fort.21
-		Rule: +,hall-b_cone_poltarget_bd001_fort.21
-		Rule: +,hall-b_cone_poltarget_au001_fort.21
 		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
 		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
 		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
 		Rule: +,hall-b_cone_poltarget_bg001_fort.21
 		Rule: +,hall-b_cone_poltarget_bh001_fort.21
-		Rule: +,hall-b_cone_poltarget_aq001_fort.21
-		Rule: +,hall-b_cone_poltarget_am001_fort.21
-		Rule: +,hall-b_cone_poltarget_ag001_fort.21
-		Rule: +,hall-b_cone_poltarget_ab001_fort.21
-		Rule: +,hall-b_cone_poltarget_be001_fort.21
-		Rule: +,hall-b_cone_poltarget_ac001_fort.21
-		Rule: +,hall-b_cone_poltarget_ak001_fort.21
-		Rule: +,hall-b_cone_poltarget_bf001_fort.21
-		Rule: +,hall-b_cone_poltarget_ba001_fort.21
-		Rule: +,hall-b_cone_poltarget_ad001_fort.21
-		Rule: +,hall-b_cone_poltarget_ao001_fort.21
-		Rule: +,hall-b_cone_poltarget_as001_fort.21
-		Rule: +,hall-b_cone_poltarget_bc001_fort.21
-		Rule: +,hall-b_cone_poltarget_ah001_fort.21
-		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
 	End
 
 	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_poltarget_ar001_fort.23
-		Rule: +,hall-b_cone_poltarget_az001_fort.23
-		Rule: +,hall-b_cone_poltarget_ap001_fort.23
-		Rule: +,hall-b_cone_poltarget_ae001_fort.23
-		Rule: +,hall-b_cone_poltarget_bd001_fort.23
-		Rule: +,hall-b_cone_poltarget_au001_fort.23
 		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
 		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
 		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
 		Rule: +,hall-b_cone_poltarget_bg001_fort.23
 		Rule: +,hall-b_cone_poltarget_bh001_fort.23
-		Rule: +,hall-b_cone_poltarget_aq001_fort.23
-		Rule: +,hall-b_cone_poltarget_am001_fort.23
-		Rule: +,hall-b_cone_poltarget_ag001_fort.23
-		Rule: +,hall-b_cone_poltarget_ab001_fort.23
-		Rule: +,hall-b_cone_poltarget_be001_fort.23
-		Rule: +,hall-b_cone_poltarget_ac001_fort.23
-		Rule: +,hall-b_cone_poltarget_ak001_fort.23
-		Rule: +,hall-b_cone_poltarget_bf001_fort.23
-		Rule: +,hall-b_cone_poltarget_ba001_fort.23
-		Rule: +,hall-b_cone_poltarget_ad001_fort.23
-		Rule: +,hall-b_cone_poltarget_ao001_fort.23
-		Rule: +,hall-b_cone_poltarget_as001_fort.23
-		Rule: +,hall-b_cone_poltarget_bc001_fort.23
-		Rule: +,hall-b_cone_poltarget_ah001_fort.23
-		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
 	End
 End
 
@@ -95,7 +113,7 @@ Run: hall-b_cone_poltarget_aa
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -182,7 +200,7 @@ Run: hall-b_cone_poltarget_ab
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -269,7 +287,7 @@ Run: hall-b_cone_poltarget_ac
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -356,7 +374,7 @@ Run: hall-b_cone_poltarget_ad
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -443,7 +461,7 @@ Run: hall-b_cone_poltarget_ae
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -528,9 +546,9 @@ Run: hall-b_cone_poltarget_af
 	Rnd:      123462
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68172
-	StartRun: 1560270054
+	Status:   3
+	Pid:      0
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -617,7 +635,7 @@ Run: hall-b_cone_poltarget_ag
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -704,7 +722,7 @@ Run: hall-b_cone_poltarget_ah
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370854
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -789,9 +807,9 @@ Run: hall-b_cone_poltarget_ai
 	Rnd:      123465
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68266
-	StartRun: 1560270054
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -876,9 +894,9 @@ Run: hall-b_cone_poltarget_aj
 	Rnd:      123466
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68297
-	StartRun: 1560270054
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -965,7 +983,7 @@ Run: hall-b_cone_poltarget_ak
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1052,7 +1070,7 @@ Run: hall-b_cone_poltarget_al
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1075,7 +1093,7 @@ Run: hall-b_cone_poltarget_am
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1160,9 +1178,9 @@ Run: hall-b_cone_poltarget_an
 	Rnd:      123470
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68422
-	StartRun: 1560270054
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1249,7 +1267,7 @@ Run: hall-b_cone_poltarget_ao
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270054
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1336,7 +1354,7 @@ Run: hall-b_cone_poltarget_ap
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1423,7 +1441,7 @@ Run: hall-b_cone_poltarget_aq
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1510,7 +1528,7 @@ Run: hall-b_cone_poltarget_ar
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1597,7 +1615,7 @@ Run: hall-b_cone_poltarget_as
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1682,9 +1700,9 @@ Run: hall-b_cone_poltarget_at
 	Rnd:      123476
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68613
-	StartRun: 1560270055
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1771,7 +1789,7 @@ Run: hall-b_cone_poltarget_au
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1856,9 +1874,9 @@ Run: hall-b_cone_poltarget_av
 	Rnd:      123478
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68674
-	StartRun: 1560270055
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1943,9 +1961,9 @@ Run: hall-b_cone_poltarget_aw
 	Rnd:      123479
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68706
-	StartRun: 1560270055
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2032,7 +2050,7 @@ Run: hall-b_cone_poltarget_ax
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2117,9 +2135,9 @@ Run: hall-b_cone_poltarget_ay
 	Rnd:      123481
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      68781
-	StartRun: 1560270055
+	Status:   3
+	Pid:      0
+	StartRun: 1560370855
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2206,7 +2224,7 @@ Run: hall-b_cone_poltarget_az
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2293,7 +2311,7 @@ Run: hall-b_cone_poltarget_ba
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2380,7 +2398,7 @@ Run: hall-b_cone_poltarget_bb
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2467,7 +2485,7 @@ Run: hall-b_cone_poltarget_bc
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2554,7 +2572,7 @@ Run: hall-b_cone_poltarget_bd
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2641,7 +2659,7 @@ Run: hall-b_cone_poltarget_be
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2728,7 +2746,7 @@ Run: hall-b_cone_poltarget_bf
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2815,7 +2833,7 @@ Run: hall-b_cone_poltarget_bg
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270055
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2902,7 +2920,7 @@ Run: hall-b_cone_poltarget_bh
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560270056
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2987,9 +3005,9 @@ Run: hall-b_cone_poltarget_bi
 	Rnd:      123491
 	Prev:     0
 	Last:     1
-	Status:   5
-	Pid:      69091
-	StartRun: 1560270056
+	Status:   3
+	Pid:      0
+	StartRun: 1560370856
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -3090,7 +3108,7 @@ Material: AL2O3
 End
 
 # Material
-Material: FLUORINE
+Material: CHLORINE
 	alpha: 0
 	color: #503010
 	fuzz: 0.0
@@ -3110,29 +3128,9 @@ Material: PCTFE
 End
 
 # Material
-Material: NH3
-	alpha: 0
-	color: #D01030
-	fuzz: 0.0
-	ior: 1.0
-	shine: 10.0
-	specular: 0.0
-End
-
-# Material
-Material: ZINK
-	alpha: 0
-	color: #B01070
-	fuzz: 0.0
-	ior: 1.0
-	shine: 10.0
-	specular: 0.0
-End
-
-# Material
 Material: CoolHe
 	alpha: 0
-	color: #301070
+	color: #73bbeb
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3153,6 +3151,16 @@ End
 Material: 92W5Ni3Fe
 	alpha: 0
 	color: #A05030
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CoilMAT
+	alpha: 0
+	color: #101090
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3200,9 +3208,29 @@ Material: sND3
 End
 
 # Material
-Material: CHLORINE
+Material: ZINK
 	alpha: 0
-	color: #503010
+	color: #B01070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: NH3
+	alpha: 0
+	color: #D01030
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: SS304L
+	alpha: 0
+	color: #20B070
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3230,16 +3258,6 @@ Material: AP1d
 End
 
 # Material
-Material: SS304L
-	alpha: 0
-	color: #20B070
-	fuzz: 0.0
-	ior: 1.0
-	shine: 10.0
-	specular: 0.0
-End
-
-# Material
 Material: ND3
 	alpha: 0
 	color: #B05090
@@ -3260,9 +3278,9 @@ Material: NIOBIUM
 End
 
 # Material
-Material: CoilMAT
+Material: FLUORINE
 	alpha: 0
-	color: #101090
+	color: #503010
 	fuzz: 0.0
 	ior: 1.0
 	shine: 10.0
@@ -3281,9 +3299,9 @@ End
 
 # Geometry Information
 Geometry:
-	Frame.bsplit: 0.5
-	Frame.tsplit: 0.01
-	Frame.vsplit: 0.99
+	Frame.bsplit: 0.99
+	Frame.tsplit: 0.5
+	Frame.vsplit: 0.01
 
 	# Layer
 	Layer: Media
@@ -3317,13 +3335,13 @@ Geometry:
 		._visible: True
 		3D: True
 		3D._visible: True
-		3D.edgedetect: True
+		3D.edgedetect: 1
 		3D.fov: 22.8
-		3D.shadows: False
+		3D.shadows: 0
 		Options.shortcut: F4
-		Options.viewport: False
+		Options.viewport: 0
 		Palette._visible: True
-		Palette.alphamin: True
+		Palette.alphamin: 1
 		Palette.cpd: 10
 		Palette.max: 1e+12
 		Palette.min: 100000000.0
@@ -3333,19 +3351,22 @@ Geometry:
 		Palette2.max: 10000000000.0
 		Palette2.min: 1.0
 		Palette2.n: 80
-		Palette3: True
 		Palette3._visible: True
 		Palette3.cpd: 10
 		Palette3.max: 10.0
 		Palette3.min: 0.001
 		Palette3.n: 40
+		Palette4._visible: True
+		Palette4.cpd: 10
+		Palette4.max: 1e+14
+		Palette4.min: 100000000.0
+		Palette4.n: 60
 		Show._visible: True
-		Show.lattice: True
-		Show.voxel: True
-		Usrbin: True
+		Show.lattice: 1
+		Show.voxel: 1
 		Usrbin._visible: True
-		Usrbin.det: 4
-		Usrbin.file: poltarget_21.bnn
+		Usrbin.det: 6
+		Usrbin.file: hall-b_cone_justGold_21.bnn
 		Usrbin.norm: 3.6E-4
 		Usrbin.palette: Palette3
 		deflights: 1
@@ -3367,7 +3388,7 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 37.7159 4940.78
+	extends: 37.7159 0.0371585
 	grid: 0
 	index: 0
 	labels: 1
@@ -3393,10 +3414,10 @@ Plot: Blue
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 48.2254 0.151177
+	extends: 207.36 121.57
 	labels: 1
-	layer: Media
-	origin: 0.311907 0 -136.751
+	layer: 3D
+	origin: -7.55145 -0.196182 -37.762
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -3415,12 +3436,12 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 83.3335 0.261234
+	extends: 57.8705 3867.68
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: -27.2496 -2.56528 -148.381
+	origin: -46.6311 -2.56528 -150.947
 	subtype: Material
 	title: GeoViewer Magenta plot
 	x2log: 0
@@ -4075,10 +4096,10 @@ Plot: Green
 	basisv: 0 -1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 22.2069 18.3539
+	extends: 114.583 0.113001
 	labels: 1
 	layer: 3D
-	origin: 0 1.22249 -114.803
+	origin: 0 -4.23437 -40.9574
 	subtype: Material
 	title: GeoViewer Green plot
 End
