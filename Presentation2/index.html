@@ -1,0 +1,280 @@
+<!doctype html>
+
+<!--
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@>` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Run Group C ERR: Radiation Safety</title>
+
+    
+    <meta name="description" content="Hall-B Targets simulation for Run group M" />
+    <meta name="author" content="Lorenzo Zana" />
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+      MathJax.Hub.Config({
+      jax: ["input/TeX","output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']],
+      processEscapes: true
+      }
+      });
+    </script>
+    <script>
+        (function(d,ua){
+            if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+                d.className += " supported ";
+            }
+        })(document.documentElement, navigator.userAgent.toLowerCase());
+    </script>
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/prefixfree.js"></script>
+</head>
+<body>
+
+<div class="fallback-message">
+    <p>This presentation was build for latest <b>Chrome</b> or <b>Safari</b> browser.</p>
+    <p>You are viewing simplified view, but most of the CSS 3D will not work for you, sorry.</p>
+</div>
+
+<div id="impress">
+
+<div id="title" class="step" data-x="0" data-y="170" data-scale="0.9">
+    <h1>
+        <span class="d2">Run Group C ERR</span>
+        <span class="short">#7</span><span class="transform"></span>
+        <span class="d3">Expected radiation levels</span>
+	<span class="short">in</span><span class="transform">the Hall during run time</span>
+    </h1>
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="mailto:zana@jlab.org">zana@jlab.org</a></br>
+         <span class="name"><it>Radiation Control Department</it></span>
+        <a class="cognifide" href="http://www.jlab.org" target="_blank"><img src="img/Jlab_logo.png" width="180" /></a>
+    </span>
+
+</div>
+
+
+
+
+<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate="0" data-scale="0.3">
+    <h4>Status Fluka Simulation</h4>
+    <ul>
+      <li> Target Cell implementation</li>
+    </ul>
+    <a href="img/HallBPolTarget/polarized_target_fluka.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_fluka.png"/></a>
+</div>
+<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate-y="90" data-scale="0.3">
+    <h4>Status Fluka Simulation</h4>
+    <ul>
+      <li> Moller Cone and Magnet</li>
+    </ul>
+    <a href="img/HallBPolTarget/polarized_target_fluka3.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_fluka3.png"/></a>
+</div>
+<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate-x="90" data-scale="0.3">
+    <h4>Status Fluka Simulation</h4>
+    <ul>
+      <li> Magnetic Field</li>
+    </ul>
+     <a href="img/HallBTg/SolenoidField.jpg" target="_blank"><img class="graph" src="img/HallBTg/SolenoidField.png" /></a>
+</div>
+
+
+
+
+
+<div id="fluka_dose" class="step" data-x="0" data-y="600" data-rotate="0" data-scale="0.3">
+  <h1>Accumulated Dose Run Group C</h1>
+	<ul>
+	  <li>For exposure pattern assumed 91 PAC days in 182 calendar days. Nominal current is 10nA  </li>
+	  <li>Short period of 12h at 200nA</li> 
+	</ul>
+    </ul>
+</div>
+
+<div id="fluka_dose2" class="step" data-x="600" data-y="600" data-rotate="0" data-scale="0.2">
+  <ul>
+    <li>  Accumulated Dose(rad) for full 91 PAC days</li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/polarized_target_doseRAD.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD.png" alt="Dose(rad)"/></a>
+</div>
+
+<div id="fluka_dose2" class="step" data-x="600" data-y="400" data-rotate="0" data-scale="0.2">
+   <ul>
+    <li> Accumulated Dose(rad) for full 91 PAC days (target area)</li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/polarized_target_doseRAD_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD_zoom.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_1MeVeq" class="step" data-x="600" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutron fluence</li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/polarized_target_1MeVeq_comp.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq_comp.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_1MeVeq2" class="step" data-x="0" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Accumulated $1MeV_{eq}$ neutron fluence (target area) (different color scale)</li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/polarized_target_1MeVeq.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_1MeVeqD2" class="step" data-x="-500" data-y="-200" data-rotate="0" data-scale="0.2">
+  <ul>
+    <li>$1MeV_{eq}$ neutron fluence $D_2$ target  $(\int I dt = 108mC)$ </li>
+  </ul>
+    
+    <a href="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_1MeVeqH2" class="step" data-x="-1000" data-y="-200" data-rotate="0" data-scale="0.2">
+  <ul>
+    <li>$1MeV_{eq}$ neutron fluence $H_2$ target $(\int I dt = 108mC)$</li>
+  </ul>
+    
+    <a href="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+ 
+</div>
+
+<div id="fluka_1MeVeqcomment" class="step" data-x="-1000" data-y="0" data-rotate="0" data-scale="0.2">
+    <ul>
+      <li>Levels of accumulated radiation 10 times higher than the one accumulated with $D_2$</li>
+      <li>The simulation for $D_2$ used the luminosity of the latest run with $D_2$ (around 1 month of running)</li>
+      <li>The integrated radiation for the Polarized target is assumed to happen in a period close to 9 months</li>
+      <li>The level of radiation are comparable to the one with $D_2$ target (with the same amount of beam time)</li>
+  </ul>
+    
+</div>
+
+<div id="fluka_activation1" class="step" data-x="-1000" data-y="200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 1h from beam (mrem/h)</li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_1h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_activation2" class="step" data-x="-1000" data-y="400" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 1h from beam (mrem/h) Target </li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_1h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph_zoom.png" alt="transform2d"/></a>
+</div>
+
+
+<div id="fluka_activation3" class="step" data-x="-1400" data-y="-200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 6h from beam (mrem/h)   </li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_6h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_activation4" class="step" data-x="-1400" data-y="0" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 6h from beam (mrem/h) Target   </li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_6h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph_zoom.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_activation5" class="step" data-x="-1400" data-y="200" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 24h from beam (mrem/h)  </li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_24h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph.png" alt="transform2d"/></a>
+</div>
+
+<div id="fluka_activation6" class="step" data-x="-1400" data-y="400" data-rotate="0" data-scale="0.2">
+    <ul>
+    <li>Activation levels after 24h from beam (mrem/h) Target  </li>
+  </ul>
+    
+    <a href="img/HallBPolTarget/poltarget_activation_24h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph_zoom.png" alt="transform2d"/></a>
+</div>
+
+
+
+<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2.5">
+    <span class="author">
+        <i>by</i><br/>
+        <span class="name">Lorenzo Zana</span> <a href="../../">@lorenzozana</a>
+	 <a class="cognifide" href="http://www.jlab.org"><img src="img/Jlab_logo.png" width="180" /></a>
+    </span>
+</div>
+
+</div>
+
+<script src="js/impress.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9117370-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
