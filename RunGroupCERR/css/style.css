@@ -646,8 +646,12 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
 
 .graph {
-    height:  100%;
     width:   100%;
+    height: auto;
+    transition: transform .4s;
+}
+.graph:hover {
+    transform: scale(1.8);
 }
 
 .middlegraph {

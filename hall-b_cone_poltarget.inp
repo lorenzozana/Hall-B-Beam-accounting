@@ -250,7 +250,7 @@ ASSIGNMA     W5Ni3Fe    ConSil
 ASSIGNMA        IRON     SOLEN                            1.
 ASSIGNMA     CoilMAT    TGCOIL                            1.
 ASSIGNMA    ALUMINUM     COILS       IBE                  1.
-ASSIGNMA        sNH3       TGD
+ASSIGNMA        sND3       TGD
 ASSIGNMA       PCTFE     TGD_h
 ASSIGNMA    ALUMINUM      TGDw
 ASSIGNMA      CoolHe      TGHe                            1.

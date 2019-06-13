@@ -83,7 +83,7 @@
 
 <div id="impress">
 
-<div id="title" class="step" data-x="0" data-y="170" data-scale="0.9">
+<div id="title" class="step" data-x="0" data-y="300" data-scale="0.9">
     <h1>
         <span class="d2">Run Group C ERR</span>
         <span class="short">#7</span><span class="transform"></span>
@@ -99,58 +99,69 @@
 
 </div>
 
+<div id="fluka_sim_status1" class="step" data-x="0" data-y="500" data-rotate="0" data-scale="0.1">
+    <h3>Fluka Simulation</h3>
+    <ul>
+      <li>Simulation was done in Fluka in order to assess radiation levels during the experiment</li>
+      <li>As part of the Fluka collaboration, the RadCon group have access to decelopment version of the code (hadron electronuclear production)</li>
+      <li>Nominal running condition for mostly the full experiment will be at 10nA</li>
+    </ul>
+</div>
+<div id="fluka_sim_statu2" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.1">
+    <h3>Beam exposure</h3>
+    <ul>
+      <li> IN SIMULATION: 85 PAC days = (55 days ND3) + (30 days NH3) </li>
+      <li> NOT IN SIMULATION: 6 PAC days = (auxiliary targets) + (special runs) </li>
+    </ul>
+    <h3>Question answered next</h3>
+    <ul>
+      <li> Accumulated dose map expressed in RAD</li>
+      <li> Damage on Silicon &rArr; $1MeV_{eq} Neutron$ fluence map</li>
+      <li> Activation: 1 month running (70% beam)</li>
+    </ul>  
+	
+ 
+</div>
 
 
-
-<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate="0" data-scale="0.3">
+<div id="fluka_sim_status3" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.3">
     <h4>Status Fluka Simulation</h4>
     <ul>
       <li> Target Cell implementation</li>
     </ul>
-    <a href="img/HallBPolTarget/polarized_target_fluka.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_fluka.png"/></a>
+    <img class="graph" src="img/HallBPolTarget/polarized_target_fluka.png"/>
 </div>
-<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate-y="90" data-scale="0.3">
+<div id="fluka_sim_status4" class="step" data-x="-500" data-y="700" data-rotate-y="90" data-scale="0.3">
     <h4>Status Fluka Simulation</h4>
     <ul>
       <li> Moller Cone and Magnet</li>
     </ul>
-    <a href="img/HallBPolTarget/polarized_target_fluka3.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_fluka3.png"/></a>
+    <img class="graph" src="img/HallBPolTarget/polarized_target_fluka3.png"/>
 </div>
-<div id="fluka_sim_status" class="step" data-x="-500" data-y="600" data-rotate-x="90" data-scale="0.3">
+<div id="fluka_sim_status5" class="step" data-x="-500" data-y="700" data-rotate-x="90" data-scale="0.3">
     <h4>Status Fluka Simulation</h4>
     <ul>
       <li> Magnetic Field</li>
     </ul>
-     <a href="img/HallBTg/SolenoidField.jpg" target="_blank"><img class="graph" src="img/HallBTg/SolenoidField.png" /></a>
+    <img class="graph" src="img/HallBTg/SolenoidField.png" />
 </div>
 
 
 
-
-
-<div id="fluka_dose" class="step" data-x="0" data-y="600" data-rotate="0" data-scale="0.3">
-  <h1>Accumulated Dose Run Group C</h1>
-	<ul>
-	  <li>For exposure pattern assumed 91 PAC days in 182 calendar days. Nominal current is 10nA  </li>
-	  <li>Short period of 12h at 200nA</li> 
-	</ul>
-    </ul>
-</div>
-
-<div id="fluka_dose2" class="step" data-x="600" data-y="600" data-rotate="0" data-scale="0.2">
+<div id="fluka_dose1" class="step" data-x="600" data-y="700" data-rotate="0" data-scale="0.2">
   <ul>
-    <li>  Accumulated Dose(rad) for full 91 PAC days</li>
+    <li>  Accumulated Dose(rad) for full 85 PAC days</li>
   </ul>
     
-    <a href="img/HallBPolTarget/polarized_target_doseRAD.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD.png" alt="Dose(rad)"/></a>
+   <img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD.png" alt="Dose(rad)"/>
 </div>
 
 <div id="fluka_dose2" class="step" data-x="600" data-y="400" data-rotate="0" data-scale="0.2">
    <ul>
-    <li> Accumulated Dose(rad) for full 91 PAC days (target area)</li>
+    <li> Accumulated Dose(rad) for full 85 PAC days (target area)</li>
   </ul>
     
-    <a href="img/HallBPolTarget/polarized_target_doseRAD_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD_zoom.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/polarized_target_doseRAD_zoom.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_1MeVeq" class="step" data-x="600" data-y="-200" data-rotate="0" data-scale="0.2">
@@ -158,7 +169,7 @@
     <li>Accumulated $1MeV_{eq}$ neutron fluence</li>
   </ul>
     
-    <a href="img/HallBPolTarget/polarized_target_1MeVeq_comp.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq_comp.png" alt="transform2d"/></a>
+   <img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq_comp.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_1MeVeq2" class="step" data-x="0" data-y="-200" data-rotate="0" data-scale="0.2">
@@ -166,7 +177,7 @@
     <li>Accumulated $1MeV_{eq}$ neutron fluence (target area) (different color scale)</li>
   </ul>
     
-    <a href="img/HallBPolTarget/polarized_target_1MeVeq.png" target="_blank"><img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/polarized_target_1MeVeq.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_1MeVeqD2" class="step" data-x="-500" data-y="-200" data-rotate="0" data-scale="0.2">
@@ -174,7 +185,7 @@
     <li>$1MeV_{eq}$ neutron fluence $D_2$ target  $(\int I dt = 108mC)$ </li>
   </ul>
     
-    <a href="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBTg/DeuteriumHallB_march-april2019_1MeVeq2.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_1MeVeqH2" class="step" data-x="-1000" data-y="-200" data-rotate="0" data-scale="0.2">
@@ -182,7 +193,7 @@
     <li>$1MeV_{eq}$ neutron fluence $H_2$ target $(\int I dt = 108mC)$</li>
   </ul>
     
-    <a href="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" target="_blank"><img class="graph" src="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBTg/HydrogenHallB_march-april2019_1MeVeq2.png" alt="transform2d"/>
  
 </div>
 
@@ -201,7 +212,7 @@
     <li>Activation levels after 1h from beam (mrem/h)</li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_1h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_activation2" class="step" data-x="-1000" data-y="400" data-rotate="0" data-scale="0.2">
@@ -209,7 +220,7 @@
     <li>Activation levels after 1h from beam (mrem/h) Target </li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_1h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph_zoom.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/poltarget_activation_1h_mremph_zoom.png" alt="transform2d"/>
 </div>
 
 
@@ -218,7 +229,7 @@
     <li>Activation levels after 6h from beam (mrem/h)   </li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_6h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_activation4" class="step" data-x="-1400" data-y="0" data-rotate="0" data-scale="0.2">
@@ -226,7 +237,7 @@
     <li>Activation levels after 6h from beam (mrem/h) Target   </li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_6h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph_zoom.png" alt="transform2d"/></a>
+    <img class="graph" src="img/HallBPolTarget/poltarget_activation_6h_mremph_zoom.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_activation5" class="step" data-x="-1400" data-y="200" data-rotate="0" data-scale="0.2">
@@ -234,7 +245,7 @@
     <li>Activation levels after 24h from beam (mrem/h)  </li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_24h_mremph.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph.png" alt="transform2d"/></a>
+   <img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph.png" alt="transform2d"/>
 </div>
 
 <div id="fluka_activation6" class="step" data-x="-1400" data-y="400" data-rotate="0" data-scale="0.2">
@@ -242,7 +253,7 @@
     <li>Activation levels after 24h from beam (mrem/h) Target  </li>
   </ul>
     
-    <a href="img/HallBPolTarget/poltarget_activation_24h_mremph_zoom.png" target="_blank"><img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph_zoom.png" alt="transform2d"/></a>
+   <img class="graph" src="img/HallBPolTarget/poltarget_activation_24h_mremph_zoom.png" alt="transform2d"/>
 </div>
 
 
