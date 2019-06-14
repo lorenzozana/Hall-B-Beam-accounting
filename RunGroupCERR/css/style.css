@@ -141,8 +141,13 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
 .step h3 {
     font-size: 2.5em;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.2em;    
 }
+
+.step h3:hover {
+    transform: scale(3);
+}
+
 
 .step ul {
     font-size: 1.2em;
