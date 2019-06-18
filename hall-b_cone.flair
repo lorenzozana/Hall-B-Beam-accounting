@@ -18,10 +18,10 @@ F77dline: False
 Run: <default>
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
 	StartRun: 1559661672
-	Family:  hall-b_cone_poltarget_aa hall-b_cone_poltarget_ab hall-b_cone_poltarget_ac hall-b_cone_poltarget_ad hall-b_cone_poltarget_ae hall-b_cone_poltarget_af hall-b_cone_poltarget_ag hall-b_cone_poltarget_ah hall-b_cone_poltarget_ai hall-b_cone_poltarget_aj hall-b_cone_poltarget_ak hall-b_cone_poltarget_al hall-b_cone_poltarget_am hall-b_cone_poltarget_an hall-b_cone_poltarget_ao hall-b_cone_poltarget_ap hall-b_cone_poltarget_aq hall-b_cone_poltarget_ar hall-b_cone_poltarget_as hall-b_cone_poltarget_at hall-b_cone_poltarget_au hall-b_cone_poltarget_av hall-b_cone_poltarget_aw hall-b_cone_poltarget_ax hall-b_cone_poltarget_ay hall-b_cone_poltarget_az hall-b_cone_poltarget_ba hall-b_cone_poltarget_bb hall-b_cone_poltarget_bc hall-b_cone_poltarget_bd hall-b_cone_poltarget_be hall-b_cone_poltarget_bf hall-b_cone_poltarget_bg hall-b_cone_poltarget_bh hall-b_cone_poltarget_bi
+	Family:  hall-b_cone_poltarget_aa hall-b_cone_poltarget_ab hall-b_cone_poltarget_ac hall-b_cone_poltarget_ad hall-b_cone_poltarget_ae hall-b_cone_poltarget_af hall-b_cone_poltarget_ag hall-b_cone_poltarget_ah hall-b_cone_poltarget_ai hall-b_cone_poltarget_aj hall-b_cone_poltarget_ak hall-b_cone_poltarget_al hall-b_cone_poltarget_am hall-b_cone_poltarget_an hall-b_cone_poltarget_ao hall-b_cone_poltarget_ap hall-b_cone_poltarget_aq hall-b_cone_poltarget_ar hall-b_cone_poltarget_as hall-b_cone_poltarget_at hall-b_cone_poltarget_au hall-b_cone_poltarget_av hall-b_cone_poltarget_aw hall-b_cone_poltarget_ax hall-b_cone_poltarget_ay hall-b_cone_poltarget_az hall-b_cone_poltarget_ba hall-b_cone_poltarget_bb hall-b_cone_poltarget_bc hall-b_cone_poltarget_bd hall-b_cone_poltarget_be hall-b_cone_poltarget_bf hall-b_cone_poltarget_bg hall-b_cone_poltarget_bh hall-b_cone_poltarget_bi hall-b_cone_poltarget_bj hall-b_cone_poltarget_bk hall-b_cone_poltarget_bl hall-b_cone_poltarget_bm hall-b_cone_poltarget_bn hall-b_cone_poltarget_bo hall-b_cone_poltarget_bp hall-b_cone_poltarget_bq hall-b_cone_poltarget_br hall-b_cone_poltarget_bs hall-b_cone_poltarget_bt hall-b_cone_poltarget_bu hall-b_cone_poltarget_bv hall-b_cone_poltarget_bw hall-b_cone_poltarget_bx hall-b_cone_poltarget_by hall-b_cone_poltarget_bz hall-b_cone_poltarget_ca hall-b_cone_poltarget_cb hall-b_cone_poltarget_cc
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
@@ -113,7 +113,7 @@ Run: hall-b_cone_poltarget_aa
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -200,7 +200,7 @@ Run: hall-b_cone_poltarget_ab
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -287,7 +287,7 @@ Run: hall-b_cone_poltarget_ac
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -374,7 +374,7 @@ Run: hall-b_cone_poltarget_ad
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -461,7 +461,7 @@ Run: hall-b_cone_poltarget_ae
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -548,7 +548,7 @@ Run: hall-b_cone_poltarget_af
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -635,7 +635,7 @@ Run: hall-b_cone_poltarget_ag
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -722,7 +722,7 @@ Run: hall-b_cone_poltarget_ah
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370854
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -809,7 +809,7 @@ Run: hall-b_cone_poltarget_ai
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -896,7 +896,7 @@ Run: hall-b_cone_poltarget_aj
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443949
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -983,7 +983,7 @@ Run: hall-b_cone_poltarget_ak
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1070,7 +1070,7 @@ Run: hall-b_cone_poltarget_al
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1093,7 +1093,7 @@ Run: hall-b_cone_poltarget_am
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1180,7 +1180,7 @@ Run: hall-b_cone_poltarget_an
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1267,7 +1267,7 @@ Run: hall-b_cone_poltarget_ao
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1354,7 +1354,7 @@ Run: hall-b_cone_poltarget_ap
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1441,7 +1441,7 @@ Run: hall-b_cone_poltarget_aq
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1528,7 +1528,7 @@ Run: hall-b_cone_poltarget_ar
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1615,7 +1615,7 @@ Run: hall-b_cone_poltarget_as
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1702,7 +1702,7 @@ Run: hall-b_cone_poltarget_at
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1789,7 +1789,7 @@ Run: hall-b_cone_poltarget_au
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1876,7 +1876,7 @@ Run: hall-b_cone_poltarget_av
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -1963,7 +1963,7 @@ Run: hall-b_cone_poltarget_aw
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2050,7 +2050,7 @@ Run: hall-b_cone_poltarget_ax
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2137,7 +2137,7 @@ Run: hall-b_cone_poltarget_ay
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370855
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2224,7 +2224,7 @@ Run: hall-b_cone_poltarget_az
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2311,7 +2311,7 @@ Run: hall-b_cone_poltarget_ba
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2398,7 +2398,7 @@ Run: hall-b_cone_poltarget_bb
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2485,7 +2485,7 @@ Run: hall-b_cone_poltarget_bc
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2572,7 +2572,7 @@ Run: hall-b_cone_poltarget_bd
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2659,7 +2659,7 @@ Run: hall-b_cone_poltarget_be
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443950
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2746,7 +2746,7 @@ Run: hall-b_cone_poltarget_bf
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443951
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2833,7 +2833,7 @@ Run: hall-b_cone_poltarget_bg
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443951
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -2920,7 +2920,7 @@ Run: hall-b_cone_poltarget_bh
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443951
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -3007,7 +3007,7 @@ Run: hall-b_cone_poltarget_bi
 	Last:     1
 	Status:   3
 	Pid:      0
-	StartRun: 1560370856
+	StartRun: 1560443951
 	Parent:    <default>
 
 	# USRxxx data file: hall-b_cone_justGold_21.bnn
@@ -3084,6 +3084,1866 @@ Run: hall-b_cone_poltarget_bi
 		Rule: +,hall-b_cone_justGold_au001_fort.23
 		Rule: +,hall-b_cone_justGold_am001_fort.23
 		Rule: +,hall-b_cone_justGold_ar001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bj
+	Rnd:      123492
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bk
+	Rnd:      123493
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bl
+	Rnd:      123494
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bm
+	Rnd:      123495
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bn
+	Rnd:      123496
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bo
+	Rnd:      123497
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443951
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bp
+	Rnd:      123498
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bq
+	Rnd:      123499
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_br
+	Rnd:      123500
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bs
+	Rnd:      123501
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bt
+	Rnd:      123502
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bu
+	Rnd:      123503
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bv
+	Rnd:      123504
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443952
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bw
+	Rnd:      123505
+	Prev:     0
+	Last:     1
+	Status:   5
+	Pid:      39236
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bx
+	Rnd:      123506
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_by
+	Rnd:      123507
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_bz
+	Rnd:      123508
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_ca
+	Rnd:      123509
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_cb
+	Rnd:      123510
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
+	End
+End
+
+# Run information
+Run: hall-b_cone_poltarget_cc
+	Rnd:      123511
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1560443953
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
+	Data: hall-b_cone_justGold_21.bnn
+		Unit: 21
+		Type: b
+		Rule: +,hall-b_cone_poltarget_aa001_fort.21
+		Rule: +,hall-b_cone_poltarget_ab001_fort.21
+		Rule: +,hall-b_cone_poltarget_ac001_fort.21
+		Rule: +,hall-b_cone_poltarget_ad001_fort.21
+		Rule: +,hall-b_cone_poltarget_ae001_fort.21
+		Rule: +,hall-b_cone_poltarget_af001_fort.21
+		Rule: +,hall-b_cone_poltarget_ag001_fort.21
+		Rule: +,hall-b_cone_poltarget_ah001_fort.21
+		Rule: +,hall-b_cone_poltarget_ai001_fort.21
+		Rule: +,hall-b_cone_poltarget_aj001_fort.21
+		Rule: +,hall-b_cone_poltarget_ak001_fort.21
+		Rule: +,hall-b_cone_poltarget_al001_fort.21
+		Rule: +,hall-b_cone_poltarget_am001_fort.21
+		Rule: +,hall-b_cone_poltarget_an001_fort.21
+		Rule: +,hall-b_cone_poltarget_ao001_fort.21
+		Rule: +,hall-b_cone_poltarget_ap001_fort.21
+		Rule: +,hall-b_cone_poltarget_aq001_fort.21
+		Rule: +,hall-b_cone_poltarget_ar001_fort.21
+		Rule: +,hall-b_cone_poltarget_as001_fort.21
+		Rule: +,hall-b_cone_poltarget_at001_fort.21
+		Rule: +,hall-b_cone_poltarget_au001_fort.21
+		Rule: +,hall-b_cone_poltarget_av001_fort.21
+		Rule: +,hall-b_cone_poltarget_aw001_fort.21
+		Rule: +,hall-b_cone_poltarget_ax001_fort.21
+		Rule: +,hall-b_cone_poltarget_ay001_fort.21
+		Rule: +,hall-b_cone_poltarget_az001_fort.21
+		Rule: +,hall-b_cone_poltarget_ba001_fort.21
+		Rule: +,hall-b_cone_poltarget_bb001_fort.21
+		Rule: +,hall-b_cone_poltarget_bc001_fort.21
+		Rule: +,hall-b_cone_poltarget_bd001_fort.21
+		Rule: +,hall-b_cone_poltarget_be001_fort.21
+		Rule: +,hall-b_cone_poltarget_bf001_fort.21
+		Rule: +,hall-b_cone_poltarget_bg001_fort.21
+		Rule: +,hall-b_cone_poltarget_bh001_fort.21
+		Rule: +,hall-b_cone_poltarget_bi001_fort.21
+	End
+
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
+	Data: hall-b_cone_justGold_23.bnx
+		Unit: 23
+		Type: x
+		Rule: +,hall-b_cone_poltarget_aa001_fort.23
+		Rule: +,hall-b_cone_poltarget_ab001_fort.23
+		Rule: +,hall-b_cone_poltarget_ac001_fort.23
+		Rule: +,hall-b_cone_poltarget_ad001_fort.23
+		Rule: +,hall-b_cone_poltarget_ae001_fort.23
+		Rule: +,hall-b_cone_poltarget_af001_fort.23
+		Rule: +,hall-b_cone_poltarget_ag001_fort.23
+		Rule: +,hall-b_cone_poltarget_ah001_fort.23
+		Rule: +,hall-b_cone_poltarget_ai001_fort.23
+		Rule: +,hall-b_cone_poltarget_aj001_fort.23
+		Rule: +,hall-b_cone_poltarget_ak001_fort.23
+		Rule: +,hall-b_cone_poltarget_al001_fort.23
+		Rule: +,hall-b_cone_poltarget_am001_fort.23
+		Rule: +,hall-b_cone_poltarget_an001_fort.23
+		Rule: +,hall-b_cone_poltarget_ao001_fort.23
+		Rule: +,hall-b_cone_poltarget_ap001_fort.23
+		Rule: +,hall-b_cone_poltarget_aq001_fort.23
+		Rule: +,hall-b_cone_poltarget_ar001_fort.23
+		Rule: +,hall-b_cone_poltarget_as001_fort.23
+		Rule: +,hall-b_cone_poltarget_at001_fort.23
+		Rule: +,hall-b_cone_poltarget_au001_fort.23
+		Rule: +,hall-b_cone_poltarget_av001_fort.23
+		Rule: +,hall-b_cone_poltarget_aw001_fort.23
+		Rule: +,hall-b_cone_poltarget_ax001_fort.23
+		Rule: +,hall-b_cone_poltarget_ay001_fort.23
+		Rule: +,hall-b_cone_poltarget_az001_fort.23
+		Rule: +,hall-b_cone_poltarget_ba001_fort.23
+		Rule: +,hall-b_cone_poltarget_bb001_fort.23
+		Rule: +,hall-b_cone_poltarget_bc001_fort.23
+		Rule: +,hall-b_cone_poltarget_bd001_fort.23
+		Rule: +,hall-b_cone_poltarget_be001_fort.23
+		Rule: +,hall-b_cone_poltarget_bf001_fort.23
+		Rule: +,hall-b_cone_poltarget_bg001_fort.23
+		Rule: +,hall-b_cone_poltarget_bh001_fort.23
+		Rule: +,hall-b_cone_poltarget_bi001_fort.23
 	End
 End
 
@@ -3299,9 +5159,9 @@ End
 
 # Geometry Information
 Geometry:
-	Frame.bsplit: 0.99
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.01
+	Frame.bsplit: 0.5
+	Frame.tsplit: 0.01
+	Frame.vsplit: 0.99
 
 	# Layer
 	Layer: Media
@@ -3356,19 +5216,22 @@ Geometry:
 		Palette3.max: 10.0
 		Palette3.min: 0.001
 		Palette3.n: 40
+		Palette4: True
 		Palette4._visible: True
 		Palette4.cpd: 10
 		Palette4.max: 1e+14
 		Palette4.min: 100000000.0
 		Palette4.n: 60
 		Show._visible: True
+		Show.label: None
 		Show.lattice: 1
 		Show.voxel: 1
+		Usrbin: True
 		Usrbin._visible: True
-		Usrbin.det: 6
-		Usrbin.file: hall-b_cone_justGold_21.bnn
-		Usrbin.norm: 3.6E-4
-		Usrbin.palette: Palette3
+		Usrbin.det: 3
+		Usrbin.file: PolarizedTarget/NH3Data/poltarget_21.bnn
+		Usrbin.norm: 4.91E17
+		Usrbin.palette: Palette4
 		deflights: 1
 		layer: 3D
 	End
@@ -3388,7 +5251,7 @@ Plot: Red
 	cbtics: 0
 	coord: X-Y
 	cpd: 0
-	extends: 37.7159 0.0371585
+	extends: 37.7159 2520.68
 	grid: 0
 	index: 0
 	labels: 1
@@ -3414,10 +5277,10 @@ Plot: Blue
 	basisv: 1 0 0
 	boundaries: 1
 	coord: Z-X
-	extends: 207.36 121.57
+	extends: 13.4588 0.0132599
 	labels: 1
-	layer: 3D
-	origin: -7.55145 -0.196182 -37.762
+	layer: Media
+	origin: 0.612131 -0.196182 -130.362
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -3436,7 +5299,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 57.8705 3867.68
+	extends: 57.8705 0.0570715
 	grid: 0
 	index: 0
 	labels: 1
@@ -4096,10 +5959,10 @@ Plot: Green
 	basisv: 0 -1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 114.583 0.113001
+	extends: 10.7093 6.40644
 	labels: 1
 	layer: 3D
-	origin: 0 -4.23437 -40.9574
+	origin: 0 1.5047 -124.171
 	subtype: Material
 	title: GeoViewer Green plot
 End
