@@ -183,8 +183,11 @@ USRBIN           11.      DOSE      -21.       50.       0.0      180.Dose
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DoseEQ
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+AUXSCORE      USRBIN                        DoseEQ    DoseEQ          EWT74
 USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
@@ -196,5 +199,5 @@ USRBDX           0.1  0.000001      100.                            1. &
 * Set the random number seed
 RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START      10000000.
+START          5000.
 STOP

@@ -3,9 +3,11 @@ TITLE
 * Set the defaults for precision simulations
 DEFAULTS                                                              PRECISIO
 * Define the beam characteristics
-BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
+BEAM            -11.            0.142857     -0.01     -0.01          ELECTRON
 * Define the beam position
 BEAMPOS          0.0       0.0     -138.       0.0       0.0
+PHYSICS           1.                                                  COALESCE
+PHYSICS           3.                                                  EVAPORAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT          ELECTNUC
 GEOBEGIN                                                              COMBNAME
@@ -17,9 +19,25 @@ SPH void       0.0 0.0 0.0 300.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.0315 0.25
 RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
+RPP DHold      -2.2225 2.2225 10.1473 14.4923 -149.05 -110.95
+RCC Ac1        0.95 14.5923 -136.34 0.0 -2.23 0.0 0.65
+RCC Act_fo1    0.95 12.4923 -136.34 0.0 0.0254 0.0 0.57
+RCC Ac2        -0.95 14.4923 -136.34 0.0 -2.23 0.0 0.77
+RCC Act_fo2    -0.95 12.4923 -136.34 0.0 0.0254 0.0 0.57
+RCC Act_Cd2    -0.95 12.3923 -136.34 0.0 0.2254 0.0 0.67
+RCC Ac3        0.95 14.4923 -113.51 0.0 -2.23 0.0 0.65
+RCC Act_fo3    0.95 12.4923 -113.51 0.0 0.0254 0.0 0.57
+RCC Ac4        -0.95 14.4923 -113.51 0.0 -2.23 0.0 0.77
+RCC Act_fo4    -0.95 12.4923 -113.51 0.0 0.0254 0.0 0.57
+RCC Act_Cd4    -0.95 12.3923 -113.51 0.0 0.2254 0.0 0.67
+RPP Dose1_h    -1.9 1.9 12.36 14.5923 -146.56 -138.8
+RPP Dose2_h    -1.9 1.9 12.36 14.5923 -133.88 -126.12
+RPP Dose3_h    -1.9 1.9 12.36 14.5923 -123.73 -115.97
+RPP DHold1     -2.34 2.34 10.13 14.81 -251.59 -108.41
+RPP DHold2     -2.54 2.54 9.93 15.01 -251.59 -108.41
 RPP tghold1    -1.3 1.3 -0.5 0.5 -127.357 -127.297
-RPP tghold2    5. 7. -0.5 0.5 -167. -124.
-RPP tghold3    -7. -5. -0.5 0.5 -167. -124.
+RPP tghold2    3. 3.5 -0.5 0.5 -167. -129.9
+RPP tghold3    -3.50 -3. -0.5 0.5 -167. -129.85
 RCC tgc1_o     0.0 0.0 -138.25 0.0 0.0 1.05 2.7
 RCC tgc1_i     0.0 0.0 -138.25 0.0 0.0 .6 2.55
 RCC tgc2_i     0.0 0.0 -137.65 0.0 0.0 .65 2.25
@@ -69,11 +87,27 @@ BLKBODY      5 +blkbody -void
 * Void around
 HallAir      5 +void -target -red_o -yel1_o -yel2_o -gold1_o -purp1_o -purp2_o -blu1_o -blu2_o
                -sil1_o -sil2_o -tghold1 -tghold2 -tghold3 -( +sol1_o -sol1_i -sol2_i -sol3_i )
-               -( +Cmot1 -Cmot ) -tgc1_o -tgc2_o -tgc3_o
+               -( +Cmot1 -Cmot ) -tgc1_o -tgc2_o -tgc3_o -DHold2
+               | +DHold1 -DHold
+               | +Ac1 -Act_fo1
+               | +Ac2 -Act_Cd2
+               | +Ac3 -Act_fo3
+               | +Ac4 -Act_Cd4
+               | +Dose1_h
+               | +Dose2_h
+               | +Dose3_h
                | +tgc1_i
                | +tgc2_i
                | +tgc3_i -TGLIQ
                | +tgc4_i -TGLIQ
+HoldTube     5 +DHold2 -DHold1
+AcFO1        5 +Act_fo1
+AcFO2        5 +Act_fo2
+AcFO3        5 +Act_fo3
+AcFO4        5 +Act_fo4
+AcCD2        5 +Act_Cd2 -Act_fo2
+AcCD4        5 +Act_Cd4 -Act_fo4
+Holder       5 +DHold -Ac1 -Ac2 -Ac3 -Ac4 -Dose1_h -Dose2_h -Dose3_h
 Motor1       5 +Cmot3 -Cmot2
 TGliq        5 +TGLIQ
 TGAL         5 +tgc1_o -tgc1_i -tgc2_i
@@ -154,6 +188,42 @@ MAT-PROP         40.                      CHROMIUM                    DPA-ENER
 STERNHEI      4.1781      .034    3.0451    .15419    2.9896       .14CHROMIUM
 COMPOUND        -.92  TUNGSTEN      -.05    NICKEL      -.03      IRONW5Ni3Fe
 COMPOUND    -.470749    OXYGEN  -.529251  ALUMINUM                    AL2O3
+* Poly-p-xylylene  Paralene-N
+* Chemical            H   H-C - C-H   H
+* Formula             |    //    \\   |
+*               ----- C - C       C - C -----
+*   C H               |    \     /    |
+*    8 8              H   H-C = C-H   H
+MATERIAL                            1.11                              Paralene
+COMPOUND          8.  HYDROGEN        8.    CARBON                    Paralene
+* Polypropylene
+* Chemical                 H     H
+* Formula                  |     |
+*                    ----- C --- C -----
+*      |C  H  |            |     |
+*      | 3  6 |n           H   H-C-H
+*                                |
+*                                H
+MATERIAL                             0.9                              Polyprop
+COMPOUND          6.  HYDROGEN        3.    CARBON                    Polyprop
+MATERIAL         17.            0.003214                              CHLORINE
+* 232 Polyvinylchloride (PVC)
+* Chemical               Cl   H
+* Formula                |    |
+*                   ---- C -- C ----
+*   C H Cl CH            |    |
+*            2           H    H
+*
+* There are LARGE density variations depending on fabrication.
+MATERIAL                             1.3                              PVC
+COMPOUND          3.  HYDROGEN        2.    CARBON        1.  CHLORINEPVC
+MATERIAL         49.                7.31                              INDIUM
+MATERIAL         48.                8.65                              CADMIUM
+MAT-PROP                            469.   CADMIUM
+STERNHEI      5.2727    0.1281    3.1667   0.24609    2.6772      0.14CADMIUM
+MAT-PROP                            488.    INDIUM
+MAT-PROP          7.                        INDIUM                    DPA-ENER
+STERNHEI      5.5211    0.2406    3.2032   0.23879    2.7144      0.14INDIUM
 MAT-PROP                           145.2     AL2O3
 STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
 LOW-MAT         ZINK       30.       -2.      296.                    ZINC
@@ -161,9 +231,9 @@ LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
 * ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
-ASSIGNMA     SILICON    Motor1                            1.
+ASSIGNMA         AIR    Motor1                            1.
 ASSIGNMA         AIR    TARGET                            1.
-ASSIGNMA    H-LIQUID     TGliq                            1.
+ASSIGNMA    DEUTERIU     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
 ASSIGNMA     W5Ni3Fe    ConYel
@@ -174,17 +244,29 @@ ASSIGNMA     W5Ni3Fe    ConBlu
 ASSIGNMA     W5Ni3Fe    ConSil
 ASSIGNMA         AIR    TGHOLD                            1.
 ASSIGNMA        IRON     SOLEN                            1.
-ASSIGNMA        AP1d     Motor                            1.
+ASSIGNMA         AIR     Motor                            1.
 ASSIGNMA         AIR      TGAL                            1.
+ASSIGNMA         PVC  HoldTube
+ASSIGNMA    Polyprop    Holder
+ASSIGNMA     CADMIUM     AcCD2     AcCD4
+ASSIGNMA      INDIUM     AcFO1     AcFO4
+RADDECAY          1.        1.                       1008000
 MGNFIELD         30.     0.001      0.01
+* 4h at 10nA
+IRRPROFI      14400.   6.24E10
+* 1min 10min 30min 1h 6h 1day
+DCYTIMES         60.      600.     1800.     3600.    21600.    86400.
 LAM-BIAS                  0.02              PHOTON    PHOTON
 LAM-BIAS                  0.02            ELECTRON  ELECTRON
 USRBIN           11.      DOSE      -21.       50.       0.0      180.Dose
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DoseEQ
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+AUXSCORE      USRBIN                        DoseEQ    DoseEQ          EWT74
 USRBDX           -1.   NEUTRON      -23.   HallAir     Motor          N_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.  ELECTRON      -23.   HallAir     Motor          e_motor
@@ -193,8 +275,42 @@ USRBDX           -1.    PROTON      -23.   HallAir     Motor          p_motor
 USRBDX           0.1  0.000001      100.                            1. &
 USRBDX           -1.    PHOTON      -23.   HallAir     Motor          ph_motor
 USRBDX           0.1  0.000001      100.                            1. &
+DCYSCORE          1.                       hall_1m   hall_1m          USRBIN
+DCYSCORE          2.                      hall_10m  hall_10m          USRBIN
+DCYSCORE          3.                      hall_30m  hall_30m          USRBIN
+DCYSCORE          4.                       hall_1h   hall_1h          USRBIN
+DCYSCORE          5.                       hall_6h   hall_6h          USRBIN
+DCYSCORE          1.                       Ref1_1m   Ref4_1m          RESNUCLE
+DCYSCORE          2.                      Ref1_10m  Ref4_10m          RESNUCLE
+DCYSCORE          6.                       Ref1_1d   Ref4_1d          RESNUCLE
+DCYSCORE          6.                       hall_1d   hall_1d          USRBIN
+AUXSCORE      USRBIN                       hall_1m   hall_1d          EWT74
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_1m
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_10m
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_30m
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_1h
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_6h
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+USRBIN           10.   DOSE-EQ      -25.       20.       20.     -112.hall_1d
+USRBIN          -20.      -20.     -152.       40.       40.       40. &
+RESNUCLE          3.      -27.                         AcFO1          Ref1_1m
+RESNUCLE          3.      -27.                         AcFO2          Ref2_1m
+RESNUCLE          3.      -27.                         AcFO3          Ref3_1m
+RESNUCLE          3.      -27.                         AcFO4          Ref4_1m
+RESNUCLE          3.      -27.                         AcFO1          Ref1_10m
+RESNUCLE          3.      -27.                         AcFO2          Ref2_10m
+RESNUCLE          3.      -27.                         AcFO3          Ref3_10m
+RESNUCLE          3.      -27.                         AcFO4          Ref4_10m
+RESNUCLE          3.      -27.                         AcFO1          Ref1_1d
+RESNUCLE          3.      -27.                         AcFO2          Ref2_1d
+RESNUCLE          3.      -27.                         AcFO3          Ref3_1d
+RESNUCLE          3.      -27.                         AcFO4          Ref4_1d
 * Set the random number seed
 RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START      10000000.
+START      50000000.
 STOP
