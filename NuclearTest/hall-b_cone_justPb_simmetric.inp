@@ -18,7 +18,7 @@ SPH blkbody    0.0 0.0 0.0 100000.
 SPH void       0.0 0.0 0.0 300.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.0315 0.25
-RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
+RCC TGLIQ      0.0 0.0 -133.5 0.0 0.0 0.0125 0.5
 RPP DHold      -2.2225 2.2225 10.1473 14.4923 -149.05 -110.95
 RCC CHold_i    0.0 0.0 -149.05 0.0 0.0 38.1 10.1473
 RCC CHold_o    0.0 0.0 -149.05 0.0 0.0 38.1 14.4923
@@ -261,7 +261,7 @@ LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
 ASSIGNMA         AIR    TARGET                            1.
-ASSIGNMA    DEUTERIU     TGliq                            1.
+ASSIGNMA        LEAD     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
 ASSIGNMA     W5Ni3Fe    ConYel

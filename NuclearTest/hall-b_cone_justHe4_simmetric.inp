@@ -261,7 +261,7 @@ LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
 ASSIGNMA    BLCKHOLE   BLKBODY
 ASSIGNMA         AIR   HallAir                            1.
 ASSIGNMA         AIR    TARGET                            1.
-ASSIGNMA    DEUTERIU     TGliq                            1.
+ASSIGNMA       He4TG     TGliq                            1.
 ASSIGNMA      VACUUM    Vacuum
 ASSIGNMA     W5Ni3Fe   ConeRed
 ASSIGNMA     W5Ni3Fe    ConYel

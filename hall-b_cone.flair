@@ -2,7 +2,7 @@
 # FLUKA Project file
 Version: 2
 Title: 
-Input: NuclearTest/hall-b_cone_justD2.inp
+Input: NuclearTest/hall-b_cone_justHe4_simmetric.inp
 Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
@@ -14,16 +14,21 @@ LinkPrg: ldpmqmd
 F77bound: True
 F77dline: False
 
+# Properties
+Properties: Input
+	REGION/AcFO4/@select: 1
+End
+
 # Run information
 Run: <default>
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
 	StartRun: 1559661672
-	Family:  hall-b_cone_justD2_simmetric_aa hall-b_cone_justD2_simmetric_ab hall-b_cone_justD2_simmetric_ac hall-b_cone_justD2_simmetric_ad hall-b_cone_justD2_simmetric_ae hall-b_cone_justD2_simmetric_af hall-b_cone_justD2_simmetric_ag hall-b_cone_justD2_simmetric_ah hall-b_cone_justD2_simmetric_ai hall-b_cone_justD2_simmetric_aj hall-b_cone_justD2_simmetric_ak hall-b_cone_justD2_simmetric_al hall-b_cone_justD2_simmetric_am hall-b_cone_justD2_simmetric_an hall-b_cone_justD2_simmetric_ao hall-b_cone_justD2_simmetric_ap hall-b_cone_justD2_simmetric_aq hall-b_cone_justD2_simmetric_ar hall-b_cone_justD2_simmetric_as hall-b_cone_justD2_simmetric_at hall-b_cone_justD2_simmetric_au hall-b_cone_justD2_simmetric_av hall-b_cone_justD2_simmetric_aw hall-b_cone_justD2_simmetric_ax hall-b_cone_justD2_simmetric_ay hall-b_cone_justD2_simmetric_az hall-b_cone_justD2_simmetric_ba hall-b_cone_justD2_simmetric_bb hall-b_cone_justD2_simmetric_bc hall-b_cone_justD2_simmetric_bd
+	Family:  hall-b_cone_justHe4_simmetric_aa hall-b_cone_justHe4_simmetric_ab hall-b_cone_justHe4_simmetric_ac hall-b_cone_justHe4_simmetric_ad hall-b_cone_justHe4_simmetric_ae hall-b_cone_justHe4_simmetric_af hall-b_cone_justHe4_simmetric_ag hall-b_cone_justHe4_simmetric_ah hall-b_cone_justHe4_simmetric_ai hall-b_cone_justHe4_simmetric_aj hall-b_cone_justHe4_simmetric_ak hall-b_cone_justHe4_simmetric_al hall-b_cone_justHe4_simmetric_am hall-b_cone_justHe4_simmetric_an hall-b_cone_justHe4_simmetric_ao hall-b_cone_justHe4_simmetric_ap hall-b_cone_justHe4_simmetric_aq hall-b_cone_justHe4_simmetric_ar hall-b_cone_justHe4_simmetric_as hall-b_cone_justHe4_simmetric_at hall-b_cone_justHe4_simmetric_au hall-b_cone_justHe4_simmetric_av hall-b_cone_justHe4_simmetric_aw hall-b_cone_justHe4_simmetric_ax hall-b_cone_justHe4_simmetric_ay hall-b_cone_justHe4_simmetric_az hall-b_cone_justHe4_simmetric_ba hall-b_cone_justHe4_simmetric_bb hall-b_cone_justHe4_simmetric_bc hall-b_cone_justHe4_simmetric_bd
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
@@ -31,7 +36,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
@@ -39,7 +44,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -47,7 +52,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -57,84 +62,32 @@ Run: <default>
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_aa
+Run: hall-b_cone_justHe4_simmetric_aa
 	Rnd:      123457
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aa_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -142,7 +95,7 @@ Run: hall-b_cone_justD2_simmetric_aa
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aa_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -152,84 +105,32 @@ Run: hall-b_cone_justD2_simmetric_aa
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ab
+Run: hall-b_cone_justHe4_simmetric_ab
 	Rnd:      123458
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ab_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -237,7 +138,7 @@ Run: hall-b_cone_justD2_simmetric_ab
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ab_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -247,84 +148,32 @@ Run: hall-b_cone_justD2_simmetric_ab
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ac
+Run: hall-b_cone_justHe4_simmetric_ac
 	Rnd:      123459
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ac_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -332,7 +181,7 @@ Run: hall-b_cone_justD2_simmetric_ac
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ac_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -342,84 +191,32 @@ Run: hall-b_cone_justD2_simmetric_ac
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ad
+Run: hall-b_cone_justHe4_simmetric_ad
 	Rnd:      123460
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ad_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -427,7 +224,7 @@ Run: hall-b_cone_justD2_simmetric_ad
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ad_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -437,84 +234,32 @@ Run: hall-b_cone_justD2_simmetric_ad
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ae
+Run: hall-b_cone_justHe4_simmetric_ae
 	Rnd:      123461
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ae_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -522,7 +267,7 @@ Run: hall-b_cone_justD2_simmetric_ae
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ae_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -532,84 +277,32 @@ Run: hall-b_cone_justD2_simmetric_ae
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_af
+Run: hall-b_cone_justHe4_simmetric_af
 	Rnd:      123462
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_af_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -617,7 +310,7 @@ Run: hall-b_cone_justD2_simmetric_af
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_af_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -627,84 +320,32 @@ Run: hall-b_cone_justD2_simmetric_af
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ag
+Run: hall-b_cone_justHe4_simmetric_ag
 	Rnd:      123463
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ag_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -712,7 +353,7 @@ Run: hall-b_cone_justD2_simmetric_ag
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ag_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -722,84 +363,32 @@ Run: hall-b_cone_justD2_simmetric_ag
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ah
+Run: hall-b_cone_justHe4_simmetric_ah
 	Rnd:      123464
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ah_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -807,7 +396,7 @@ Run: hall-b_cone_justD2_simmetric_ah
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ah_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -817,84 +406,32 @@ Run: hall-b_cone_justD2_simmetric_ah
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ai
+Run: hall-b_cone_justHe4_simmetric_ai
 	Rnd:      123465
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ai_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -902,7 +439,7 @@ Run: hall-b_cone_justD2_simmetric_ai
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ai_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -912,84 +449,32 @@ Run: hall-b_cone_justD2_simmetric_ai
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_aj
+Run: hall-b_cone_justHe4_simmetric_aj
 	Rnd:      123466
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aj_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -997,7 +482,7 @@ Run: hall-b_cone_justD2_simmetric_aj
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aj_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1007,84 +492,32 @@ Run: hall-b_cone_justD2_simmetric_aj
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ak
+Run: hall-b_cone_justHe4_simmetric_ak
 	Rnd:      123467
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ak_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1092,7 +525,7 @@ Run: hall-b_cone_justD2_simmetric_ak
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ak_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1102,84 +535,32 @@ Run: hall-b_cone_justD2_simmetric_ak
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_al
+Run: hall-b_cone_justHe4_simmetric_al
 	Rnd:      123468
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192359
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_al_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1187,7 +568,7 @@ Run: hall-b_cone_justD2_simmetric_al
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_al_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1197,84 +578,32 @@ Run: hall-b_cone_justD2_simmetric_al
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_am
+Run: hall-b_cone_justHe4_simmetric_am
 	Rnd:      123469
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_am_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1282,7 +611,7 @@ Run: hall-b_cone_justD2_simmetric_am
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_am_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1292,84 +621,32 @@ Run: hall-b_cone_justD2_simmetric_am
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_an
+Run: hall-b_cone_justHe4_simmetric_an
 	Rnd:      123470
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_an_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1377,7 +654,7 @@ Run: hall-b_cone_justD2_simmetric_an
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_an_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1387,84 +664,32 @@ Run: hall-b_cone_justD2_simmetric_an
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ao
+Run: hall-b_cone_justHe4_simmetric_ao
 	Rnd:      123471
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ao_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1472,7 +697,7 @@ Run: hall-b_cone_justD2_simmetric_ao
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ao_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1482,84 +707,32 @@ Run: hall-b_cone_justD2_simmetric_ao
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ap
+Run: hall-b_cone_justHe4_simmetric_ap
 	Rnd:      123472
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ap_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1567,7 +740,7 @@ Run: hall-b_cone_justD2_simmetric_ap
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ap_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1577,84 +750,32 @@ Run: hall-b_cone_justD2_simmetric_ap
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_aq
+Run: hall-b_cone_justHe4_simmetric_aq
 	Rnd:      123473
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aq_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1662,7 +783,7 @@ Run: hall-b_cone_justD2_simmetric_aq
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aq_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1672,84 +793,32 @@ Run: hall-b_cone_justD2_simmetric_aq
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ar
+Run: hall-b_cone_justHe4_simmetric_ar
 	Rnd:      123474
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ar_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1757,7 +826,7 @@ Run: hall-b_cone_justD2_simmetric_ar
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ar_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1767,84 +836,32 @@ Run: hall-b_cone_justD2_simmetric_ar
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_as
+Run: hall-b_cone_justHe4_simmetric_as
 	Rnd:      123475
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_as_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1852,7 +869,7 @@ Run: hall-b_cone_justD2_simmetric_as
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_as_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1862,84 +879,32 @@ Run: hall-b_cone_justD2_simmetric_as
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_at
+Run: hall-b_cone_justHe4_simmetric_at
 	Rnd:      123476
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_at_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1947,7 +912,7 @@ Run: hall-b_cone_justD2_simmetric_at
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_at_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1957,84 +922,32 @@ Run: hall-b_cone_justD2_simmetric_at
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_au
+Run: hall-b_cone_justHe4_simmetric_au
 	Rnd:      123477
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_au_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2042,7 +955,7 @@ Run: hall-b_cone_justD2_simmetric_au
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_au_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2052,84 +965,32 @@ Run: hall-b_cone_justD2_simmetric_au
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_av
+Run: hall-b_cone_justHe4_simmetric_av
 	Rnd:      123478
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_av_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2137,7 +998,7 @@ Run: hall-b_cone_justD2_simmetric_av
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_av_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2147,84 +1008,32 @@ Run: hall-b_cone_justD2_simmetric_av
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_aw
+Run: hall-b_cone_justHe4_simmetric_aw
 	Rnd:      123479
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aw_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2232,7 +1041,7 @@ Run: hall-b_cone_justD2_simmetric_aw
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_aw_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2242,84 +1051,32 @@ Run: hall-b_cone_justD2_simmetric_aw
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ax
+Run: hall-b_cone_justHe4_simmetric_ax
 	Rnd:      123480
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ax_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2327,7 +1084,7 @@ Run: hall-b_cone_justD2_simmetric_ax
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ax_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2337,84 +1094,32 @@ Run: hall-b_cone_justD2_simmetric_ax
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ay
+Run: hall-b_cone_justHe4_simmetric_ay
 	Rnd:      123481
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ay_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2422,7 +1127,7 @@ Run: hall-b_cone_justD2_simmetric_ay
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ay_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2432,84 +1137,32 @@ Run: hall-b_cone_justD2_simmetric_ay
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_az
+Run: hall-b_cone_justHe4_simmetric_az
 	Rnd:      123482
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_az_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2517,7 +1170,7 @@ Run: hall-b_cone_justD2_simmetric_az
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_az_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2527,84 +1180,32 @@ Run: hall-b_cone_justD2_simmetric_az
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_ba
+Run: hall-b_cone_justHe4_simmetric_ba
 	Rnd:      123483
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192360
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ba_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2612,7 +1213,7 @@ Run: hall-b_cone_justD2_simmetric_ba
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_ba_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2622,84 +1223,32 @@ Run: hall-b_cone_justD2_simmetric_ba
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_bb
+Run: hall-b_cone_justHe4_simmetric_bb
 	Rnd:      123484
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192361
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bb_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2707,7 +1256,7 @@ Run: hall-b_cone_justD2_simmetric_bb
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bb_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2717,84 +1266,32 @@ Run: hall-b_cone_justD2_simmetric_bb
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_bc
+Run: hall-b_cone_justHe4_simmetric_bc
 	Rnd:      123485
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192361
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bc_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2802,7 +1299,7 @@ Run: hall-b_cone_justD2_simmetric_bc
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bc_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2812,84 +1309,32 @@ Run: hall-b_cone_justD2_simmetric_bc
 End
 
 # Run information
-Run: hall-b_cone_justD2_simmetric_bd
+Run: hall-b_cone_justHe4_simmetric_bd
 	Rnd:      123486
 	Prev:     0
 	Last:     1
-	Status:   3
+	Status:   0
 	Pid:      0
-	StartRun: 1579192361
+	StartRun: 1559661672
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_21.bnn
-	Data: hall-b_cone_justGold_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_21.bnn
+	Data: \I_\U.\e
 		Unit: 21
 		Type: b
-		Rule: +,hall-b_cone_justD2_aw001_fort.21
-		Rule: +,hall-b_cone_justD2_ao001_fort.21
-		Rule: +,hall-b_cone_justD2_al001_fort.21
-		Rule: +,hall-b_cone_justD2_ay001_fort.21
-		Rule: +,hall-b_cone_justD2_ap001_fort.21
-		Rule: +,hall-b_cone_justD2_aj001_fort.21
-		Rule: +,hall-b_cone_justD2_ar001_fort.21
-		Rule: +,hall-b_cone_justD2_bc001_fort.21
-		Rule: +,hall-b_cone_justD2_ac001_fort.21
-		Rule: +,hall-b_cone_justD2_az001_fort.21
-		Rule: +,hall-b_cone_justD2_ae001_fort.21
-		Rule: +,hall-b_cone_justD2_af001_fort.21
-		Rule: +,hall-b_cone_justD2_at001_fort.21
-		Rule: +,hall-b_cone_justD2_aq001_fort.21
-		Rule: +,hall-b_cone_justD2_ax001_fort.21
-		Rule: +,hall-b_cone_justD2_bd001_fort.21
-		Rule: +,hall-b_cone_justD2_ak001_fort.21
-		Rule: +,hall-b_cone_justD2_ab001_fort.21
-		Rule: +,hall-b_cone_justD2_ad001_fort.21
-		Rule: +,hall-b_cone_justD2_au001_fort.21
-		Rule: +,hall-b_cone_justD2_bb001_fort.21
-		Rule: +,hall-b_cone_justD2_aa001_fort.21
-		Rule: +,hall-b_cone_justD2_av001_fort.21
-		Rule: +,hall-b_cone_justD2_ai001_fort.21
-		Rule: +,hall-b_cone_justD2_ba001_fort.21
-		Rule: +,hall-b_cone_justD2_as001_fort.21
-		Rule: +,hall-b_cone_justD2_an001_fort.21
-		Rule: +,hall-b_cone_justD2_ag001_fort.21
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justGold_23.bnx
-	Data: hall-b_cone_justGold_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_23.bnx
+	Data: \I_\U.\e
 		Unit: 23
 		Type: x
-		Rule: +,hall-b_cone_justD2_aw001_fort.23
-		Rule: +,hall-b_cone_justD2_ao001_fort.23
-		Rule: +,hall-b_cone_justD2_al001_fort.23
-		Rule: +,hall-b_cone_justD2_ay001_fort.23
-		Rule: +,hall-b_cone_justD2_ap001_fort.23
-		Rule: +,hall-b_cone_justD2_aj001_fort.23
-		Rule: +,hall-b_cone_justD2_ar001_fort.23
-		Rule: +,hall-b_cone_justD2_bc001_fort.23
-		Rule: +,hall-b_cone_justD2_ac001_fort.23
-		Rule: +,hall-b_cone_justD2_az001_fort.23
-		Rule: +,hall-b_cone_justD2_ae001_fort.23
-		Rule: +,hall-b_cone_justD2_af001_fort.23
-		Rule: +,hall-b_cone_justD2_at001_fort.23
-		Rule: +,hall-b_cone_justD2_aq001_fort.23
-		Rule: +,hall-b_cone_justD2_ax001_fort.23
-		Rule: +,hall-b_cone_justD2_bd001_fort.23
-		Rule: +,hall-b_cone_justD2_ak001_fort.23
-		Rule: +,hall-b_cone_justD2_ab001_fort.23
-		Rule: +,hall-b_cone_justD2_ad001_fort.23
-		Rule: +,hall-b_cone_justD2_au001_fort.23
-		Rule: +,hall-b_cone_justD2_bb001_fort.23
-		Rule: +,hall-b_cone_justD2_aa001_fort.23
-		Rule: +,hall-b_cone_justD2_av001_fort.23
-		Rule: +,hall-b_cone_justD2_ba001_fort.23
-		Rule: +,hall-b_cone_justD2_ai001_fort.23
-		Rule: +,hall-b_cone_justD2_as001_fort.23
-		Rule: +,hall-b_cone_justD2_an001_fort.23
-		Rule: +,hall-b_cone_justD2_ag001_fort.23
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bd_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2897,7 +1342,7 @@ Run: hall-b_cone_justD2_simmetric_bd
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justD2_simmetric_bd_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -3169,8 +1614,8 @@ End
 # Geometry Information
 Geometry:
 	Frame.bsplit: 0.5
-	Frame.tsplit: 0.5
-	Frame.vsplit: 0.5
+	Frame.tsplit: 0.99
+	Frame.vsplit: 0.99
 
 	# Layer
 	Layer: Media
@@ -3264,12 +1709,12 @@ Plot: Red
 	cbtics: 0
 	coord: Z-X
 	cpd: 0
-	extends: 26.1916 16.2049
+	extends: 484.242 246.394
 	grid: 0
 	index: 0
 	labels: 1
-	layer: 3D
-	origin: -4.97084 14 -129.729
+	layer: Media
+	origin: 136.127 0 -117.334
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -3290,7 +1735,7 @@ Plot: Blue
 	basisv: 0.0848337 0.995997 0.0281675
 	boundaries: 1
 	coord: U-V
-	extends: 100 61.8705
+	extends: 100 0.120627
 	labels: 1
 	layer: 3D
 	origin: -0.999479 -1.72433 -154.423
@@ -3312,7 +1757,7 @@ Plot: Magenta
 	cbtics: 0
 	coord: X-Z
 	cpd: 0
-	extends: 13.4588 8.33904
+	extends: 13.4588 0.016235
 	grid: 0
 	index: 0
 	labels: 1
@@ -4013,7 +2458,7 @@ Plot: Green
 	basisv: 0 1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 31.9778 19.8133
+	extends: 31.9778 1782.23
 	labels: 1
 	layer: Media
 	origin: -1 10.8489 -120.339
@@ -4176,12 +2621,41 @@ End
 Plot: NuclearTest/hall-b_cone_justD2_simmetric_21_plot
 	Format: .eps
 	Type:   USRBIN
+	axes: Auto
 	cbcolors: 30
 	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
 	cbtics: 1
+	cpd: 0
 	datafile: NuclearTest/hall-b_cone_justD2_simmetric_21.bnn
+	det: 1
+	errors: 0
 	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 0.19038160123869274
+	lw.0: 0
+	max: 1.80118717E-02
+	min: 2.94936713E-16
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
 	title: USRBIN NuclearTest/hall-b cone justD2 simmetric 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
 End
 
 # USR-1D plot "Spectrum on foil INTEGRATED (4h @10nA)"
