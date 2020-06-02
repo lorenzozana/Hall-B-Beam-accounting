@@ -289,9 +289,18 @@ USRBIN           11.   DOSE-EM      -21.       50.       0.0      180.DoseEM
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DoseEQ
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DEQ_n
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DEQ_e
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
+USRBIN           11.   DOSE-EQ      -21.       50.       0.0      180.DEQ_ph
+USRBIN           0.0       0.0     -180.      200.        1.      180. &
 USRBIN           11.  SI1MEVNE      -21.       50.       0.0      180.1MeVeq
 USRBIN           0.0       0.0     -180.      200.        1.      180. &
 AUXSCORE      USRBIN                        DoseEQ    DoseEQ          EWT74
+AUXSCORE      USRBIN   NEUTRON               DEQ_n     DEQ_n          EWT74
+AUXSCORE      USRBIN  ELECTRON               DEQ_n     DEQ_n          EWT74
+AUXSCORE      USRBIN    PHOTON              DEQ_ph    DEQ_ph          EWT74
 USRBDX            1.   NEUTRON      -23.     AcCD2     AcFO2          Neutron1
 USRBDX         0.010    0.0001      100.                            1. &
 USRBDX            1.   NEUTRON      -23.   HallAir     AcFO1          Neutron2
