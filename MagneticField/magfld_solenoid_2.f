@@ -59,7 +59,7 @@
       PARAMETER (RMAX = 3.0)
       PARAMETER (ZMIN = -3.0)
       PARAMETER (ZMAX = 3.0)
-      PARAMETER (ZC = -127.227)
+      PARAMETER (ZC = -133.5)
       
   
       INTEGER NSEC

@@ -2,7 +2,7 @@
 # FLUKA Project file
 Version: 2
 Title: 
-Input: NuclearTest/hall-b_cone_justHe4_simmetric.inp
+Input: NuclearTest/hall-b_cone_justPb_simmetric.inp
 Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
@@ -14,37 +14,36 @@ LinkPrg: ldpmqmd
 F77bound: True
 F77dline: False
 
-# Properties
-Properties: Input
-	REGION/AcFO4/@select: 1
-End
-
 # Run information
 Run: <default>
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   2
 	Pid:      0
 	StartRun: 1559661672
-	Family:  hall-b_cone_justHe4_simmetric_aa hall-b_cone_justHe4_simmetric_ab hall-b_cone_justHe4_simmetric_ac hall-b_cone_justHe4_simmetric_ad hall-b_cone_justHe4_simmetric_ae hall-b_cone_justHe4_simmetric_af hall-b_cone_justHe4_simmetric_ag hall-b_cone_justHe4_simmetric_ah hall-b_cone_justHe4_simmetric_ai hall-b_cone_justHe4_simmetric_aj hall-b_cone_justHe4_simmetric_ak hall-b_cone_justHe4_simmetric_al hall-b_cone_justHe4_simmetric_am hall-b_cone_justHe4_simmetric_an hall-b_cone_justHe4_simmetric_ao hall-b_cone_justHe4_simmetric_ap hall-b_cone_justHe4_simmetric_aq hall-b_cone_justHe4_simmetric_ar hall-b_cone_justHe4_simmetric_as hall-b_cone_justHe4_simmetric_at hall-b_cone_justHe4_simmetric_au hall-b_cone_justHe4_simmetric_av hall-b_cone_justHe4_simmetric_aw hall-b_cone_justHe4_simmetric_ax hall-b_cone_justHe4_simmetric_ay hall-b_cone_justHe4_simmetric_az hall-b_cone_justHe4_simmetric_ba hall-b_cone_justHe4_simmetric_bb hall-b_cone_justHe4_simmetric_bc hall-b_cone_justHe4_simmetric_bd
+	Family:  hall-b_cone_justPb_simmetric_aa hall-b_cone_justPb_simmetric_ab hall-b_cone_justPb_simmetric_ac hall-b_cone_justPb_simmetric_ad hall-b_cone_justPb_simmetric_ae hall-b_cone_justPb_simmetric_af hall-b_cone_justPb_simmetric_ag hall-b_cone_justPb_simmetric_ah hall-b_cone_justPb_simmetric_ai hall-b_cone_justPb_simmetric_aj hall-b_cone_justPb_simmetric_ak hall-b_cone_justPb_simmetric_al hall-b_cone_justPb_simmetric_am hall-b_cone_justPb_simmetric_an hall-b_cone_justPb_simmetric_ao hall-b_cone_justPb_simmetric_ap hall-b_cone_justPb_simmetric_aq hall-b_cone_justPb_simmetric_ar hall-b_cone_justPb_simmetric_as hall-b_cone_justPb_simmetric_at hall-b_cone_justPb_simmetric_au hall-b_cone_justPb_simmetric_av hall-b_cone_justPb_simmetric_aw hall-b_cone_justPb_simmetric_ax hall-b_cone_justPb_simmetric_ay hall-b_cone_justPb_simmetric_az hall-b_cone_justPb_simmetric_ba hall-b_cone_justPb_simmetric_bb hall-b_cone_justPb_simmetric_bc hall-b_cone_justPb_simmetric_bd
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -52,7 +51,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -62,32 +61,36 @@ Run: <default>
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_aa
+Run: hall-b_cone_justPb_simmetric_aa
 	Rnd:      123457
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234500
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aa_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aa_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aa_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -95,7 +98,7 @@ Run: hall-b_cone_justHe4_simmetric_aa
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aa_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aa_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -105,32 +108,36 @@ Run: hall-b_cone_justHe4_simmetric_aa
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ab
+Run: hall-b_cone_justPb_simmetric_ab
 	Rnd:      123458
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234500
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ab_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ab_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ab_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -138,7 +145,7 @@ Run: hall-b_cone_justHe4_simmetric_ab
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ab_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ab_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -148,32 +155,36 @@ Run: hall-b_cone_justHe4_simmetric_ab
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ac
+Run: hall-b_cone_justPb_simmetric_ac
 	Rnd:      123459
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234500
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ac_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ac_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ac_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -181,7 +192,7 @@ Run: hall-b_cone_justHe4_simmetric_ac
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ac_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ac_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -191,32 +202,36 @@ Run: hall-b_cone_justHe4_simmetric_ac
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ad
+Run: hall-b_cone_justPb_simmetric_ad
 	Rnd:      123460
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234500
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ad_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ad_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ad_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -224,7 +239,7 @@ Run: hall-b_cone_justHe4_simmetric_ad
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ad_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ad_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -234,32 +249,36 @@ Run: hall-b_cone_justHe4_simmetric_ad
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ae
+Run: hall-b_cone_justPb_simmetric_ae
 	Rnd:      123461
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234500
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ae_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ae_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ae_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -267,7 +286,7 @@ Run: hall-b_cone_justHe4_simmetric_ae
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ae_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ae_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -277,32 +296,36 @@ Run: hall-b_cone_justHe4_simmetric_ae
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_af
+Run: hall-b_cone_justPb_simmetric_af
 	Rnd:      123462
 	Prev:     0
 	Last:     1
-	Status:   0
-	Pid:      0
-	StartRun: 1559661672
+	Status:   2
+	Pid:      23377
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_af_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_af_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_af_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -310,7 +333,7 @@ Run: hall-b_cone_justHe4_simmetric_af
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_af_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_af_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -320,32 +343,36 @@ Run: hall-b_cone_justHe4_simmetric_af
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ag
+Run: hall-b_cone_justPb_simmetric_ag
 	Rnd:      123463
 	Prev:     0
 	Last:     1
-	Status:   0
-	Pid:      0
-	StartRun: 1559661672
+	Status:   5
+	Pid:      23432
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ag_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ag_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ag_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -353,7 +380,7 @@ Run: hall-b_cone_justHe4_simmetric_ag
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ag_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ag_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -363,32 +390,36 @@ Run: hall-b_cone_justHe4_simmetric_ag
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ah
+Run: hall-b_cone_justPb_simmetric_ah
 	Rnd:      123464
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ah_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ah_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ah_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -396,7 +427,7 @@ Run: hall-b_cone_justHe4_simmetric_ah
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ah_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ah_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -406,32 +437,36 @@ Run: hall-b_cone_justHe4_simmetric_ah
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ai
+Run: hall-b_cone_justPb_simmetric_ai
 	Rnd:      123465
 	Prev:     0
 	Last:     1
-	Status:   0
-	Pid:      0
-	StartRun: 1559661672
+	Status:   5
+	Pid:      23510
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ai_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ai_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ai_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -439,7 +474,7 @@ Run: hall-b_cone_justHe4_simmetric_ai
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ai_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ai_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -449,32 +484,36 @@ Run: hall-b_cone_justHe4_simmetric_ai
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_aj
+Run: hall-b_cone_justPb_simmetric_aj
 	Rnd:      123466
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aj_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aj_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aj_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -482,7 +521,7 @@ Run: hall-b_cone_justHe4_simmetric_aj
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aj_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aj_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -492,32 +531,36 @@ Run: hall-b_cone_justHe4_simmetric_aj
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ak
+Run: hall-b_cone_justPb_simmetric_ak
 	Rnd:      123467
 	Prev:     0
 	Last:     1
-	Status:   0
-	Pid:      0
-	StartRun: 1559661672
+	Status:   5
+	Pid:      23584
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ak_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ak_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ak_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -525,7 +568,7 @@ Run: hall-b_cone_justHe4_simmetric_ak
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ak_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ak_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -535,32 +578,36 @@ Run: hall-b_cone_justHe4_simmetric_ak
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_al
+Run: hall-b_cone_justPb_simmetric_al
 	Rnd:      123468
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_al_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_al_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_al_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -568,7 +615,7 @@ Run: hall-b_cone_justHe4_simmetric_al
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_al_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_al_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -578,32 +625,36 @@ Run: hall-b_cone_justHe4_simmetric_al
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_am
+Run: hall-b_cone_justPb_simmetric_am
 	Rnd:      123469
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_am_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_am_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_am_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -611,7 +662,7 @@ Run: hall-b_cone_justHe4_simmetric_am
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_am_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_am_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -621,32 +672,36 @@ Run: hall-b_cone_justHe4_simmetric_am
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_an
+Run: hall-b_cone_justPb_simmetric_an
 	Rnd:      123470
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_an_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_an_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_an_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -654,7 +709,7 @@ Run: hall-b_cone_justHe4_simmetric_an
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_an_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_an_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -664,32 +719,36 @@ Run: hall-b_cone_justHe4_simmetric_an
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ao
+Run: hall-b_cone_justPb_simmetric_ao
 	Rnd:      123471
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ao_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ao_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ao_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -697,7 +756,7 @@ Run: hall-b_cone_justHe4_simmetric_ao
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ao_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ao_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -707,32 +766,36 @@ Run: hall-b_cone_justHe4_simmetric_ao
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ap
+Run: hall-b_cone_justPb_simmetric_ap
 	Rnd:      123472
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ap_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ap_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ap_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -740,7 +803,7 @@ Run: hall-b_cone_justHe4_simmetric_ap
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ap_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ap_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -750,32 +813,36 @@ Run: hall-b_cone_justHe4_simmetric_ap
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_aq
+Run: hall-b_cone_justPb_simmetric_aq
 	Rnd:      123473
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aq_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aq_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aq_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -783,7 +850,7 @@ Run: hall-b_cone_justHe4_simmetric_aq
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aq_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aq_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -793,32 +860,36 @@ Run: hall-b_cone_justHe4_simmetric_aq
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ar
+Run: hall-b_cone_justPb_simmetric_ar
 	Rnd:      123474
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ar_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ar_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ar_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -826,7 +897,7 @@ Run: hall-b_cone_justHe4_simmetric_ar
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ar_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ar_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -836,32 +907,36 @@ Run: hall-b_cone_justHe4_simmetric_ar
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_as
+Run: hall-b_cone_justPb_simmetric_as
 	Rnd:      123475
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_as_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_as_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_as_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -869,7 +944,7 @@ Run: hall-b_cone_justHe4_simmetric_as
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_as_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_as_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -879,32 +954,36 @@ Run: hall-b_cone_justHe4_simmetric_as
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_at
+Run: hall-b_cone_justPb_simmetric_at
 	Rnd:      123476
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_at_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_at_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_at_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -912,7 +991,7 @@ Run: hall-b_cone_justHe4_simmetric_at
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_at_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_at_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -922,32 +1001,36 @@ Run: hall-b_cone_justHe4_simmetric_at
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_au
+Run: hall-b_cone_justPb_simmetric_au
 	Rnd:      123477
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_au_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_au_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_au_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -955,7 +1038,7 @@ Run: hall-b_cone_justHe4_simmetric_au
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_au_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_au_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -965,32 +1048,36 @@ Run: hall-b_cone_justHe4_simmetric_au
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_av
+Run: hall-b_cone_justPb_simmetric_av
 	Rnd:      123478
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_av_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_av_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_av_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -998,7 +1085,7 @@ Run: hall-b_cone_justHe4_simmetric_av
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_av_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_av_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1008,32 +1095,36 @@ Run: hall-b_cone_justHe4_simmetric_av
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_aw
+Run: hall-b_cone_justPb_simmetric_aw
 	Rnd:      123479
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aw_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aw_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aw_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1041,7 +1132,7 @@ Run: hall-b_cone_justHe4_simmetric_aw
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_aw_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_aw_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1051,32 +1142,36 @@ Run: hall-b_cone_justHe4_simmetric_aw
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ax
+Run: hall-b_cone_justPb_simmetric_ax
 	Rnd:      123480
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ax_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ax_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ax_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1084,7 +1179,7 @@ Run: hall-b_cone_justHe4_simmetric_ax
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ax_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ax_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1094,32 +1189,36 @@ Run: hall-b_cone_justHe4_simmetric_ax
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ay
+Run: hall-b_cone_justPb_simmetric_ay
 	Rnd:      123481
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ay_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ay_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ay_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1127,7 +1226,7 @@ Run: hall-b_cone_justHe4_simmetric_ay
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ay_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ay_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1137,32 +1236,36 @@ Run: hall-b_cone_justHe4_simmetric_ay
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_az
+Run: hall-b_cone_justPb_simmetric_az
 	Rnd:      123482
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_az_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_az_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_az_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1170,7 +1273,7 @@ Run: hall-b_cone_justHe4_simmetric_az
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_az_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_az_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1180,32 +1283,36 @@ Run: hall-b_cone_justHe4_simmetric_az
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_ba
+Run: hall-b_cone_justPb_simmetric_ba
 	Rnd:      123483
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ba_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ba_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ba_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1213,7 +1320,7 @@ Run: hall-b_cone_justHe4_simmetric_ba
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_ba_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_ba_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1223,32 +1330,36 @@ Run: hall-b_cone_justHe4_simmetric_ba
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_bb
+Run: hall-b_cone_justPb_simmetric_bb
 	Rnd:      123484
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234501
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bb_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bb_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bb_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1256,7 +1367,7 @@ Run: hall-b_cone_justHe4_simmetric_bb
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bb_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bb_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1266,32 +1377,36 @@ Run: hall-b_cone_justHe4_simmetric_bb
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_bc
+Run: hall-b_cone_justPb_simmetric_bc
 	Rnd:      123485
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234502
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bc_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bc_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bc_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1299,7 +1414,7 @@ Run: hall-b_cone_justHe4_simmetric_bc
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bc_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bc_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1309,32 +1424,36 @@ Run: hall-b_cone_justHe4_simmetric_bc
 End
 
 # Run information
-Run: hall-b_cone_justHe4_simmetric_bd
+Run: hall-b_cone_justPb_simmetric_bd
 	Rnd:      123486
 	Prev:     0
 	Last:     1
-	Status:   0
+	Status:   3
 	Pid:      0
-	StartRun: 1559661672
+	StartRun: 1591234502
 	Parent:    <default>
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_21.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bd_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.21
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_au001_fort.21
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_23.bnx
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bd_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
 		Rule: +,\I\d\d\d_fort\.\U
 		Rule: +,\I\d\d\d_ftn\.\U
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_af001_fort.23
+		Rule: -,NuclearTest/hall-b_cone_justD2_simmetric_av001_fort.23
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_25.bnn
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bd_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1342,7 +1461,7 @@ Run: hall-b_cone_justHe4_simmetric_bd
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: NuclearTest/hall-b_cone_justHe4_simmetric_bd_27.rnc
+	# USRxxx data file: NuclearTest/hall-b_cone_justPb_simmetric_bd_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1709,12 +1828,12 @@ Plot: Red
 	cbtics: 0
 	coord: Z-X
 	cpd: 0
-	extends: 484.242 246.394
+	extends: 0.395361 0.20117
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: 136.127 0 -117.334
+	origin: -11.312 0 -141.746
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -2635,10 +2754,10 @@ Plot: NuclearTest/hall-b_cone_justD2_simmetric_21_plot
 	grid: 0
 	hist: 2D Projection
 	index: 0
-	int: 0.19038160123869274
+	int: 249297.32557226068
 	lw.0: 0
-	max: 1.80118717E-02
-	min: 2.94936713E-16
+	max: 3993.01904
+	min: 3.77294498E-08
 	proj: Y
 	ps.0: 0
 	pt.0: 0
@@ -2673,13 +2792,13 @@ Plot: NuclearTest/hall-b_cone_justD2_simmetric_23_plot
 	cbtics: 0
 	cpd: 0
 	det.0: 0
-	det.1: 2
-	det.2: 4
-	det.3: 6
+	det.1: 0
+	det.2: 0
+	det.3: 0
 	file.0: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
 	file.1: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
 	file.2: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
-	file.3: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.3: NuclearTest/CreateHisto/hall-b_cone_justD2_simmetric_23_tab.lis
 	grid: 0
 	index: 0
 	key.0: 1
@@ -2742,6 +2861,8 @@ Plot: NuclearTest/hall-b_cone_justD2_simmetric_23_plot01
 	Type:   USR-1D
 	block.0: 0
 	block.1: 0
+	block.2: 0
+	block.3: 0
 	cbcolors: 0
 	cblog: 0
 	cbpalette: FLUKA
@@ -2750,36 +2871,60 @@ Plot: NuclearTest/hall-b_cone_justD2_simmetric_23_plot01
 	cpd: 0
 	det.0: 0
 	det.1: 2
+	det.2: 4
+	det.3: 6
 	file.0: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
 	file.1: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.2: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.3: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
 	grid: 0
 	index: 0
 	key.0: 1
 	key.1: 1
+	key.2: 1
+	key.3: 1
 	lc.0: red
+	lc.2: dark-gray
+	lc.3: green
 	lw.0: 2
 	lw.1: 1
-	name.0: Neutron
-	name.1: #Detector 2
-	ndetectors: 2
+	lw.2: 1
+	lw.3: 1
+	name.0: Neutron1
+	name.1: Neutron2
+	name.2: Neutron3
+	name.3: Neutron4
+	ndetectors: 4
 	ps.0: 1
 	ps.1: 1
+	ps.2: 1
+	ps.3: 1
 	pt.0: 0
 	pt.1: 0
+	pt.2: 0
+	pt.3: 0
 	show.0: 1
 	show.1: 1
+	show.2: 1
+	show.3: 1
 	title: USR-1D NuclearTest/hall-b cone justD2 simmetric 23
 	with.0: histerror
-	with.1: histogram
+	with.1: histerror
+	with.2: histerror
+	with.3: histerror
 	x.0: 2
 	x2log: 0
 	x2tics: 0
-	xlog: 1
+	xlog: 0
 	y.0: 0
 	y.1: 0
+	y.2: 0
+	y.3: 0
 	y2log: 0
 	y2tics: 0
-	ylog: 1
+	ylog: 0
+	ymax: 0.00004
+	ymin: 0
 	zlog: 0
 	ztics: 0
 End

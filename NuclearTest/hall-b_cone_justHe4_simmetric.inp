@@ -107,7 +107,7 @@ RCC Cmot       0.0 0.0 -172.45 0.0 0.0 2.7 3.3
 RCC Cmot1      0.0 0.0 -172.45 0.0 0.0 2.7 4.5
 RCC Cmot2      0.0 0.0 -172.3 0.0 0.0 2.4 3.4
 RCC Cmot3      0.0 0.0 -172.3 0.0 0.0 2.4 4.4
-$start_translat 0 0 -217.0363
+$start_translat 0 0 -222.672
 TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
 RCC sol1_o     0.0 0.0 0.0 0.0 0.0 178.344 102.
 RCC sol2_i     0.0 0.0 42.5 0.0 0.0 91.694 39.
@@ -346,5 +346,5 @@ RESNUCLE          3.      -27.                         AcFO4          Ref4_1d
 * Set the random number seed
 RANDOMIZ          1.   123456.
 * Set the number of primary histories to be simulated in the run
-START      67000000.
+START      40000000.
 STOP
