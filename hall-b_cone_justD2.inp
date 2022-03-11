@@ -8,12 +8,18 @@ BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
 BEAMPOS          0.0       0.0     -138.       0.0       0.0
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT
 PHOTONUC          1.                      BLCKHOLE  @LASTMAT          ELECTNUC
+!point           0.0       0.0    3045.0                              marker1
+!point           0.0       0.0    3044.0                              marker2
+!point           0.0      5.44    3044.0                              marker3
+!point           0.0     -5.44    3044.0                              marker4
+!point           0.0     -5.44    3012.0                              marker5
+!point           0.0      5.44    3012.0                              marker6
 GEOBEGIN                                                              COMBNAME
     0    0          
 * Black body
 SPH blkbody    0.0 0.0 0.0 100000.
 * Void sphere
-SPH void       0.0 0.0 0.0 300.
+SPH void       0.0 0.0 0.0 40000.
 * Cylindrical target
 RCC target     0.0 0.0 -127.327 0.0 0.0 0.0315 0.25
 RCC TGLIQ      0.0 0.0 -136. 0.0 0.0 5. 0.5
@@ -57,12 +63,14 @@ RCC Cmot       0.0 0.0 -172.45 0.0 0.0 2.7 3.3
 RCC Cmot1      0.0 0.0 -172.45 0.0 0.0 2.7 4.5
 RCC Cmot2      0.0 0.0 -172.3 0.0 0.0 2.4 3.4
 RCC Cmot3      0.0 0.0 -172.3 0.0 0.0 2.4 4.4
+RCC D5kW1_o    0.0 0.0 3012.0 0.0 0.0 32. 5.44
+RCC D5kW1_i    0.0 0.0 3012.0 0.0 0.0 32. 5.11
 $start_translat 0 0 -217.0363
 TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
 RCC sol1_o     0.0 0.0 0.0 0.0 0.0 178.344 102.
 RCC sol2_i     0.0 0.0 42.5 0.0 0.0 91.694 39.
 TRC sol3_i     0.0 0.0 134.194 0.0 0.0 441.5 39. 78.4
-$end_translat 
+$end_translat
 END
 * Black hole
 BLKBODY      5 +blkbody -void

@@ -1,0 +1,291 @@
+TITLE
+
+* Set the defaults for precision simulations
+DEFAULTS                                                              PRECISIO
+* Define the beam characteristics
+BEAM            -11.            0.142857      -0.1      -0.1          ELECTRON
+* Define the beam position
+BEAMPOS          0.0       0.0     4290.       0.0       0.0
+PHYSICS           1.                                                  COALESCE
+PHYSICS           3.                                                  EVAPORAT
+PHOTONUC          1.                      BLCKHOLE  @LASTMAT
+PHOTONUC          1.                      BLCKHOLE  @LASTMAT          ELECTNUC
+!point           0.0       0.0 2890.1567                              marker1
+!point           0.0       0.0 3071.7667                              marker2
+!point           0.0    -15.82   3041.04                              marker3
+!point           0.0     15.82   3041.04                              marker4
+!point           0.0       3.7    2890.0                              marker5
+!point           0.0      -3.7    2890.0                              marker6
+!point           0.0       3.7    2904.0                              marker7
+!point           0.0      -3.7    2904.0                              marker8
+!point           0.0    -107.0    2185.0                              marker9
+!point           0.0     107.0    2185.0                              marker10
+!point           0.0    -107.0    5233.0                              marker11
+!point           0.0     107.0    5233.0                              marker12
+GEOBEGIN                                                              COMBNAME
+    0    0          
+* Black body
+SPH blkbody    0.0 0.0 0.0 100000.
+* Void sphere
+SPH void       0.0 0.0 0.0 7000.
+RPP tunneli    -107.0 107.0 -107.0 107.0 0.0 5233.
+RPP tunneli1   -117.0 117.0 -117.0 117.0 2185. 5243.
+RPP tunneli2   -127.0 127.0 -127.0 127.0 2185. 5253.
+RPP tunneli3   -137.0 137.0 -137.0 137.0 2185. 5263.
+RPP tunneli4   -147.0 147.0 -147.0 147.0 2185. 5273.
+RPP tunnelo    -198.0 198.0 -198.0 198.0 2185.0 5324.44
+RPP tunnelo1   -998.0 998.0 -998.0 998.0 2305.0 6685.0
+RPP tunnelo2   -698.0 -198.0 -198.0 198.0 2305.0 5050.0
+RPP tunnelo3   198.0 698.0 -198.0 198.0 2305.0 5050.0
+RPP tunnelo4   -198.0 198.0 198.0 698.0 2305.0 5050.0
+RPP dumpc      -487.68 487.68 -487.68 487.68 4036. 5685.
+PLA dumpc1     0.0 -1. -1. 0.0 107. 5685.
+PLA dumpc2     0.0 1. -1. 0.0 -107. 5685.
+PLA dumpc3     0.0 1. 1. 0.0 -198. 4036.
+PLA dumpc4     0.0 -1. 1. 0.0 198. 4036.
+RCC hall_i     0.0 -244.0 0.0 0.0 744.0 0.0 1546.8497826227
+RCC tunn_i     0.0 0.0 0.0 0.0 0.0 3300. 150.
+RCC tunn_o     0.0 0.0 0.0 0.0 0.0 3350. 200.
+$start_translat   1500
+RCC Sto_cor1   0.0 0.0 2933.0 0.0 0.0 107.5 12.65
+RCC Sto_cor8   0.0 0.0 3040.5 0.0 0.0 30. 12.65
+RCC Conn_1     0.0 0.0 3070.5 0.0 0.0 89.3 7.2000000000002
+RCC Sto_cor5   0.0 0.0 2935.0 0.0 0.0 100.3 5.0
+RCC Sto_cor6   0.0 0.0 2935.0 0.0 0.0 -23.2 4.1
+RCC Sto_cor7   0.0 0.0 2935.0 0.0 0.0 -31.0 8.9
+RCC Sto_cor2   0.0 0.0 2935.0 0.0 0.0 48.5 3.0
+TRC Sto_cor3   0.0 0.0 2983.5 0.0 0.0 3.0 3.0 0.0
+RCC Sto_st1    0.0 0.0 3011.95 0.0 0.0 32.95 5.40
+RCC Sto_st2    0.0 0.0 3012.3 0.0 0.0 31.4 5.1
+RCC Sto_st3    0.0 0.0 3011.95 0.0 0.0 .35 5.1
+RCC Sto_cor4   0.0 0.0 3012.3 0.0 0.0 1.4 5.1
+RCC Sto_st4    0.0 0.0 3009.7 0.0 0.0 3.9 6.10
+RCC Sto_st5    0.0 0.0 3010.7 0.0 0.0 2.9 5.4
+RCC Sto_st6    0.0 0.0 3009.7 0.0 0.0 1.0 2.60
+RCC Sto_st7    0.0 0.0 3010.7 0.0 0.0 .95 4.80
+RCC Sto_pi1    0.0 0.0 3026.25 0.0 15.0 0.0 1.1
+RCC Sto_pi2    0.0 0.0 3026.25 0.0 15.0 0.0 0.86
+RCC Sto_pi3    0.0 0.0 3029.75 0.0 15.0 0.0 1.1
+RCC Sto_pi4    0.0 0.0 3029.75 0.0 15.0 0.0 0.86
+RCC Du_st1     0.0 0.0 3159.82 0.0 0.0 102.5 41.0
+RCC Du_st2     0.0 0.0 3162.32 0.0 0.0 97.5 38.5
+RCC Du_st3     0.0 0.0 3162.32 0.0 0.0 18. 9.75
+RCC Du_st4     0.0 0.0 3159.82 0.0 0.0 23. 7.25
+RCC Du_st5     0.0 0.0 3180.32 0.0 0.0 40. 23.25
+RCC Du_st6     0.0 0.0 3182.82 0.0 0.0 35. 20.75
+RCC Du_w1      0.0 0.0 3220.32 0.0 0.0 5. 7.5
+RCC Sto_cor9   0.0 0.0 2985.5 0.0 0.0 55.9 16.0
+RCC Sto_co10   0.0 0.0 2911.8 0.0 0.0 -21.8 3.3
+RCC Sto_co11   0.0 0.0 2904.0 0.0 0.0 -14. 3.7
+RCC Sto_co14   0.0 0.0 2882.5 0.0 0.0 -95.5 2.7
+RCC Sto_co15   0.0 0.0 2882.5 0.0 0.0 -95.5 2.3
+TRC Sto_co12   0.0 0.0 2890.0 0.0 0.0 -7.5 3.7 2.7
+TRC Sto_co13   0.0 0.0 2890.0 0.0 0.0 -7.5 3.3 2.3
+TRC CoW_1      0.0 0.0 2891.7 0.0 0.0 1.3 2.7 1.7
+TRC CoW_2      0.0 0.0 2894.6 0.0 0.0 -1.3 2.7 1.7
+RCC CoW_3      0.0 0.0 2891.7 0.0 0.0 2.9 3.3
+TRC CoW_4      0.0 0.0 2898.1 0.0 0.0 1.3 2.7 1.7
+TRC CoW_5      0.0 0.0 2901.0 0.0 0.0 -1.3 2.7 1.7
+RCC CoW_6      0.0 0.0 2898.1 0.0 0.0 2.9 3.3
+$end_translat
+RPP tunel1o    -335.0 335.0 -335.0 335.0 1510.0 2305.0
+RPP tunel1i    -244.0 244.0 -244.0 244.0 1510.0 2185.0
+RCC hall_o1    0.0 -200.0 0.0 0.0 700.0 0.0 1669.
+RCC hall_o2    0.0 -335.0 0.0 0.0 835.0 0.0 1576.0
+PLA hall_c1    -0.9272 0.0 0.3746 0.0 0.0 0.0
+PLA hall_c2    0.9272 0.0 0.3746 0.0 0.0 0.0
+RPP shield1    -107.0 107.0 -107.0 107.0 2585.0 2630.72
+RPP shield2    -63.0 63.0 -107.0 107.0 2185.0 2205.32
+RPP shield3    -107.0 -60.0 -107.0 107.0 2285.0 2305.32
+RPP shield4    60.0 107.0 -107.0 107.0 2285.0 2305.32
+END
+* Black hole
+BLKBODY      5 +blkbody -void
+SH_C         5 +shield1
+SH_Pb        5 +shield2
+Sh_Ss        5 +shield3
+               | +shield4
+* Void around
+HallAir      5 +void -tunnelo -tunel1o -( +hall_o1 -hall_c1 -hall_c2 ) -hall_o2 -tunnelo1 -tunnelo2 -tunnelo3
+               -tunnelo4
+               | +tunneli -Sto_cor1 -Du_st1 -Sto_cor7 -Sto_cor8 -Sto_cor9 -Sto_co11 -Sto_co12 -Sto_co14 -Conn_1
+               -shield1 -shield2 -shield3 -shield4
+               | +tunel1i
+               | +hall_i
+TUNNEL1      5 +tunneli1 -tunneli
+TUNNEL2      5 +tunneli2 -tunneli1
+TUNNEL3      5 +tunneli3 -tunneli2
+TUNNEL4      5 +tunneli4 -tunneli3
+TUNNEL5      5 +tunnelo -tunneli4
+               | +tunel1o  -tunel1i -tunneli4 -hall_i
+               | +hall_o1 -hall_o2 -hall_c1 -hall_c2 -tunel1i
+               | +hall_o2 -hall_i  -tunel1i
+               | +dumpc -tunnelo -dumpc1 -dumpc2 -dumpc3 -dumpc4
+Ground       5 +tunnelo1 -tunnelo -dumpc
+               | +dumpc1 +dumpc
+               | +dumpc2 +dumpc
+               | +dumpc3 +dumpc
+               | +dumpc4 +dumpc
+Vacuum       5 +Sto_cor2
+               | +Sto_cor3
+               | +Du_st4
+               | +Du_st6
+               | +Sto_cor6
+               | +Sto_co10 -CoW_3 -CoW_6
+               | +Sto_co13
+               | +Sto_co15
+               | +CoW_1
+               | +CoW_2
+               | +CoW_4
+               | +CoW_5
+               | +Conn_1
+STO_AL       5 +Sto_cor1 -Sto_cor6 -Sto_cor5
+               | +Sto_cor5 -Sto_cor2 -Sto_cor3
+               | +Sto_cor7 -Sto_cor6 -Sto_co10
+               | +Sto_cor4 -Sto_cor2
+               | +Sto_cor9 -Sto_cor1 -Sto_cor8
+STO_SS       5 +Sto_co11 -Sto_co10
+               | +Sto_co12 -Sto_co13
+               | +Sto_co14 -Sto_co15
+STO_CU       5 +Sto_cor8
+COP_W        5 +CoW_3 -CoW_1 -CoW_2
+               | +CoW_6 -CoW_4 -CoW_5
+DUMP_ST      5 +Du_st1 -Du_st2 -Du_st4
+               | +Du_st3 -Du_st4
+               | +Du_st5 -Du_st4 -Du_st6
+DUMP_PB      5 +Du_st2 -Du_st3 -Du_st5 -Du_w1
+DUMP_W       5 +Du_w1
+END
+GEOEND
+* Aluminum oxide
+*
+MATERIAL                            3.97                              AL2O3
+MATERIAL                          2.0023                              Soil
+COMPOUND       -.175     WATER     -.825      SiO2                    Soil
+* 276 Water liquid H2O
+* Chemical Formula:  H -- O -- H
+MATERIAL                              1.                              WATER
+COMPOUND          2.  HYDROGEN        1.    OXYGEN                    WATER
+* Silicon dioxide Si_O2
+*
+MATERIAL                            2.32                              SiO2
+COMPOUND    -.532565    OXYGEN  -.467435   SILICON                    SiO2
+MATERIAL                             8.8                              AP1d
+COMPOUND       -0.63    COPPER     -0.26    NICKEL    -0.005  MANGANESAP1d
+COMPOUND      -0.011      LEAD    -0.006       TIN   -0.0025      IRONAP1d
+COMPOUND     -0.0855      ZINK                                        AP1d
+MATERIAL                            17.5                              W5Ni3Fe
+MATERIAL                            7.83                              SS304L
+COMPOUND    -0.69855      IRON      -.18  CHROMIUM      -.09    NICKELSS304L
+COMPOUND       -0.02  MANGANES     -0.01   SILICON   -4.5E-4   PHOSPHOSS304L
+COMPOUND      -3.E-4    SULFUR    -8.E-4    CARBON                    SS304L
+MATERIAL         24.                7.18                              CHROMIUM
+MATERIAL         25.                7.44                              MANGANES
+MATERIAL         41.                8.57                              NIOBIUM
+MATERIAL         15.                 2.2                              PHOSPHO
+MATERIAL         16.                  2.                              SULFUR
+MATERIAL         30.               7.133                              ZINK
+MATERIAL          1.    2.0079     0.169                            2.DEUTERIU
+MATERIAL          2.    4.0026 1.6632E-4                            4.HELIUM
+MATERIAL                          0.1249                              He4TG
+COMPOUND          1.    HELIUM                                        He4TG
+MATERIAL          1.              0.0708                              H-LIQUID
+MAT-PROP                            21.8  H-LIQUID
+STERNHEI      3.2632    0.4759    1.9215   0.13483    5.6249       0.0H-LIQUID
+MAT-PROP                            41.8    HELIUM
+STERNHEI     11.1393    2.2017    3.6122   0.13443    5.8347       0.0HELIUM
+MAT-PROP                            180.    SULFUR
+STERNHEI      4.6659     0.158    2.7159   0.33992    2.6456       .14SULFUR
+MAT-PROP                            173.   PHOSPHO
+MAT-PROP          9.                       PHOSPHO                    DPA-ENER
+STERNHEI      4.5214    0.1696    2.7815    0.2361    2.9158       .14PHOSPHO
+MAT-PROP                            417.   NIOBIUM
+MAT-PROP         40.                       NIOBIUM                    DPA-ENER
+STERNHEI      5.0141     .1785    3.2201    .13883     3.093       .14NIOBIUM
+MAT-PROP                            272.  MANGANES
+MAT-PROP         40.                      MANGANES                    DPA-ENER
+STERNHEI      4.2702     .0447    3.1074   0.14973    2.9796       .14MANGANES
+MAT-PROP                            257.  CHROMIUM
+MAT-PROP         40.                      CHROMIUM                    DPA-ENER
+STERNHEI      4.1781      .034    3.0451    .15419    2.9896       .14CHROMIUM
+COMPOUND        -.92  TUNGSTEN      -.05    NICKEL      -.03      IRONW5Ni3Fe
+COMPOUND    -.470749    OXYGEN  -.529251  ALUMINUM                    AL2O3
+MATERIAL         19.               0.862                              POTASSIU
+* Concrete portland
+* Concrete has a wide variation in density and composition.
+MATERIAL                             2.3                              PORTLAND
+COMPOUND       -0.01  HYDROGEN    -0.001    CARBON -0.529107    OXYGENPORTLAND
+COMPOUND      -0.016    SODIUM    -0.002  MAGNESIU -0.033872  ALUMINUMPORTLAND
+COMPOUND   -0.337021   SILICON    -0.013  POTASSIU    -0.044   CALCIUMPORTLAND
+COMPOUND      -0.014      IRON                                        PORTLAND
+MAT-PROP                           135.2  PORTLAND
+STERNHEI      3.9464    0.1301    3.0466   0.07515    3.5467          PORTLAND
+MAT-PROP                           145.2     AL2O3
+STERNHEI      3.5682    0.0402    2.8665      .085    3.5458          AL2O3
+LOW-MAT         ZINK       30.       -2.      296.                    ZINC
+LOW-MAT     H-LIQUID        1.        1.       87.                    HYDROG-1
+* Stainless-Steel (typical)
+* Stainless-Steel is produced with Cr content ranging from
+* 4 - 19 Atomic Percent, and with C content from 0 - 4 percent.
+MATERIAL                             8.0                              Stainles
+COMPOUND        18.0  CHROMIUM      74.0      IRON       8.0    NICKELStainles
+ASSIGNMA        Soil    Ground
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+ASSIGNMA    BLCKHOLE   BLKBODY
+ASSIGNMA         AIR   HallAir                            1.
+ASSIGNMA      VACUUM    Vacuum
+ASSIGNMA    ALUMINUM    STO_AL
+ASSIGNMA      COPPER    STO_CU
+ASSIGNMA      SS304L    STO_SS
+ASSIGNMA      COPPER     COP_W
+ASSIGNMA      SS304L   DUMP_ST
+ASSIGNMA        LEAD   DUMP_PB
+ASSIGNMA    TUNGSTEN    DUMP_W
+ASSIGNMA    PORTLAND   TUNNEL1   TUNNEL5
+ASSIGNMA    PORTLAND      SH_C
+ASSIGNMA        LEAD     SH_Pb
+ASSIGNMA    Stainles     Sh_Ss
+BIASING          0.0                  1.   BLKBODY   HallAir        1.
+BIASING          0.0                  5.   TUNNEL1   TUNNEL1        1.
+BIASING          0.0                 25.   TUNNEL2   TUNNEL2        1.
+BIASING          0.0                125.   TUNNEL3   TUNNEL3        1.
+BIASING          0.0                625.   TUNNEL4   TUNNEL4        1.
+BIASING          0.0               3125.   TUNNEL5   TUNNEL5        1.
+BIASING          0.0              15625.    Ground    Ground        1.
+BIASING          0.0                  1.    Vacuum    DUMP_W        1.
+LAM-BIAS                  0.02              PHOTON    PHOTON
+LAM-BIAS                  0.02            ELECTRON  ELECTRON
+RADDECAY          1.        1.                       1008000
+* 100uA 7days YES, 4day NO, 7days YES
+IRRPROFI     604800.   6.24E14   345600.       0.0   604800.   6.24E14
+* 100uA 4days NO, 7days YES
+IRRPROFI     345600.       0.0   604800.   6.24E14
+* 1hour, 1day, 3days, 1week, 2weeks, 30days
+DCYTIMES       3600.    86400.   259200.   604800.  1209600.  2592000.
+USRBDX            1.   NEUTRON      -23.   TUNNEL5    Ground          N_low
+USRBDX            1.       0.0     1000.                            1. &
+USRBIN           11.   DOSE-EQ      -21.      150.       0.0     5300.Pr_dose
+USRBIN           0.0       0.0     1000.       30.        1.      430. &
+USRBIN           11.   DOSE-EQ      -21.      150.       0.0     5300.1h_dose
+USRBIN           0.0       0.0     1000.       30.        1.      430. &
+USRBIN           11.   DOSE-EQ      -21.      150.       0.0     5300.1d_dose
+USRBIN           0.0       0.0     1000.       30.        1.      430. &
+USRBIN           11.   DOSE-EQ      -21.      150.       0.0     5300.1w_dose
+USRBIN           0.0       0.0     1000.       30.        1.      430. &
+USRBIN           11.  SI1MEVNE      -21.      150.       0.0     5300.Pr_1MeVeq
+USRBIN           0.0       0.0     1000.       30.        1.      430. &
+USRBIN           11.    ENERGY      -21.      100.       0.0     5600.Prom_edep
+USRBIN           0.0       0.0     2600.       10.        1.      300. &
+USRBIN           13.  HADGT20M      -25.      650.      650.     5600.Nflux
+USRBIN           0.0     -650.     2600.       65.      130.      300. &
+USRBIN           13.  NTLOWENE      -25.      650.      650.     5600.Ng20MeV
+USRBIN           0.0     -650.     2600.       65.      130.      300. &
+AUXSCORE      USRBIN                       Pr_dose   1w_dose          EWT74
+DCYSCORE          1.                       1h_dose   1h_dose          USRBIN
+DCYSCORE          2.                       1d_dose   1d_dose          USRBIN
+DCYSCORE          4.                       1w_dose   1w_dose          USRBIN
+* Set the random number seed
+RANDOMIZ          1.   123456.
+* Set the number of primary histories to be simulated in the run
+START         10000.
+STOP

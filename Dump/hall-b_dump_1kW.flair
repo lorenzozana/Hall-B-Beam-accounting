@@ -1,0 +1,2144 @@
+#!/usr/local/flair/flair
+# FLUKA Project file
+Version: 2
+Title: 
+Input: hall-b_DUMP1kW.inp
+Exec: dump5kW.exe
+Submit: *Default
+Tabs: 0.1 0.32 0.56 0.81 1.0
+Page: Flair
+DefMain: True
+LinkPrg: ldpmqmd
+F77bound: True
+F77dline: False
+
+# Properties
+Properties: Input
+	!point/marker5/@select: 8
+	!point/marker6/@select: 8
+	!point/marker7/@select: 8
+	RCC/Sto_cor1/@select: 1
+	RCC/hall_o1/@select: 8
+	RCC/hall_o2/@select: 8
+	RPP/shield1/@select: 8
+	RPP/shield2/@select: 8
+	RPP/shield3/@select: 8
+	RPP/shield4/@select: 8
+	RPP/tunel1i/@select: 8
+	RPP/tunel1o/@select: 8
+End
+
+# Run information
+Run: <default>
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1559661672
+	Family:  hall-b_DUMP5kW_aa hall-b_DUMP5kW_ab hall-b_DUMP5kW_ac hall-b_DUMP5kW_ad hall-b_DUMP5kW_ae hall-b_DUMP5kW_af hall-b_DUMP5kW_ag hall-b_DUMP5kW_ah hall-b_DUMP5kW_ai hall-b_DUMP5kW_aj hall-b_DUMP5kW_ak
+
+	# USRxxx data file: hall-b_DUMP1kW_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP1kW_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_aa
+	Rnd:      123457
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_aa_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aa_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aa_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aa_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ab
+	Rnd:      123458
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ab_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ab_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ab_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ab_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ac
+	Rnd:      123459
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ac_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ac_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ac_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ac_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ad
+	Rnd:      123460
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ad_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ad_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ad_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ad_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ae
+	Rnd:      123461
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ae_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ae_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ae_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ae_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_af
+	Rnd:      123462
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_af_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_af_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_af_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_af_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ag
+	Rnd:      123463
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ag_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ag_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ag_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ag_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ah
+	Rnd:      123464
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ah_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ah_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ah_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ah_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ai
+	Rnd:      123465
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ai_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ai_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ai_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ai_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_aj
+	Rnd:      123466
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_aj_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aj_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aj_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_aj_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: hall-b_DUMP5kW_ak
+	Rnd:      123467
+	Prev:     0
+	Last:     1
+	Status:   3
+	Pid:      0
+	StartRun: 1646930254
+	Parent:    <default>
+
+	# USRxxx data file: hall-b_DUMP5kW_ak_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ak_23.bnx
+	Data: \I_\U.\e
+		Unit: 23
+		Type: x
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ak_25.bnn
+	Data: \I_\U.\e
+		Unit: 25
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: hall-b_DUMP5kW_ak_27.rnc
+	Data: \I_\U.\e
+		Unit: 27
+		Type: r
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Material
+Material: 
+	alpha: 0
+	color: #101010
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CoolHe
+	alpha: 0
+	color: #73bbeb
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: W5Ni3Fe
+	alpha: 0
+	color: #701070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: He4TG
+	alpha: 0
+	color: #203090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: Stainles
+	alpha: 0
+	color: #40D0D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: ZINK
+	alpha: 0
+	color: #B01070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: WATER1
+	alpha: 0
+	color: #101050
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: 92W5Ni3Fe
+	alpha: 0
+	color: #A05030
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: H-LIQUID
+	alpha: 100
+	color: #A070B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: Paralene
+	alpha: 0
+	color: #50B050
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: PVC
+	alpha: 0
+	color: #507050
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CADMIUM
+	alpha: 0
+	color: #4090D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: FLUORINE
+	alpha: 0
+	color: #503010
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: ND3
+	alpha: 0
+	color: #B05090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: INDIUM
+	alpha: 0
+	color: #3010D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: AL2O3
+	alpha: 0
+	color: #903090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: SiO2
+	alpha: 0
+	color: #60D0B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: Polyprop
+	alpha: 0
+	color: #603050
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: sNH3
+	alpha: 0
+	color: #B030D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: DEUTERIU
+	alpha: 100
+	color: #6070D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: NH3
+	alpha: 0
+	color: #D01030
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: SS304L
+	alpha: 0
+	color: #20B070
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CoilMAT
+	alpha: 0
+	color: #101090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: NIOBIUM
+	alpha: 0
+	color: #7030D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: PCTFE
+	alpha: 0
+	color: #C070D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: Soil
+	alpha: 0
+	color: #6010D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: MANGANES
+	alpha: 0
+	color: #B050D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: POTASSIU
+	alpha: 0
+	color: #70B0B0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: sND3
+	alpha: 0
+	color: #B090D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: AP1d
+	alpha: 0
+	color: #70D090
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Material
+Material: CHLORINE
+	alpha: 0
+	color: #503010
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Geometry Information
+Geometry:
+	Frame.bsplit: 0.5
+	Frame.tsplit: 0.01
+	Frame.vsplit: 0.99
+
+	# Layer
+	Layer: Media
+		: True
+		._visible: True
+		3D.fov: 22.8
+		Image: True
+		Image._visible: True
+		Image.file: Design/Hall-B_design2.png
+		Image.marker: 3
+		Image.marker.0: 1354.6 317.2 0.0 0.0 0.0
+		Image.marker.1: 733.5 326.0 0.0 0.0 1768.0
+		Image.marker.2: 731.5 236.5 244.0 0.0 1768.0
+		Image.marker.3: 896.5 652.5 0.0 -5.44 3044.0
+		Image.marker.4: 128.6 653.4 0.0 -5.44 3012.0
+		Image.marker.5: 128.5 392.0 0.0 5.44 3012.0
+		Image.marker.6: 284.0 848.2 -4.3 0.0 -166.8
+		Options.shortcut: F3
+		Palette.alphamin: 1
+		Palette.max: 1e+14
+		Palette.min: 10000.0
+		Show._visible: True
+		Show.label: Material
+		Usrbin.det: 3
+		Usrbin.file: Run5/accumulated_dose_21.bnn
+		Usrbin.norm: 8.04E17
+		layer: Media
+	End
+
+	# Layer
+	Layer: 3D
+		: True
+		._visible: True
+		3D: True
+		3D._visible: True
+		3D.edgedetect: 1
+		3D.fov: 22.8
+		3D.shadows: 0
+		Options.gridfont: Roman-bold-34
+		Options.palettefont: Roman-bold-34
+		Options.shortcut: F4
+		Options.viewport: 0
+		Palette._visible: True
+		Palette.alphamin: 1
+		Palette.cpd: 10
+		Palette.max: 1e+12
+		Palette.min: 100000000.0
+		Palette.n: 40
+		Palette2._visible: True
+		Palette2.cpd: 8
+		Palette2.max: 10000000000.0
+		Palette2.min: 1.0
+		Palette2.n: 80
+		Palette3._visible: True
+		Palette3.cpd: 10
+		Palette3.max: 10.0
+		Palette3.min: 0.001
+		Palette3.n: 40
+		Palette4._visible: True
+		Palette4.cpd: 10
+		Palette4.max: 1e+12
+		Palette4.min: 100000000.0
+		Palette4.n: 40
+		Palette5._visible: True
+		Palette5.cpd: 10
+		Palette5.min: 1.0
+		Palette5.n: 50
+		Show._visible: True
+		Show.label: None
+		Show.lattice: 1
+		Show.voxel: 1
+		Usrbin._visible: True
+		Usrbin.det: 4
+		Usrbin.file: NuclearTest/hall-b_cone_justD2_simmetric_21.bnn
+		Usrbin.norm: 2.25E13
+		Usrbin.palette: Palette2
+		deflights: 1
+		layer: 3D
+	End
+End
+
+# Geometry plot "GeoViewer Red plot"
+Plot: Red
+	Format: .eps
+	Type:   Geometry
+	basisu: 1 0 0
+	basisv: 0 0 -1
+	boundaries: 1
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: X-Z
+	cpd: 0
+	extends: 280.233 24324.2
+	grid: 0
+	index: 0
+	labels: 1
+	layer: Media
+	origin: 166.356 42.5506 1672.41
+	subtype: Material
+	title: GeoViewer Red plot
+	x2log: False
+	x2tics: 0
+	xlog: False
+	y2log: False
+	y2tics: 0
+	ylog: False
+	zlog: False
+	ztics: 0
+End
+
+# Geometry plot "GeoViewer Blue plot"
+Plot: Blue
+	Format: .eps
+	Type:   Geometry
+	basisu: 1 0 0
+	basisv: 0 0 -1
+	boundaries: 1
+	coord: X-Z
+	extends: 358.318 0.595213
+	labels: 1
+	layer: Media
+	origin: 0 53.886 3188.92
+	subtype: Material
+	title: GeoViewer Blue plot
+End
+
+# Geometry plot "GeoViewer Magenta plot"
+Plot: Magenta
+	Format: .eps
+	Type:   Geometry
+	basisu: 1 0 0
+	basisv: 0 0 -1
+	boundaries: 1
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: X-Z
+	cpd: 0
+	extends: 11.2157 0.0186307
+	grid: 0
+	index: 0
+	labels: 1
+	layer: Media
+	origin: -37.2688 -3.62516 -142.494
+	subtype: Material
+	title: GeoViewer Magenta plot
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# Geometry plot "Plot #6"
+Plot: hall-b_cone_plot06
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	boundaries: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: Z-X
+	cpd: 0
+	extends: 300 300
+	grid: 0
+	index: 0
+	labels: 0
+	origin: 0 0 0
+	subtype: Field Intensity
+	title: Plot #6
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# Geometry plot "Solenoid Field (Tesla)"
+Plot: SolenoidField
+	Format: .jpg
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 0 1 0
+	boundaries: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	coord: Z-Y
+	cpd: 0
+	extends: 300 300
+	grid: 0
+	index: 1
+	labels: 0
+	origin: 0 0 -127
+	subtype: Field Intensity
+	title: Solenoid Field (Tesla)
+	x2log: 0
+	x2tics: 0
+	xlabel: cm
+	xlog: 0
+	y2log: 0
+	y2tics: 0
+	ylabel: cm
+	ylog: 0
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone H2 21"
+Plot: hall-b_cone_H2_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Run3/accumulated_dose_21.bnn
+	det: 3
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 11.279292045742832
+	lw.0: 0
+	max: 0.104778923
+	min: 1.51495456E-16
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone H2 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone H2 21"
+Plot: hall-b_cone_H2_21_plot01
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Deuterium/Run/hall-b_cone_justD2_20001_fort.21
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 11.279292045742832
+	lw.0: 0
+	max: 0.104778923
+	min: 1.51495456E-16
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone H2 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone H2 23"
+Plot: hall-b_cone_H2_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: Run3/spectrum_Pb_16_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D hall-b cone H2 23
+	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone Pb 21"
+Plot: hall-b_cone_Pb_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: hall-b_cone_Si_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 0.12344914562872088
+	lw.0: 0
+	max: 2.97443592E-03
+	min: 4.32072862E-14
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone Pb 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone Pb 23"
+Plot: hall-b_cone_Pb_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: Run3/accumulated_spectrum_23.bnx
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	norm.0: 3.766355E+19
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D hall-b cone Pb 23
+	with.0: errorbars
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone NO 21"
+Plot: hall-b_cone_NO_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbmax: 0.01
+	cbmin: 1e-20
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Run/accumulated_dose_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 0.12289113931168930
+	lw.0: 0
+	max: 2.83828261E-03
+	min: 1.10492860E-19
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone NO 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone NO 21"
+Plot: hall-b_cone_NO_21_plot01
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbmax: 0.01
+	cbmin: 1e-20
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Run2/accumulated_dose_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 1
+	int: 0.12278074300283773
+	lw.0: 0
+	max: 2.82863458E-03
+	min: 1.27571950E-16
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone NO 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone NO 21"
+Plot: hall-b_cone_NO_21_plot02
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbmax: 0.01
+	cbmin: 1e-20
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Run2/accumulated_dose_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 1
+	int: 0.12279150550270074
+	lw.0: 0
+	max: 2.84678675E-03
+	min: 1.12606229E-19
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone NO 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN hall-b cone NO 21"
+Plot: hall-b_cone_NO_21_plot03
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbmax: 0.01
+	cbmin: 1e-20
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: Run4/accumulated_dose_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 3
+	int: 0.12279584906127534
+	lw.0: 0
+	max: 2.84680072E-03
+	min: 1.34562718E-19
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN hall-b cone NO 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone NO 23"
+Plot: hall-b_cone_NO_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 6
+	file.0: Run/accumulated_spectrum_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D hall-b cone NO 23
+	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "Neutron Spectrum in Motor"
+Plot: hall-b_cone_NO_23_plot01
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: Run5/accumulated_spectrum_23_tab.lis
+	grid: 0
+	index: 3
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	norm.0: 8E17
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: Neutron Spectrum in Motor
+	with.0: errorbars
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlabel: MeV
+	xlog: 1
+	xnorm.0: 1./MeV
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "Spectrum in Motor (Log binning)"
+Plot: spectrum_accumulated
+	Format: .jpg
+	Type:   USR-1D
+	block.0: 0
+	block.1: 0
+	block.2: 0
+	block.3: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	det.1: 2
+	det.2: 4
+	det.3: 6
+	file.0: Run5/accumulated_spectrum_23_tab.lis
+	file.1: Run5/accumulated_spectrum_23_tab.lis
+	file.2: Run5/accumulated_spectrum_23_tab.lis
+	file.3: Run5/accumulated_spectrum_23_tab.lis
+	grid: 0
+	index: 4
+	key.0: 1
+	key.1: 1
+	key.2: 1
+	key.3: 1
+	lc.0: red
+	lc.1: black
+	lc.2: blue
+	lc.3: green
+	lw.0: 2
+	lw.1: 2
+	lw.2: 2
+	lw.3: 2
+	name.0: neutron
+	name.1: electron
+	name.2: proton
+	name.3: photon
+	ndetectors: 4
+	norm.0: 8E17/(2*3.14*4)
+	norm.1: 8E17/(2*3.14*4)
+	norm.2: 8E17/(2*3.14*4)
+	norm.3: 8E17/(2*3.14*4)
+	ps.0: 1
+	ps.1: 1
+	ps.2: 1
+	ps.3: 1
+	pt.0: 1
+	pt.1: 4
+	pt.2: 6
+	pt.3: 8
+	show.0: 1
+	show.1: 1
+	show.2: 1
+	show.3: 1
+	title: Spectrum in Motor (Log binning)
+	with.0: errorbars
+	with.1: errorbars
+	with.2: errorbars
+	with.3: errorbars
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlabel: MeV
+	xlog: 1
+	xnorm.0: 1./MeV
+	xnorm.1: 1./MeV
+	xnorm.2: 1./MeV
+	xnorm.3: 1./MeV
+	y.0: 1
+	y.1: 1
+	y.2: 1
+	y.3: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone NO 25"
+Plot: hall-b_cone_NO_25_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: Run4/accumulated_spectrum_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	norm.0: 8E17
+	ps.0: 1
+	pt.0: 2
+	show.0: 1
+	title: USR-1D hall-b cone NO 25
+	with.0: errorbars
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	xnorm.0: 1./MeV
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	ymax: 1e+17
+	ymin: 1e+8
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D hall-b cone NO 25"
+Plot: hall-b_cone_NO_25_plot01
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	file.0: Run2/accumulated_spectrum_23_tab.lis
+	grid: 0
+	index: 5
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	norm.0: 8E17
+	ps.0: 1
+	pt.0: 2
+	show.0: 1
+	title: USR-1D hall-b cone NO 25
+	with.0: errorbars
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	xnorm.0: 1./MeV
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	ymax: 1e+17
+	ymin: 1e+8
+	zlog: 0
+	ztics: 0
+End
+
+# Geometry plot "GeoViewer Green plot"
+Plot: Green
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	boundaries: 1
+	coord: Z-X
+	extends: 46.0481 33.4755
+	labels: 1
+	layer: Media
+	origin: 3.46568 0 3046.66
+	subtype: Material
+	title: GeoViewer Green plot
+End
+
+# USRBIN plot "USRBIN NuclearTest/hall-b cone justGold 21"
+Plot: NuclearTest/hall-b_cone_justGold_21_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: NuclearTest/hall-b_cone_justGold_21.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 0.19029781710242644
+	lw.0: 0
+	max: 1.81737728E-02
+	min: 9.42750979E-18
+	proj: Y
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN NuclearTest/hall-b cone justGold 21
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D NuclearTest/hall-b cone justGold 23"
+Plot: NuclearTest/hall-b_cone_justGold_23_plot
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	det.0: 0
+	file.0: NuclearTest/hall-b_cone_justGold_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	lc.0: red
+	lw.0: 2
+	name.0: Detector 1
+	ndetectors: 1
+	ps.0: 1
+	pt.0: 0
+	show.0: 1
+	title: USR-1D NuclearTest/hall-b cone justGold 23
+	with.0: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN NuclearTest/hall-b cone justD2 25"
+Plot: NuclearTest/hall-b_cone_justD2_25_plot
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: NuclearTest/hall-b_cone_justD2_25.bnn
+	det: 4
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 30089.091716162700
+	lw.0: 0
+	max: 3.44690967
+	min: 0.225665063
+	proj: Z
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: USRBIN NuclearTest/hall-b cone justD2 25
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# RESNUCLE plot "RESNUCLE NuclearTest/hall-b cone justD2 27"
+Plot: NuclearTest/hall-b_cone_justD2_27_plot
+	Format: .eps
+	Type:   RESNUCLE
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	datafile: NuclearTest/Data_Correct_design/hall-b_cone_justD2_27.rnc
+	det: 1
+	grid: 0
+	index: 1
+	lw.0: 0
+	plot: Z/A
+	ps.0: 0
+	title: RESNUCLE NuclearTest/hall-b cone justD2 27
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlog: 0
+	xmin: 45
+	y2log: 0
+	y2tics: 0
+	ylog: 0
+	ymax: 118
+	ymin: 110
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "USRBIN NuclearTest/hall-b cone justD2 simmetric 21"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_21_plot
+	Format: .eps
+	Type:   USRBIN
+	cbcolors: 30
+	cblog: 1
+	cbtics: 1
+	datafile: NuclearTest/hall-b_cone_justD2_simmetric_21.bnn
+	geo: -Auto-
+	title: USRBIN NuclearTest/hall-b cone justD2 simmetric 21
+End
+
+# USR-1D plot "Spectrum on foil INTEGRATED (4h @10nA)"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_23_plot
+	Format: .gif
+	Type:   USR-1D
+	block.0: 0
+	block.1: 0
+	block.2: 0
+	block.3: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	det.1: 2
+	det.2: 4
+	det.3: 6
+	file.0: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.1: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.2: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.3: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	key.1: 1
+	key.2: 1
+	key.3: 1
+	lc.0: red
+	lc.1: blue
+	lc.2: green
+	lc.3: black
+	lw.0: 2
+	lw.1: 2
+	lw.2: 2
+	lw.3: 2
+	name.0: Neutron
+	name.1: Electron
+	name.2: Proton
+	name.3: Photon
+	ndetectors: 4
+	norm.0: 1E13
+	norm.1: 1E13
+	norm.2: 1E13
+	norm.3: 1E13
+	ps.0: 2
+	ps.1: 2
+	ps.2: 2
+	ps.3: 2
+	pt.0: 6
+	pt.1: 3
+	pt.2: 2
+	pt.3: 4
+	show.0: 1
+	show.1: 1
+	show.2: 1
+	show.3: 1
+	title: Spectrum on foil INTEGRATED (4h @10nA)
+	with.0: histerror
+	with.1: histerror
+	with.2: histerror
+	with.3: histerror
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlabel: GeV
+	xlog: 1
+	y.0: 0
+	y.1: 0
+	y.2: 0
+	y.3: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USR-1D plot "USR-1D NuclearTest/hall-b cone justD2 simmetric 23"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_23_plot01
+	Format: .eps
+	Type:   USR-1D
+	block.0: 0
+	block.1: 0
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	det.0: 0
+	det.1: 2
+	file.0: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	file.1: NuclearTest/hall-b_cone_justD2_simmetric_23_tab.lis
+	grid: 0
+	index: 0
+	key.0: 1
+	key.1: 1
+	lc.0: red
+	lw.0: 2
+	lw.1: 1
+	name.0: Neutron
+	name.1: #Detector 2
+	ndetectors: 2
+	ps.0: 1
+	ps.1: 1
+	pt.0: 0
+	pt.1: 0
+	show.0: 1
+	show.1: 1
+	title: USR-1D NuclearTest/hall-b cone justD2 simmetric 23
+	with.0: histerror
+	with.1: histogram
+	x.0: 2
+	x2log: 0
+	x2tics: 0
+	xlog: 1
+	y.0: 0
+	y.1: 0
+	y2log: 0
+	y2tics: 0
+	ylog: 1
+	zlog: 0
+	ztics: 0
+End
+
+# USRBIN plot "Activation after 1min (Target at Z=-130) mrem/h"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_25_plot
+	Format: .gif
+	Type:   USRBIN
+	axes: Auto
+	cbcolors: 30
+	cblog: 1
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: NuclearTest/Data_Correct_design/hall-b_cone_justD2_25.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 2
+	int: 172975.44384184171
+	lw.0: 0
+	max: 37.7865448
+	min: 0.802619994
+	norm: 3.6E-4
+	proj: X
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: Activation after 1min (Target at Z=-130) mrem/h
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlabel: Z(cm)
+	xlog: 0
+	xrebin: 1
+	y2log: 0
+	y2tics: 0
+	ylabel: Y(cm)
+	ylog: 0
+	yrebin: 1
+	zlog: 0
+	zrebin: 1
+	ztics: 0
+End
+
+# RESNUCLE plot "Activated nuclei single foil (Bq) No Cadmium after 1min"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_27_plot
+	Format: .gif
+	Type:   RESNUCLE
+	cbcolors: 0
+	cblog: 0
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	datafile: NuclearTest/hall-b_cone_justD2_simmetric_27.rnc
+	det: 1
+	grid: 0
+	index: 1
+	lw.0: 0
+	norm: 0.0114
+	plot: Z/A
+	ps.0: 0
+	title: Activated nuclei single foil (Bq) No Cadmium after 1min
+	with.0: errorbars
+	x2log: 0
+	x2tics: 0
+	xlabel: Z
+	xlog: 0
+	xmax: 51
+	xmin: 46
+	y2log: 0
+	y2tics: 0
+	ylabel: A
+	ylog: 0
+	ymax: 118
+	ymin: 110
+	zlog: 0
+	ztics: 0
+End
+
+# RESNUCLE plot "Activated nuclei single foil (Bq) With Cadmium after 1min"
+Plot: NuclearTest/hall-b_cone_justD2_simmetric_27_plot01
+	Format: .gif
+	Type:   RESNUCLE
+	cbcolors: 0
+	cblog: False
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 0
+	cpd: 0
+	datafile: NuclearTest/Data_Symmetric_design/hall-b_cone_justD2_simmetric_27.rnc
+	det: 4
+	grid: 0
+	index: 1
+	lw.0: 0
+	norm: 0.0114
+	plot: Z/A
+	ps.0: 0
+	title: Activated nuclei single foil (Bq) With Cadmium after 1min
+	with.0: errorbars
+	x2log: False
+	x2tics: 0
+	xlabel: Z
+	xlog: False
+	xmax: 51
+	xmin: 46
+	y2log: False
+	y2tics: 0
+	ylabel: A
+	ylog: False
+	ymax: 118
+	ymin: 110
+	zlog: False
+	ztics: 0
+End
+
+# USRBIN plot "Plot #31"
+Plot: hall-b_dump_5kW_plot31
+	Format: .eps
+	Type:   USRBIN
+	axes: Auto
+	bxmax: 10
+	bxmin: 0.
+	cbcolors: 30
+	cblog: True
+	cbpalette: FLUKA
+	cbround: 0
+	cbtics: 1
+	cpd: 0
+	datafile: hall-b_DUMP5kW_25.bnn
+	det: 1
+	errors: 0
+	geo: -Auto-
+	grid: 0
+	hist: 2D Projection
+	index: 0
+	int: 228.91283361267170
+	lw.0: 0
+	max: 6.05349839E-02
+	min: 2.87715306E-14
+	norm: 3.11E11
+	proj: X
+	ps.0: 0
+	pt.0: 0
+	swap: 0
+	title: Plot #31
+	with.0: errorbars
+	x2log: False
+	x2tics: 0
+	xlog: False
+	xrebin: 1
+	y2log: False
+	y2tics: 0
+	ylog: False
+	yrebin: 1
+	zlog: False
+	zrebin: 1
+	ztics: 0
+End

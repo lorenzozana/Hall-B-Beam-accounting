@@ -2,13 +2,13 @@
 # FLUKA Project file
 Version: 2
 Title: 
-Input: Dump/hall-b_cone_D2_DUMP.inp
+Input: hall-b_DUMP.inp
 Exec: solenoid.exe
 Submit: *Default
 Tabs: 0.1 0.32 0.56 0.81 1.0
 Page: Flair
-Source: Source/source_ea_double_new.f
-Source: MagneticField/magfld_solenoid_2.f
+Source: ../Source/source_ea_double_new.f
+Source: ../MagneticField/magfld_solenoid_2.f
 DefMain: True
 LinkPrg: ldpmqmd
 F77bound: True
@@ -20,10 +20,14 @@ Properties: Input
 	!point/marker2/@select: 8
 	!point/marker3/@select: 8
 	!point/marker4/@select: 8
-	!point/marker5/@select: 8
-	!point/marker6/@select: 8
-	RCC/Sto_cor2/@select: 8
-	TRC/Sto_cor3/@select: 1
+	RCC/CoW_3/@select: 8
+	RCC/Sto_co10/@select: 8
+	RCC/Sto_co11/@select: 8
+	RCC/Sto_co14/@select: 8
+	RCC/Sto_co15/@select: 8
+	RCC/Sto_cor9/@select: 8
+	REGION/Vacuum/@select: 1
+	TRC/CoW_2/@select: 8
 End
 
 # Run information
@@ -35,7 +39,7 @@ Run: <default>
 	StartRun: 1559661672
 	Family:  hall-b_cone_justD2_simmetric_aa hall-b_cone_justD2_simmetric_ab hall-b_cone_justD2_simmetric_ac hall-b_cone_justD2_simmetric_ad hall-b_cone_justD2_simmetric_ae hall-b_cone_justD2_simmetric_af hall-b_cone_justD2_simmetric_ag hall-b_cone_justD2_simmetric_ah hall-b_cone_justD2_simmetric_ai hall-b_cone_justD2_simmetric_aj hall-b_cone_justD2_simmetric_ak hall-b_cone_justD2_simmetric_al hall-b_cone_justD2_simmetric_am hall-b_cone_justD2_simmetric_an hall-b_cone_justD2_simmetric_ao hall-b_cone_justD2_simmetric_ap hall-b_cone_justD2_simmetric_aq hall-b_cone_justD2_simmetric_ar hall-b_cone_justD2_simmetric_as hall-b_cone_justD2_simmetric_at hall-b_cone_justD2_simmetric_au hall-b_cone_justD2_simmetric_av hall-b_cone_justD2_simmetric_aw hall-b_cone_justD2_simmetric_ax hall-b_cone_justD2_simmetric_ay hall-b_cone_justD2_simmetric_az hall-b_cone_justD2_simmetric_ba hall-b_cone_justD2_simmetric_bb hall-b_cone_justD2_simmetric_bc hall-b_cone_justD2_simmetric_bd
 
-	# USRxxx data file: Dump/hall-b_cone_D2_DUMP_21.bnn
+	# USRxxx data file: hall-b_DUMP_21.bnn
 	Data: \I_\U.\e
 		Unit: 21
 		Type: b
@@ -43,7 +47,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_D2_DUMP_23.bnx
+	# USRxxx data file: hall-b_DUMP_23.bnx
 	Data: \I_\U.\e
 		Unit: 23
 		Type: x
@@ -51,7 +55,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_D2_DUMP_25.bnn
+	# USRxxx data file: hall-b_DUMP_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -59,7 +63,7 @@ Run: <default>
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_D2_DUMP_27.rnc
+	# USRxxx data file: hall-b_DUMP_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -78,7 +82,7 @@ Run: hall-b_cone_justD2_simmetric_aa
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -112,7 +116,7 @@ Run: hall-b_cone_justD2_simmetric_aa
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -146,7 +150,7 @@ Run: hall-b_cone_justD2_simmetric_aa
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aa_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aa_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -154,7 +158,7 @@ Run: hall-b_cone_justD2_simmetric_aa
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aa_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aa_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -173,7 +177,7 @@ Run: hall-b_cone_justD2_simmetric_ab
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -207,7 +211,7 @@ Run: hall-b_cone_justD2_simmetric_ab
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -241,7 +245,7 @@ Run: hall-b_cone_justD2_simmetric_ab
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ab_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ab_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -249,7 +253,7 @@ Run: hall-b_cone_justD2_simmetric_ab
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ab_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ab_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -268,7 +272,7 @@ Run: hall-b_cone_justD2_simmetric_ac
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -302,7 +306,7 @@ Run: hall-b_cone_justD2_simmetric_ac
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -336,7 +340,7 @@ Run: hall-b_cone_justD2_simmetric_ac
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ac_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ac_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -344,7 +348,7 @@ Run: hall-b_cone_justD2_simmetric_ac
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ac_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ac_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -363,7 +367,7 @@ Run: hall-b_cone_justD2_simmetric_ad
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -397,7 +401,7 @@ Run: hall-b_cone_justD2_simmetric_ad
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -431,7 +435,7 @@ Run: hall-b_cone_justD2_simmetric_ad
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ad_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ad_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -439,7 +443,7 @@ Run: hall-b_cone_justD2_simmetric_ad
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ad_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ad_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -458,7 +462,7 @@ Run: hall-b_cone_justD2_simmetric_ae
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -492,7 +496,7 @@ Run: hall-b_cone_justD2_simmetric_ae
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -526,7 +530,7 @@ Run: hall-b_cone_justD2_simmetric_ae
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ae_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ae_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -534,7 +538,7 @@ Run: hall-b_cone_justD2_simmetric_ae
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ae_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ae_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -553,7 +557,7 @@ Run: hall-b_cone_justD2_simmetric_af
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -587,7 +591,7 @@ Run: hall-b_cone_justD2_simmetric_af
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -621,7 +625,7 @@ Run: hall-b_cone_justD2_simmetric_af
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_af_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_af_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -629,7 +633,7 @@ Run: hall-b_cone_justD2_simmetric_af
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_af_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_af_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -648,7 +652,7 @@ Run: hall-b_cone_justD2_simmetric_ag
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -682,7 +686,7 @@ Run: hall-b_cone_justD2_simmetric_ag
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -716,7 +720,7 @@ Run: hall-b_cone_justD2_simmetric_ag
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ag_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ag_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -724,7 +728,7 @@ Run: hall-b_cone_justD2_simmetric_ag
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ag_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ag_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -743,7 +747,7 @@ Run: hall-b_cone_justD2_simmetric_ah
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -777,7 +781,7 @@ Run: hall-b_cone_justD2_simmetric_ah
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -811,7 +815,7 @@ Run: hall-b_cone_justD2_simmetric_ah
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ah_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ah_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -819,7 +823,7 @@ Run: hall-b_cone_justD2_simmetric_ah
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ah_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ah_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -838,7 +842,7 @@ Run: hall-b_cone_justD2_simmetric_ai
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -872,7 +876,7 @@ Run: hall-b_cone_justD2_simmetric_ai
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -906,7 +910,7 @@ Run: hall-b_cone_justD2_simmetric_ai
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ai_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ai_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -914,7 +918,7 @@ Run: hall-b_cone_justD2_simmetric_ai
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ai_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ai_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -933,7 +937,7 @@ Run: hall-b_cone_justD2_simmetric_aj
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -967,7 +971,7 @@ Run: hall-b_cone_justD2_simmetric_aj
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1001,7 +1005,7 @@ Run: hall-b_cone_justD2_simmetric_aj
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aj_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aj_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1009,7 +1013,7 @@ Run: hall-b_cone_justD2_simmetric_aj
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aj_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aj_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1028,7 +1032,7 @@ Run: hall-b_cone_justD2_simmetric_ak
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1062,7 +1066,7 @@ Run: hall-b_cone_justD2_simmetric_ak
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1096,7 +1100,7 @@ Run: hall-b_cone_justD2_simmetric_ak
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ak_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ak_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1104,7 +1108,7 @@ Run: hall-b_cone_justD2_simmetric_ak
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ak_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ak_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1123,7 +1127,7 @@ Run: hall-b_cone_justD2_simmetric_al
 	StartRun: 1579192359
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1157,7 +1161,7 @@ Run: hall-b_cone_justD2_simmetric_al
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1191,7 +1195,7 @@ Run: hall-b_cone_justD2_simmetric_al
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_al_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_al_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1199,7 +1203,7 @@ Run: hall-b_cone_justD2_simmetric_al
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_al_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_al_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1218,7 +1222,7 @@ Run: hall-b_cone_justD2_simmetric_am
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1252,7 +1256,7 @@ Run: hall-b_cone_justD2_simmetric_am
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1286,7 +1290,7 @@ Run: hall-b_cone_justD2_simmetric_am
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_am_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_am_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1294,7 +1298,7 @@ Run: hall-b_cone_justD2_simmetric_am
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_am_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_am_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1313,7 +1317,7 @@ Run: hall-b_cone_justD2_simmetric_an
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1347,7 +1351,7 @@ Run: hall-b_cone_justD2_simmetric_an
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1381,7 +1385,7 @@ Run: hall-b_cone_justD2_simmetric_an
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_an_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_an_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1389,7 +1393,7 @@ Run: hall-b_cone_justD2_simmetric_an
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_an_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_an_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1408,7 +1412,7 @@ Run: hall-b_cone_justD2_simmetric_ao
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1442,7 +1446,7 @@ Run: hall-b_cone_justD2_simmetric_ao
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1476,7 +1480,7 @@ Run: hall-b_cone_justD2_simmetric_ao
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ao_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ao_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1484,7 +1488,7 @@ Run: hall-b_cone_justD2_simmetric_ao
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ao_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ao_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1503,7 +1507,7 @@ Run: hall-b_cone_justD2_simmetric_ap
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1537,7 +1541,7 @@ Run: hall-b_cone_justD2_simmetric_ap
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1571,7 +1575,7 @@ Run: hall-b_cone_justD2_simmetric_ap
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ap_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ap_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1579,7 +1583,7 @@ Run: hall-b_cone_justD2_simmetric_ap
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ap_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ap_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1598,7 +1602,7 @@ Run: hall-b_cone_justD2_simmetric_aq
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1632,7 +1636,7 @@ Run: hall-b_cone_justD2_simmetric_aq
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1666,7 +1670,7 @@ Run: hall-b_cone_justD2_simmetric_aq
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aq_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aq_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1674,7 +1678,7 @@ Run: hall-b_cone_justD2_simmetric_aq
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aq_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aq_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1693,7 +1697,7 @@ Run: hall-b_cone_justD2_simmetric_ar
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1727,7 +1731,7 @@ Run: hall-b_cone_justD2_simmetric_ar
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1761,7 +1765,7 @@ Run: hall-b_cone_justD2_simmetric_ar
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ar_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ar_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1769,7 +1773,7 @@ Run: hall-b_cone_justD2_simmetric_ar
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ar_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ar_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1788,7 +1792,7 @@ Run: hall-b_cone_justD2_simmetric_as
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1822,7 +1826,7 @@ Run: hall-b_cone_justD2_simmetric_as
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1856,7 +1860,7 @@ Run: hall-b_cone_justD2_simmetric_as
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_as_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_as_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1864,7 +1868,7 @@ Run: hall-b_cone_justD2_simmetric_as
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_as_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_as_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1883,7 +1887,7 @@ Run: hall-b_cone_justD2_simmetric_at
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -1917,7 +1921,7 @@ Run: hall-b_cone_justD2_simmetric_at
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -1951,7 +1955,7 @@ Run: hall-b_cone_justD2_simmetric_at
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_at_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_at_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -1959,7 +1963,7 @@ Run: hall-b_cone_justD2_simmetric_at
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_at_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_at_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -1978,7 +1982,7 @@ Run: hall-b_cone_justD2_simmetric_au
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2012,7 +2016,7 @@ Run: hall-b_cone_justD2_simmetric_au
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2046,7 +2050,7 @@ Run: hall-b_cone_justD2_simmetric_au
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_au_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_au_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2054,7 +2058,7 @@ Run: hall-b_cone_justD2_simmetric_au
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_au_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_au_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2073,7 +2077,7 @@ Run: hall-b_cone_justD2_simmetric_av
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2107,7 +2111,7 @@ Run: hall-b_cone_justD2_simmetric_av
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2141,7 +2145,7 @@ Run: hall-b_cone_justD2_simmetric_av
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_av_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_av_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2149,7 +2153,7 @@ Run: hall-b_cone_justD2_simmetric_av
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_av_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_av_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2168,7 +2172,7 @@ Run: hall-b_cone_justD2_simmetric_aw
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2202,7 +2206,7 @@ Run: hall-b_cone_justD2_simmetric_aw
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2236,7 +2240,7 @@ Run: hall-b_cone_justD2_simmetric_aw
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aw_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aw_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2244,7 +2248,7 @@ Run: hall-b_cone_justD2_simmetric_aw
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_aw_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_aw_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2263,7 +2267,7 @@ Run: hall-b_cone_justD2_simmetric_ax
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2297,7 +2301,7 @@ Run: hall-b_cone_justD2_simmetric_ax
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2331,7 +2335,7 @@ Run: hall-b_cone_justD2_simmetric_ax
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ax_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ax_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2339,7 +2343,7 @@ Run: hall-b_cone_justD2_simmetric_ax
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ax_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ax_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2358,7 +2362,7 @@ Run: hall-b_cone_justD2_simmetric_ay
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2392,7 +2396,7 @@ Run: hall-b_cone_justD2_simmetric_ay
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2426,7 +2430,7 @@ Run: hall-b_cone_justD2_simmetric_ay
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ay_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ay_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2434,7 +2438,7 @@ Run: hall-b_cone_justD2_simmetric_ay
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ay_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ay_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2453,7 +2457,7 @@ Run: hall-b_cone_justD2_simmetric_az
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2487,7 +2491,7 @@ Run: hall-b_cone_justD2_simmetric_az
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2521,7 +2525,7 @@ Run: hall-b_cone_justD2_simmetric_az
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_az_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_az_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2529,7 +2533,7 @@ Run: hall-b_cone_justD2_simmetric_az
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_az_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_az_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2548,7 +2552,7 @@ Run: hall-b_cone_justD2_simmetric_ba
 	StartRun: 1579192360
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2582,7 +2586,7 @@ Run: hall-b_cone_justD2_simmetric_ba
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2616,7 +2620,7 @@ Run: hall-b_cone_justD2_simmetric_ba
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ba_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ba_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2624,7 +2628,7 @@ Run: hall-b_cone_justD2_simmetric_ba
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_ba_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_ba_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2643,7 +2647,7 @@ Run: hall-b_cone_justD2_simmetric_bb
 	StartRun: 1579192361
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2677,7 +2681,7 @@ Run: hall-b_cone_justD2_simmetric_bb
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2711,7 +2715,7 @@ Run: hall-b_cone_justD2_simmetric_bb
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bb_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bb_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2719,7 +2723,7 @@ Run: hall-b_cone_justD2_simmetric_bb
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bb_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bb_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2738,7 +2742,7 @@ Run: hall-b_cone_justD2_simmetric_bc
 	StartRun: 1579192361
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2772,7 +2776,7 @@ Run: hall-b_cone_justD2_simmetric_bc
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2806,7 +2810,7 @@ Run: hall-b_cone_justD2_simmetric_bc
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bc_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bc_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2814,7 +2818,7 @@ Run: hall-b_cone_justD2_simmetric_bc
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bc_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bc_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -2833,7 +2837,7 @@ Run: hall-b_cone_justD2_simmetric_bd
 	StartRun: 1579192361
 	Parent:    <default>
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_21.bnn
+	# USRxxx data file: hall-b_cone_justGold_21.bnn
 	Data: hall-b_cone_justGold_21.bnn
 		Unit: 21
 		Type: b
@@ -2867,7 +2871,7 @@ Run: hall-b_cone_justD2_simmetric_bd
 		Rule: +,hall-b_cone_justD2_ag001_fort.21
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justGold_23.bnx
+	# USRxxx data file: hall-b_cone_justGold_23.bnx
 	Data: hall-b_cone_justGold_23.bnx
 		Unit: 23
 		Type: x
@@ -2901,7 +2905,7 @@ Run: hall-b_cone_justD2_simmetric_bd
 		Rule: +,hall-b_cone_justD2_ag001_fort.23
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bd_25.bnn
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bd_25.bnn
 	Data: \I_\U.\e
 		Unit: 25
 		Type: b
@@ -2909,7 +2913,7 @@ Run: hall-b_cone_justD2_simmetric_bd
 		Rule: +,\I\d\d\d_ftn\.\U
 	End
 
-	# USRxxx data file: Dump/hall-b_cone_justD2_simmetric_bd_27.rnc
+	# USRxxx data file: hall-b_cone_justD2_simmetric_bd_27.rnc
 	Data: \I_\U.\e
 		Unit: 27
 		Type: r
@@ -3180,23 +3184,24 @@ End
 
 # Geometry Information
 Geometry:
-	Frame.bsplit: 0.5
-	Frame.tsplit: 0.01
-	Frame.vsplit: 0.99
+	Frame.bsplit: 0.99
+	Frame.tsplit: 0.5
+	Frame.vsplit: 0.01
 
 	# Layer
 	Layer: Media
 		: True
 		._visible: True
+		3D._visible: True
 		3D.fov: 22.8
 		Image: True
 		Image._visible: True
-		Image.file: ../Dump/5kWdump.png
-		Image.marker: 6
-		Image.marker.0: 919.0 522.333333333 0.0 0.0 3045.0
-		Image.marker.1: 895.8 522.4 0.0 0.0 3044.0
-		Image.marker.2: 895.5 391.333333333 0.0 5.44 3044.0
-		Image.marker.3: 896.5 652.5 0.0 -5.44 3044.0
+		Image.file: ../../Dump/newdump.png
+		Image.marker: 4
+		Image.marker.0: 451.0 214.666666667 0.0 0.0 2890.1567
+		Image.marker.1: 1198.0 215.333333333 0.0 0.0 3071.7667
+		Image.marker.2: 1075.86666667 277.733333333 0.0 -15.82 3041.04
+		Image.marker.3: 1075.33333333 151.0 0.0 15.82 3041.04
 		Image.marker.4: 128.6 653.4 0.0 -5.44 3012.0
 		Image.marker.5: 128.5 392.0 0.0 5.44 3012.0
 		Image.marker.6: 284.0 848.2 -4.3 0.0 -166.8
@@ -3205,6 +3210,7 @@ Geometry:
 		Palette.max: 1e+14
 		Palette.min: 10000.0
 		Show._visible: True
+		Show.label: Material
 		Usrbin.det: 3
 		Usrbin.file: Run5/accumulated_dose_21.bnn
 		Usrbin.norm: 8.04E17
@@ -3268,21 +3274,21 @@ Plot: Red
 	Format: .eps
 	Type:   Geometry
 	basisu: 0 0 1
-	basisv: -1 0 0
+	basisv: 0 1 0
 	boundaries: 1
 	cbcolors: 0
 	cblog: 0
 	cbpalette: FLUKA
 	cbround: 0
 	cbtics: 0
-	coord: Z-X
+	coord: Z-Y
 	cpd: 0
-	extends: 26.1916 1452.76
+	extends: 65.1731 0.108261
 	grid: 0
 	index: 0
 	labels: 1
 	layer: 3D
-	origin: 601.277 14 -129.729
+	origin: -100 -14.1645 3155.16
 	subtype: Material
 	title: GeoViewer Red plot
 	x2log: 0
@@ -3299,14 +3305,14 @@ End
 Plot: Blue
 	Format: .eps
 	Type:   Geometry
-	basisu: -0.371218 0.00535882 0.92853
-	basisv: 0.0848337 0.995997 0.0281675
+	basisu: 0 0 1
+	basisv: 0 1 0
 	boundaries: 1
-	coord: U-V
-	extends: 358.318 0.432229
+	coord: Z-Y
+	extends: 19.3807 12.7257
 	labels: 1
-	layer: 3D
-	origin: 3.31536 -2.40809 -165.366
+	layer: Media
+	origin: 0 4.94238 2892.89
 	subtype: Material
 	title: GeoViewer Blue plot
 End
@@ -3325,12 +3331,12 @@ Plot: Magenta
 	cbtics: 0
 	coord: Y-Z
 	cpd: 0
-	extends: 13.4588 0.016235
+	extends: 11.2157 879.311
 	grid: 0
 	index: 0
 	labels: 1
 	layer: Media
-	origin: -37.2688 -2.56528 -143.599
+	origin: -37.2688 -3.62516 -142.494
 	subtype: Material
 	title: GeoViewer Magenta plot
 	x2log: 0
@@ -4026,10 +4032,10 @@ Plot: Green
 	basisv: 0 1 0
 	boundaries: 1
 	coord: Z-Y
-	extends: 6.19752 3.13837
+	extends: 5.16459 0.00857905
 	labels: 1
 	layer: Media
-	origin: 0.17252 1.69546 3018.48
+	origin: 0.17252 -33.7324 3160.15
 	subtype: Material
 	title: GeoViewer Green plot
 End

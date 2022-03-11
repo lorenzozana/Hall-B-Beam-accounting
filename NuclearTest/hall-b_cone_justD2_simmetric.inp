@@ -107,12 +107,12 @@ RCC Cmot       0.0 0.0 -172.45 0.0 0.0 2.7 3.3
 RCC Cmot1      0.0 0.0 -172.45 0.0 0.0 2.7 4.5
 RCC Cmot2      0.0 0.0 -172.3 0.0 0.0 2.4 3.4
 RCC Cmot3      0.0 0.0 -172.3 0.0 0.0 2.4 4.4
-$start_translat 0 0 -217.0363
+$start_translat 0 0 -222.672
 TRC sol1_i     0.0 0.0 0.0 0.0 0.0 42.5 53.25 39.
 RCC sol1_o     0.0 0.0 0.0 0.0 0.0 178.344 102.
 RCC sol2_i     0.0 0.0 42.5 0.0 0.0 91.694 39.
 TRC sol3_i     0.0 0.0 134.194 0.0 0.0 441.5 39. 78.4
-$end_translat 
+$end_translat
 END
 * Black hole
 BLKBODY      5 +blkbody -void
